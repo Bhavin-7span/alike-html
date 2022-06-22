@@ -1,5 +1,135 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-
 body {
-  font-family: "Manrope", sans-serif;
+    font-family: "Manrope", sans-serif;
+}
+
+:root {
+    --bs-primary: #EC601D !important;
+    --bs-secondary: #271B45 !important;
+    --bs-gray: #DCDADE !important;
+    --bs-gray-bg: #F9F8F9 !important;
+    --bs-dark-gray: #70677C !important;
+    --bs-danger-light: #DB105B !important;
+    --bs-danger-border: #F46C83 !important;
+    --bs-rounded-4: 12px;
+}
+.rounded-4{
+    border-radius: var(--bs-rounded-4);
+}
+.primary {
+    color: var(--bs-primary);
+}
+
+.secondary {
+    color: var(--bs-secondary);
+}
+
+.gray {
+    color: var(--bs-gray);
+}
+
+.gray-bg {
+    background-color: var(--bs-gray-bg);
+}
+
+.dark-gray {
+    color: var(--bs-dark-gray);
+}
+
+.danger-light {
+    color: var(--bs-danger-light);
+}
+
+.danger-border {
+    border-color: var(--bs-danger-border) !important;
+}
+
+
+/* first section css start */
+
+.section--cover {
+    background-image: url(../img/header_img.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 7rem 0;
+}
+
+.cover-overlay {
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+.serch-icon{
+    right:15%;
+    bottom: 22%;
+}
+.form-control:focus {
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+.input-group>.form-control:focus {
+    z-index: auto;
+}
+
+@media only screen and (max-width:768px) {
+    .section--cover {
+        background-image: url(../img/moblie--cover.png);
+        padding: 5rem 0;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .input-wrapper {
+        width: auto !important;
+    }
+}
+
+
+/* second section css start */
+
+
+.place-overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 63.12%, rgba(0, 0, 0, 0.7) 100%);
+    display:none;
+}
+.place-content {    
+    margin: 0 10px;
+}
+.nav-tabs .nav-link.active {
+    color: #EC601D;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+    color: #EC601D;
+}
+.asia-media{
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+.place_img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.place__wrapper .slick-list{
+    overflow: visible;
+}
+
+
+/* third section css strat */
+
+li::marker {
+    color: #70677C;
+}
+
+a.asia-link:hover {
+    color: #EC601D;
 }
