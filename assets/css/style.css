@@ -9,9 +9,26 @@ body {
     --bs-gray: #DCDADE !important;
     --bs-gray-bg: #F9F8F9 !important;
     --bs-dark-gray: #70677C !important;
+    --bs-light-gray:#8F8D91 !important;
     --bs-danger-light: #DB105B !important;
     --bs-danger-border: #F46C83 !important;
+    --bs-warning: #EAB308 !important;
+    --bs-orange-bg:#FEF1DC !important;
     --bs-rounded-4: 12px;
+    --bs-fs-6:14px;
+    --bs-gray-border: #DCDADE !important;
+}
+.gray-border{
+    border-color: var(--bs-gray-border);
+}
+.orange-bg{
+    background-color: var(--bs-orange-bg);
+}
+.warning{
+    color: var(--bs-warning);
+}
+.light-gray{
+    color: var(--bs-light-gray);
 }
 .rounded-4{
     border-radius: var(--bs-rounded-4);
@@ -43,7 +60,12 @@ body {
 .danger-border {
     border-color: var(--bs-danger-border) !important;
 }
+.fs-6{
+    font-size: var(--bs-fs-6);
+}
 
+
+/* ******** city list page css start ********* */
 
 /* first section css start */
 
@@ -59,8 +81,11 @@ body {
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
 .serch-icon{
-    right:15%;
-    bottom: 22%;
+    right: 27%;
+    bottom: 30%;
+}
+.serch-icon i.bi::before{
+    font-weight: 700 !important;
 }
 .form-control:focus {
     border-color: transparent !important;
@@ -69,7 +94,23 @@ body {
 .input-group>.form-control:focus {
     z-index: auto;
 }
+.input-wrapper{
+    width: 40%;
+}
+.input--search::placeholder{
+    color: #271B45;
+}
 
+@media only screen and (max-width:1280px){
+    .serch-icon{
+        right:20%;
+    }
+}
+@media only screen and (max-width:991px){
+    .serch-icon {
+        right: 8%;
+    }
+}
 @media only screen and (max-width:768px) {
     .section--cover {
         background-image: url(../img/moblie--cover.png);
@@ -119,8 +160,13 @@ body {
     height: 100%;
     object-fit: cover;
 }
-.place__wrapper .slick-list{
+.place__wrapper .slick-list,
+.cities-wrapper .slick-list{
     overflow: visible;
+}
+
+.visited--city{
+    margin-top: 5rem;
 }
 
 
@@ -132,4 +178,43 @@ li::marker {
 
 a.asia-link:hover {
     color: #EC601D;
+}
+
+.show__more:hover{
+    background-color: #FDDEDA;
+    border-color: transparent !important;
+}
+
+
+/* ******** city list page css end ********* */
+
+
+
+
+/* ******** city detail page css start ********* */
+
+/* first section css start */
+.section--dubai{
+    background-image: url(../img/dubai_cover.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 7rem 0;
+}
+
+/* second section css start  */
+.detail-wrap{
+    margin-top: -5rem;
+}
+.cities-media{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.heart-icon i.bi-heart::before{
+    font-weight: 700 !important;
+    font-size: 30px;
+}
+.user-icon i.bi-person-check::before{
+    font-weight: 700 !important;
+    font-size: 25px;
 }

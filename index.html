@@ -34,6 +34,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <!-- jQuery (necessary for jQuery plugins) -->
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/custom.js"></script>
@@ -51,15 +53,13 @@
             <section class="section--cover position-relative">
                 <div class="container px-3">
                     <div class="cover-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                    <div class="cover-content d-md-flex flex-column align-items-center justify-content-center py-5 position-relative">
+                    <div class="cover-content d-md-flex flex-column align-items-center justify-content-center py-sm-5 py-0 position-relative">
                         <p class="text-white fw-bold fs-2">Explore Cities and Make your own Trip Story</p>
-                        <div class="w-25 m-auto input-wrapper">
-                            <div class="input-group rounded">
-                                <input type="search" class="form-control rounded py-2 text-md-center" placeholder="Search for your favorite city" aria-label="Search" aria-describedby="search-addon" />
+                        <div class="m-auto input-wrapper">
+                            <div class="input-group rounded-2">
+                                <input type="search" class="form-control rounded-2 py-3 text-md-center input--search" placeholder="Search for your favorite city" aria-label="Search" aria-describedby="search-addon" />
                                 <span class="position-absolute serch-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#271B45" class="bi bi-search" viewBox="0 0 16 16">
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                    </svg>
+                                    <i class="bi bi-search secondary"></i>
                                 </span>
                             </div>
                         </div>
@@ -68,13 +68,13 @@
             </section>
 
             <!-- second section start -->
-            <section class="section--place py-3 py-md-5 overflow-hidden">
+            <section class="section--place py-5 overflow-hidden">
                 <div class="container">
-                    <div class="row">
+                    <div class="row py-0 py-md-5">
                         <div class="col-md-12 p-0">
                             <div class="tab-container-one">
                                 <!-- Tabs navs start-->
-                                <ul class="nav nav-tabs border-0 mb-3" id="myTab" role="tablist">
+                                <ul class="nav nav-tabs border-0 mb-3 mb-md-4 px-3 px-md-0" id="myTab" role="tablist">
                                     <li><p class="fw-bold secondary fs-3 m-0"> Best Places to visit in</p></li>
                                     <li class="nav-item active"><a class="nav-link gray fw-bold fs-5 active" href="#jul" role="tab" aria-controls="jul" data-bs-toggle="tab">Jul</a></li>
                                     <li class="nav-item"><a class="nav-link gray fw-bold fs-5" href="#aug" role="tab" aria-controls="aug" data-bs-toggle="tab">Aug</a></li>
@@ -98,49 +98,49 @@
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Kyoto</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Montreal</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Greece</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -151,49 +151,49 @@
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Kyoto</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Montreal</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Greece</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -204,49 +204,49 @@
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Kyoto</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Montreal</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Greece</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -257,49 +257,49 @@
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Kyoto</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Montreal</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Greece</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -310,49 +310,49 @@
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Kyoto</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Montreal</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Greece</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -363,49 +363,49 @@
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Kyoto</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Montreal</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Greece</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -416,49 +416,49 @@
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Kyoto</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Montreal</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Greece</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -469,49 +469,49 @@
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Kyoto</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Montreal</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Greece</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -522,49 +522,49 @@
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Kyoto</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Montreal</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Greece</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -575,49 +575,49 @@
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Kyoto</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Montreal</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Greece</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -628,49 +628,49 @@
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Kyoto</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Montreal</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Greece</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -681,49 +681,49 @@
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Kyoto</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Montreal</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Greece</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                                 </div>
                                             </div>
                                             <div class="place-content position-relative">
                                                 <div class="asia-media">
                                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                                     <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -732,56 +732,56 @@
                                 <!-- Tabs content end-->
                             </div>
                             <!-- Most Visited Cities in the World -->
-                            <div class="visited--city mt-4 mt-md-5">
-                                <p class="fw-bold secondary fs-3 m-0"> Most Visited Cities in the World</p>
+                            <div class="visited--city">
+                                <p class="fw-bold secondary fs-3 mb-4 px-3 px-md-0"> Most Visited Cities in the World</p>
                                 <div class="place__wrapper">
                                     <div class="place-content position-relative">
                                         <div class="asia-media">
                                             <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                             <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                            <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                            <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                         </div>
                                     </div>
                                     <div class="place-content position-relative">
                                         <div class="asia-media">
                                             <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                             <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                            <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                            <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                         </div>
                                     </div>
                                     <div class="place-content position-relative">
                                         <div class="asia-media">
                                             <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                             <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                            <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Kyoto</p>
+                                            <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
                                         </div>
                                     </div>
                                     <div class="place-content position-relative">
                                         <div class="asia-media">
                                             <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                             <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                            <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Montreal</p>
+                                            <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
                                         </div>
                                     </div>
                                     <div class="place-content position-relative">
                                         <div class="asia-media">
                                             <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                             <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                            <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Greece</p>
+                                            <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
                                         </div>
                                     </div>
                                     <div class="place-content position-relative">
                                         <div class="asia-media">
                                             <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                             <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                            <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">San Francisco</p>
+                                            <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
                                         </div>
                                     </div>
                                     <div class="place-content position-relative">
                                         <div class="asia-media">
                                             <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                             <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                            <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Copenhagen</p>
+                                            <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
                                         </div>
                                     </div>
                                 </div>
@@ -792,93 +792,93 @@
             </section>
 
             <!-- third section start -->
-            <section class="gray-bg py-3 py-md-5">
+            <section class="gray-bg py-5">
                 <div class="container">
                     <!-- Discover  Asia -->
                     <div class="asia-wrapper py-0 py-md-5">
-                        <p class="fw-bold secondary fs-3 m-0 px-1">Discover Asia</p>
-                        <div class="row mt-4">
-                            <div class="col-6 col-md-3">
+                        <p class="fw-bold secondary fs-2 m-0 px-1">Discover Asia</p>
+                        <div class="row">
+                            <div class="col-6 col-md-3 mt-4">
                                 <div class="asia-media position-relative">
                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                     <img class="place_img" src="assets/img/dubai.png" alt="dubai">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Dubai</p>
+                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Dubai</p>
                                 </div>
-                                <ul class="mt-2 ps-4">
+                                <ul class="mt-2 ps-4 d-none d-md-block">
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Dubai Burj Khalifa Tour</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Dubai Burj Khalifa Tour</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Global Village</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Global Village</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">72 Hours of Fun</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">72 Hours of Fun</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-6 col-md-3 mt-4">
                                 <div class="asia-media position-relative">
                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                     <img class="place_img" src="assets/img/abu-dhabi.png" alt="abu-dhabi">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Abu Dhabi</p>
+                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Abu Dhabi</p>
                                 </div>
-                                <ul class="mt-2 ps-4">
+                                <ul class="mt-2 ps-4 d-none d-md-block">
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Al Ain City Tour</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Al Ain City Tour</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Falcon Tour Abu Dhabi </a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Falcon Tour Abu Dhabi </a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Sunrise Desert Safari</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Sunrise Desert Safari</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">4 Day Family Trip</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">4 Day Family Trip</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-6 col-md-3 mt-4">
                                 <div class="asia-media position-relative">
                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                     <img class="place_img" src="assets/img/phuket.png" alt="phuket">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Phuket</p>
+                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Phuket</p>
                                 </div>
-                                <ul class="mt-2 ps-4">
+                                <ul class="mt-2 ps-4 d-none d-md-block">
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-6 col-md-3 mt-4">
                                 <div class="asia-media position-relative">
                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                     <img class="place_img" src="assets/img/bangkok.png" alt="bangkok">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Bangkok</p>
+                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Bangkok</p>
                                 </div>
-                                <ul class="mt-2 ps-4">
+                                <ul class="mt-2 ps-4 d-none d-md-block">
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
                                     </li>
                                 </ul>
                             </div>
@@ -886,20 +886,20 @@
                                 <div class="asia-media position-relative">
                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                     <img class="place_img" src="assets/img/singapore.png" alt="singapore">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Singapore</p>
+                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Singapore</p>
                                 </div>
-                                <ul class="mt-2 ps-4">
+                                <ul class="mt-2 ps-4 d-none d-md-block">
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
                                     </li>
                                 </ul>
                             </div>
@@ -907,20 +907,20 @@
                                 <div class="asia-media position-relative">
                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                     <img class="place_img" src="assets/img/mumbai.png" alt="mumbai">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Mumbai</p>
+                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Mumbai</p>
                                 </div>
-                                <ul class="mt-2 ps-4">
+                                <ul class="mt-2 ps-4 d-none d-md-block">
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
                                     </li>
                                 </ul>
                             </div>
@@ -928,25 +928,25 @@
                                 <div class="asia-media position-relative">
                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                     <img class="place_img" src="assets/img/jaipur.png" alt="jaipur">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Jaipur</p>
+                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Jaipur</p>
                                 </div>
-                                <ul class="mt-2 ps-4">
+                                <ul class="mt-2 ps-4 d-none d-md-block">
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="col-6 col-md-3 mt-4">
-                                <a href="javascript:;" class="d-block text-decoration-none asia-media position-relative border danger-border rounded-4">
+                                <a href="javascript:;" class="show__more d-block text-decoration-none asia-media position-relative border danger-border rounded-4">
                                     <p class="place_img fs-5 danger-light m-0 d-flex align-items-center justify-content-center">Show More</p>
                                 </a>
                             </div>
@@ -954,73 +954,73 @@
                     </div>
                     <!-- Amazing Africa and The Middle East -->
                     <div class="asia-wrapper py-0 py-md-5">
-                        <p class="fw-bold secondary fs-3 m-0 px-1">Amazing Africa and The Middle East</p>
-                        <div class="row mt-4">
-                            <div class="col-6 col-md-3">
+                        <p class="fw-bold secondary fs-2 mt-md-0 mt-5 mb-0 px-1">Amazing Africa and The Middle East</p>
+                        <div class="row">
+                            <div class="col-6 col-md-3 mt-4">
                                 <div class="asia-media position-relative">
                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                     <img class="place_img" src="assets/img/cape_town.png" alt="cape_town">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Cape Town</p>
+                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Cape Town</p>
                                 </div>
-                                <ul class="mt-2 ps-4">
+                                <ul class="mt-2 ps-4 d-none d-md-block">
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Dubai Burj Khalifa Tour</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Dubai Burj Khalifa Tour</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Global Village</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Global Village</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">72 Hours of Fun</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">72 Hours of Fun</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-6 col-md-3 mt-4">
                                 <div class="asia-media position-relative">
                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                     <img class="place_img" src="assets/img/cairo.png" alt="cairo">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Cairo</p>
+                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Cairo</p>
                                 </div>
-                                <ul class="mt-2 ps-4">
+                                <ul class="mt-2 ps-4 d-none d-md-block">
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Al Ain City Tour</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Al Ain City Tour</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Falcon Tour Abu Dhabi </a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Falcon Tour Abu Dhabi </a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Sunrise Desert Safari</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Sunrise Desert Safari</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">4 Day Family Trip</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">4 Day Family Trip</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-6 col-md-3 mt-4">
                                 <div class="asia-media position-relative">
                                     <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
                                     <img class="place_img" src="assets/img/morocco.png" alt="morocco">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-3 fw-bold fs-5">Morocco</p>
+                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Morocco</p>
                                 </div>
-                                <ul class="mt-2 ps-4">
+                                <ul class="mt-2 ps-4 d-none d-md-block">
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
                                     </li>
                                     <li>
-                                        <a class="dark-gray fs-5 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
+                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-6 col-md-3">
-                                <a href="javascript:;" class="d-block text-decoration-none asia-media position-relative border danger-border rounded-4">
+                            <div class="col-6 col-md-3 mt-4">
+                                <a href="javascript:;" class="show__more d-block text-decoration-none asia-media position-relative border danger-border rounded-4">
                                     <p class="place_img fs-5 danger-light m-0 d-flex align-items-center justify-content-center">Show More</p>
                                 </a>
                             </div>
