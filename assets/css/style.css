@@ -5,6 +5,7 @@ body {
 
 :root {
     --bs-primary: #EC601D !important;
+    --bs-primary-bg: #EC601D !important;
     --bs-secondary: #271B45 !important;
     --bs-gray: #DCDADE !important;
     --bs-gray-bg: #F9F8F9 !important;
@@ -18,8 +19,11 @@ body {
     --bs-fs-6:14px;
     --bs-gray-border: #DCDADE !important;
 }
+.primary-bg{
+    background-color: var(--bs-primary-bg);
+}
 .gray-border{
-    border-color: var(--bs-gray-border);
+    border-color: var(--bs-gray-border) !important;
 }
 .orange-bg{
     background-color: var(--bs-orange-bg);
@@ -61,7 +65,7 @@ body {
     border-color: var(--bs-danger-border) !important;
 }
 .fs-6{
-    font-size: var(--bs-fs-6);
+    font-size: var(--bs-fs-6) !important;
 }
 
 
@@ -131,9 +135,6 @@ body {
 .place-overlay {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 63.12%, rgba(0, 0, 0, 0.7) 100%);
     display:none;
-}
-.place-content {    
-    margin: 0 10px;
 }
 .nav-tabs .nav-link.active {
     color: #EC601D;
@@ -217,4 +218,55 @@ a.asia-link:hover {
 .user-icon i.bi-person-check::before{
     font-weight: 700 !important;
     font-size: 25px;
+}
+
+
+/* section--faq css start */
+
+/* faqs */
+.faq__wrapper .accordion-button:focus {
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
+}
+.faq__wrapper .accordion-button:not(.collapsed) {
+    color: #EC601D;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: none;
+}
+.faq__wrapper .accordion-item:first-of-type,
+.faq__wrapper .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+}
+.faq__wrapper .accordion-item:last-of-type,
+.faq__wrapper .accordion-item:last-of-type .accordion-button.collapsed{
+    border-bottom-right-radius: 12px !important;
+    border-bottom-left-radius: 12px !important;
+}
+.accordion-button:not(.collapsed)::after {
+    transform: none;
+    content: "\F63B";
+    font-family: bootstrap-icons !important;
+    font-weight: 700 !important;
+    -webkit-font-smoothing: antialiased;
+    background-image: none;
+    color: #EC601D;
+}
+.accordion-button::after{
+    background-image: none;
+    content: "\F64D";
+    font-family: bootstrap-icons !important;
+    font-weight: 700 !important;
+    -webkit-font-smoothing: antialiased;
+    color: #271B45;
+}
+
+.know__icon .bi-cloud::before,
+.know__icon .bi-cash::before,
+.know__icon .bi-clock::before {
+    font-weight: 700 !important;
+    color: #70677C;
+    font-size: 40px;
 }
