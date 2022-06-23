@@ -136,6 +136,37 @@ body {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 63.12%, rgba(0, 0, 0, 0.7) 100%);
     display:none;
 }
+.common-card {    
+    margin: 0 10px;
+    position:relative;
+    overflow: hidden;
+}
+
+.common-card::after{
+    content:"";
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 63.12%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.common-card.common-card--link::after{
+    display:none;
+}
+
+.common-card:hover .common-card__title{
+    color:var(--bs-primary);
+}
+.common-title{
+    font-size:30px;
+}
+.nav-tabs.place-tabs .nav-link{
+    padding:0px 8px;
+    font-size:30px;
+}
 .nav-tabs .nav-link.active {
     color: #EC601D;
     background-color: transparent;
@@ -147,11 +178,31 @@ body {
     border-color: transparent;
     color: #EC601D;
 }
-.asia-media{
+.common-card__media{
     padding-bottom: 56.25%;
     overflow: hidden;
 }
-.place_img{
+.common-card__media.common-card__media-75{
+    padding-bottom:75%;
+    position:relative;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display:block;
+}
+.common-card__title{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    font-size:24px;
+    font-weight:700;
+    line-height:32px;
+    padding:10px 15px;
+    margin:0px;
+    color:#fff;
+    z-index:10;
+}
+.common-card__image{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -161,7 +212,7 @@ body {
     height: 100%;
     object-fit: cover;
 }
-.place__wrapper .slick-list,
+.places-slider .slick-list,
 .cities-wrapper .slick-list{
     overflow: visible;
 }
@@ -186,6 +237,55 @@ a.asia-link:hover {
     border-color: transparent !important;
 }
 
+.custom-dropdown .custom-dropdown__label{
+    display:none;
+}
+
+@media only screen and (max-width:1024px){
+    .custom-dropdown .place-tabs{
+        display:none;
+    }
+    .custom-dropdown .custom-dropdown__label{
+        display: block;
+        background-color:transparent;
+        font-size:18px;
+        color:var(--bs-primary);
+        border:none;
+        font-weight: 600;
+        padding:0px 20px;
+        margin-left: 10px;
+    }
+    .common-title{
+        font-size:18px !important;
+    }
+    .custom-dropdown{
+        position:relative;
+    }
+    .place-tabs{
+        position:absolute;
+        top:35px;
+        right:0px;
+    }
+    .custom-dropdown.is-active .place-tabs{
+        display:block;
+        padding:10px;
+        border:1px solid #eaeaea;
+        z-index:100;
+        background-color:#fff;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+    }
+    .nav-tabs.place-tabs .nav-link{
+        font-size:14px;
+        padding:5px 15px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .common-card__title{
+        font-size:18px;
+    }
+}
 
 /* ******** city list page css end ********* */
 
@@ -195,7 +295,7 @@ a.asia-link:hover {
 /* ******** city detail page css start ********* */
 
 /* first section css start */
-.section--dubai{
+.section--city{
     background-image: url(../img/dubai_cover.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -203,13 +303,21 @@ a.asia-link:hover {
     padding: 7rem 0;
 }
 
+.cover-card__title{
+    font-size:48px;
+    color:#fff;
+    font-weight:800;
+}
+.cover-card__text{
+    font-size:20px;
+    color:#fff;
+    text-align: center;
+    margin-top:20px;
+}
+
 /* second section css start  */
 .detail-wrap{
     margin-top: -5rem;
-}
-.cities-media{
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
 }
 .heart-icon i.bi-heart::before{
     font-weight: 700 !important;

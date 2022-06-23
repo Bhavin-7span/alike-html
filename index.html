@@ -2,1035 +2,1133 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Required meta tags for responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <!-- Favicon and touch icons -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
-    <meta name="misapplication-TileColor" content="#ffffff" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="" />
-    <meta name="twitter:site" content="@twitter_username" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:description" content="" />
-    <meta name="twitter:image" content="" />
-    <!-- Open Graph data -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:site_name" content="R" />
-    <meta property="fb:admins" content="Facebook numeric ID" />
-    <!-- gmail verification -->
-    <meta name="google-site-verification" content="" />
-    <!-- Website title -->
-    <title>Tourist Plan</title>
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- bootstrap cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- bootstrap icon cdn -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <!-- jQuery (necessary for jQuery plugins) -->
-    <script src="assets/js/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <!-- slick slider css -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <!-- slick slider js -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- Required meta tags for responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<!-- Favicon and touch icons -->
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png" />
+	<meta name="misapplication-TileColor" content="#ffffff" />
+	<meta name="theme-color" content="#ffffff" />
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="" />
+	<meta name="twitter:site" content="@twitter_username" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image" content="" />
+	<!-- Open Graph data -->
+	<meta property="og:title" content="" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:site_name" content="R" />
+	<meta property="fb:admins" content="Facebook numeric ID" />
+	<!-- gmail verification -->
+	<meta name="google-site-verification" content="" />
+	<!-- Website title -->
+	<title>alike | City List Page</title>
+	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<!-- bootstrap cdn -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<!-- bootstrap icon cdn -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	<!-- jQuery (necessary for jQuery plugins) -->
+	<script src="assets/js/jquery-3.5.1.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<!-- slick slider css -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<!-- slick slider js -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <main id="maincontent" class="page-main">
+	<div class="page-wrapper">
+		<main id="maincontent" class="page-main">
 
-            <!-- first section start -->
-            <section class="section--cover position-relative">
-                <div class="container px-3">
-                    <div class="cover-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                    <div class="cover-content d-md-flex flex-column align-items-center justify-content-center py-sm-5 py-0 position-relative">
-                        <p class="text-white fw-bold fs-2">Explore Cities and Make your own Trip Story</p>
-                        <div class="m-auto input-wrapper">
-                            <div class="input-group rounded-2">
-                                <input type="search" class="form-control rounded-2 py-3 text-md-center input--search" placeholder="Search for your favorite city" aria-label="Search" aria-describedby="search-addon" />
-                                <span class="position-absolute serch-icon">
-                                    <i class="bi bi-search secondary"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+			<!-- first section start -->
+			<section class="section--cover position-relative">
+				<div class="container px-3">
+					<div class="cover-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
+					<div
+						class="cover-content d-md-flex flex-column align-items-center justify-content-center py-sm-5 py-0 position-relative">
+						<p class="text-white fw-bold fs-2">Explore Cities and Make your own Trip Story</p>
+						<div class="m-auto input-wrapper">
+							<div class="input-group rounded-2">
+								<input type="search" class="form-control rounded-2 py-3 text-md-center input--search"
+									placeholder="Search for your favorite city" aria-label="Search" aria-describedby="search-addon" />
+								<span class="position-absolute serch-icon">
+									<i class="bi bi-search secondary"></i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-            <!-- second section start -->
-            <section class="section--place py-5 overflow-hidden">
-                <div class="container">
-                    <div class="row py-0 py-md-5">
-                        <div class="col-md-12 p-0">
-                            <div class="tab-container-one">
-                                <!-- Tabs navs start-->
-                                <ul class="nav nav-tabs border-0 mb-3 mb-md-4 px-3 px-md-0" id="myTab" role="tablist">
-                                    <li><p class="fw-bold secondary fs-3 m-0"> Best Places to visit in</p></li>
-                                    <li class="nav-item active"><a class="nav-link gray fw-bold fs-5 active" href="#jul" role="tab" aria-controls="jul" data-bs-toggle="tab">Jul</a></li>
-                                    <li class="nav-item"><a class="nav-link gray fw-bold fs-5" href="#aug" role="tab" aria-controls="aug" data-bs-toggle="tab">Aug</a></li>
-                                    <li class="nav-item"><a class="nav-link gray fw-bold fs-5" href="#sep" role="tab" aria-controls="sep" data-bs-toggle="tab">Sep</a></li>
-                                    <li class="nav-item"><a class="nav-link gray fw-bold fs-5" href="#oct" role="tab" aria-controls="oct" data-bs-toggle="tab">Oct</a></li>
-                                    <li class="nav-item"><a class="nav-link gray fw-bold fs-5" href="#nov" role="tab" aria-controls="nov" data-bs-toggle="tab">Nov</a></li>
-                                    <li class="nav-item"><a class="nav-link gray fw-bold fs-5" href="#dec" role="tab" aria-controls="dec" data-bs-toggle="tab">Dec</a></li>
-                                    <li class="nav-item"><a class="nav-link gray fw-bold fs-5" href="#jan" role="tab" aria-controls="jan" data-bs-toggle="tab">Jan</a></li>
-                                    <li class="nav-item"><a class="nav-link gray fw-bold fs-5" href="#feb" role="tab" aria-controls="feb" data-bs-toggle="tab">Feb</a></li>
-                                    <li class="nav-item"><a class="nav-link gray fw-bold fs-5" href="#mar" role="tab" aria-controls="mar" data-bs-toggle="tab">Mar</a></li>
-                                    <li class="nav-item"><a class="nav-link gray fw-bold fs-5" href="#apr" role="tab" aria-controls="apr" data-bs-toggle="tab">Apr</a></li>
-                                    <li class="nav-item"><a class="nav-link gray fw-bold fs-5" href="#may" role="tab" aria-controls="may" data-bs-toggle="tab">May</a></li>
-                                    <li class="nav-item"><a class="nav-link gray fw-bold fs-5" href="#jun" role="tab" aria-controls="jun" data-bs-toggle="tab">Jun</a></li>
-                                </ul>
-                                <!-- Tabs navs end-->
-                                <!-- Tabs content strat-->
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="jul" role="tabpanel" aria-labelledby="jul-tab">
-                                        <div class="place__wrapper">
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="aug" role="tabpanel" aria-labelledby="aug-tab">
-                                        <div class="place__wrapper">
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="sep" role="tabpanel" aria-labelledby="sep-tab">
-                                        <div class="place__wrapper">
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="oct" role="tabpanel" aria-labelledby="oct-tab">
-                                        <div class="place__wrapper">
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="nov" role="tabpanel" aria-labelledby="nov-tab">
-                                        <div class="place__wrapper">
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="dec" role="tabpanel" aria-labelledby="dec-tab">
-                                        <div class="place__wrapper">
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="jan" role="tabpanel" aria-labelledby="jan-tab">
-                                        <div class="place__wrapper">
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="feb" role="tabpanel" aria-labelledby="feb-tab">
-                                        <div class="place__wrapper">
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="mar" role="tabpanel" aria-labelledby="mar-tab">
-                                        <div class="place__wrapper">
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="apr" role="tabpanel" aria-labelledby="apr-tab">
-                                        <div class="place__wrapper">
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="may" role="tabpanel" aria-labelledby="may-tab">
-                                        <div class="place__wrapper">
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="jun" role="tabpanel" aria-labelledby="jun-tab">
-                                        <div class="place__wrapper">
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/kyoto.png" alt="kyoto">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Kyoto</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/montreal.png" alt="montreal">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Montreal</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/greece.png" alt="greece">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Greece</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/jul.png" alt="jul">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">San Francisco</p>
-                                                </div>
-                                            </a>
-                                            <a href="javascript:;" class="place-content position-relative">
-                                                <div class="asia-media">
-                                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                    <img class="place_img" src="assets/img/copenhagen.png" alt="copenhagen">
-                                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Copenhagen</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Tabs content end-->
-                            </div>
-                            <!-- Most Visited Cities in the World -->
-                            <div class="visited--city">
-                                <p class="fw-bold secondary fs-3 mb-4 px-3 px-md-0"> Most Visited Cities in the World</p>
-                                    <div class="place__wrapper">
-                                        <a href="javascript:;" class="place-content position-relative">
-                                            <div class="asia-media">
-                                                <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                <img class="place_img" src="assets/img/bangkok.png" alt="bangkok">
-                                                <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Bangkok</p>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:;" class="place-content position-relative">
-                                            <div class="asia-media">
-                                                <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                <img class="place_img" src="assets/img/paris.png" alt="paris">
-                                                <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Paris</p>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:;" class="place-content position-relative">
-                                            <div class="asia-media">
-                                                <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                <img class="place_img" src="assets/img/london.png" alt="london">
-                                                <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">London</p>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:;" class="place-content position-relative">
-                                            <div class="asia-media">
-                                                <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                <img class="place_img" src="assets/img/dubai.png" alt="dubai">
-                                                <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Dubai</p>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:;" class="place-content position-relative">
-                                            <div class="asia-media">
-                                                <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                <img class="place_img" src="assets/img/singapore.png" alt="singapore">
-                                                <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Singapore</p>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:;" class="place-content position-relative">
-                                            <div class="asia-media">
-                                                <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                <img class="place_img" src="assets/img/bangkok.png" alt="bangkok">
-                                                <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Bangkok</p>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:;" class="place-content position-relative">
-                                            <div class="asia-media">
-                                                <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                                <img class="place_img" src="assets/img/paris.png" alt="paris">
-                                                <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Paris</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+			<!-- Best Places Section: START -->
+			<section class="section section--places py-5 overflow-hidden">
+				<div class="container">
+					<div class="py-0 py-md-5">
+						<div class="tab-container-one">
+							<!-- Tabs navs start-->
+							<div class="d-flex justify-content-between justify-content-lg-start mb-4">
+								<p class="common-title fw-bold secondary m-0"> Best Places to visit in</p>
+								<div>
+									<div class="custom-dropdown">
+										<button class="custom-dropdown__label"><span>Jul</span> <i class="bi bi-chevron-down"></i></button>
+										<ul class="place-tabs nav nav-tabs border-0" id="myTab" role="tablist">
+											<li class="nav-item active"><a class="nav-link gray fw-bold active" href="#jul" role="tab"
+													aria-controls="jul" data-bs-toggle="tab">Jul</a>
+											</li>
+											<li class="nav-item"><a class="nav-link gray fw-bold" href="#aug" role="tab" aria-controls="aug"
+													data-bs-toggle="tab">Aug</a></li>
+											<li class="nav-item"><a class="nav-link gray fw-bold" href="#oct" role="tab" aria-controls="oct"
+													data-bs-toggle="tab">Oct</a></li>
+											<li class="nav-item"><a class="nav-link gray fw-bold" href="#nov" role="tab" aria-controls="nov"
+													data-bs-toggle="tab">Nov</a></li>
+											<li class="nav-item"><a class="nav-link gray fw-bold" href="#dec" role="tab" aria-controls="dec"
+													data-bs-toggle="tab">Dec</a></li>
+											<li class="nav-item"><a class="nav-link gray fw-bold" href="#jan" role="tab" aria-controls="jan"
+													data-bs-toggle="tab">Jan</a></li>
+											<li class="nav-item"><a class="nav-link gray fw-bold" href="#feb" role="tab" aria-controls="feb"
+													data-bs-toggle="tab">Feb</a></li>
+											<li class="nav-item"><a class="nav-link gray fw-bold" href="#mar" role="tab" aria-controls="mar"
+													data-bs-toggle="tab">Mar</a></li>
+											<li class="nav-item"><a class="nav-link gray fw-bold" href="#apr" role="tab" aria-controls="apr"
+													data-bs-toggle="tab">Apr</a></li>
+											<li class="nav-item"><a class="nav-link gray fw-bold" href="#may" role="tab" aria-controls="may"
+													data-bs-toggle="tab">May</a></li>
+											<li class="nav-item"><a class="nav-link gray fw-bold" href="#jun" role="tab" aria-controls="jun"
+													data-bs-toggle="tab">Jun</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Tabs navs end-->
+							<!-- Tabs content strat-->
+							<div class="tab-content">
+								<div class="tab-pane active" id="jul" role="tabpanel" aria-labelledby="jul-tab">
 
-            <!-- third section start -->
-            <section class="gray-bg py-5">
-                <div class="container">
-                    <!-- Discover  Asia -->
-                    <div class="asia-wrapper py-0 py-md-5">
-                        <p class="fw-bold secondary fs-2 m-0 px-1">Discover Asia</p>
-                        <div class="row">
-                            <div class="col-6 col-md-3 mt-4">
-                                <a href="javascript:;" class="d-block asia-media position-relative">
-                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                    <img class="place_img" src="assets/img/dubai.png" alt="dubai">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Dubai</p>
-                                </a>
-                                <ul class="mt-2 ps-4 d-none d-md-block">
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Dubai Burj Khalifa Tour</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Global Village</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">72 Hours of Fun</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md-3 mt-4">
-                                <a href="javascript:;" class="d-block asia-media position-relative">
-                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                    <img class="place_img" src="assets/img/abu-dhabi.png" alt="abu-dhabi">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Abu Dhabi</p>
-                                </a>
-                                <ul class="mt-2 ps-4 d-none d-md-block">
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Al Ain City Tour</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Falcon Tour Abu Dhabi </a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Sunrise Desert Safari</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">4 Day Family Trip</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md-3 mt-4">
-                                <a href="javascript:;" class="d-block asia-media position-relative">
-                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                    <img class="place_img" src="assets/img/phuket.png" alt="phuket">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Phuket</p>
-                                </a>
-                                <ul class="mt-2 ps-4 d-none d-md-block">
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md-3 mt-4">
-                                <a href="javascript:;" class="d-block asia-media position-relative">
-                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                    <img class="place_img" src="assets/img/bangkok.png" alt="bangkok">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Bangkok</p>
-                                </a>
-                                <ul class="mt-2 ps-4 d-none d-md-block">
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md-3 mt-4">
-                                <a href="javascript:;" class="d-block asia-media position-relative">
-                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                    <img class="place_img" src="assets/img/singapore.png" alt="singapore">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Singapore</p>
-                                </a>
-                                <ul class="mt-2 ps-4 d-none d-md-block">
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md-3 mt-4">
-                                <a href="javascript:;" class="d-block asia-media position-relative">
-                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                    <img class="place_img" src="assets/img/mumbai.png" alt="mumbai">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Mumbai</p>
-                                </a>
-                                <ul class="mt-2 ps-4 d-none d-md-block">
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md-3 mt-4">
-                                <a href="javascript:;" class="d-block asia-media position-relative">
-                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                    <img class="place_img" src="assets/img/jaipur.png" alt="jaipur">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Jaipur</p>
-                                </a>
-                                <ul class="mt-2 ps-4 d-none d-md-block">
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md-3 mt-4">
-                                <a href="javascript:;" class="show__more d-block text-decoration-none asia-media position-relative border danger-border rounded-4">
-                                    <p class="place_img fs-5 danger-light m-0 d-flex align-items-center justify-content-center">Show More</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Amazing Africa and The Middle East -->
-                    <div class="asia-wrapper py-0 py-md-5">
-                        <p class="fw-bold secondary fs-2 mt-md-0 mt-5 mb-0 px-1">Amazing Africa and The Middle East</p>
-                        <div class="row">
-                            <div class="col-6 col-md-3 mt-4">
-                                <a href="javascript:;" class="d-block asia-media position-relative">
-                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                    <img class="place_img" src="assets/img/cape_town.png" alt="cape_town">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Cape Town</p>
-                                </a>
-                                <ul class="mt-2 ps-4 d-none d-md-block">
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Dubai Burj Khalifa Tour</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Global Village</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">72 Hours of Fun</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md-3 mt-4">
-                                <a href="javascript:;" class="d-block asia-media position-relative">
-                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                    <img class="place_img" src="assets/img/cairo.png" alt="cairo">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Cairo</p>
-                                </a>
-                                <ul class="mt-2 ps-4 d-none d-md-block">
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Al Ain City Tour</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Falcon Tour Abu Dhabi </a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Sunrise Desert Safari</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">4 Day Family Trip</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md-3 mt-4">
-                                <a href="javascript:;" class="d-block asia-media position-relative">
-                                    <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                                    <img class="place_img" src="assets/img/morocco.png" alt="morocco">
-                                    <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">Morocco</p>
-                                </a>
-                                <ul class="mt-2 ps-4 d-none d-md-block">
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
-                                    </li>
-                                    <li>
-                                        <a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md-3 mt-4">
-                                <a href="javascript:;" class="show__more d-block text-decoration-none asia-media position-relative border danger-border rounded-4">
-                                    <p class="place_img fs-5 danger-light m-0 d-flex align-items-center justify-content-center">Show More</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+									<!-- Places Slide START-->
+									<div class="places-slider">
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/kyoto.png" alt="kyoto">
+												<p class="common-card__title">
+													Kyoto</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/montreal.png" alt="montreal">
+												<p class="common-card__title">
+													Montreal</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/greece.png" alt="greece">
+												<p class="common-card__title">
+													Greece</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+									</div>
+									<!-- Places Slide END-->
 
-        </main>
-    </div>
+								</div>
+								<div class="tab-pane" id="aug" role="tabpanel" aria-labelledby="aug-tab">
+									<div class="places-slider">
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/kyoto.png" alt="kyoto">
+												<p class="common-card__title">
+													Kyoto</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/montreal.png" alt="montreal">
+												<p class="common-card__title">
+													Montreal</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/greece.png" alt="greece">
+												<p class="common-card__title">
+													Greece</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane" id="sep" role="tabpanel" aria-labelledby="sep-tab">
+									<div class="places-slider">
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/kyoto.png" alt="kyoto">
+												<p class="common-card__title">
+													Kyoto</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/montreal.png" alt="montreal">
+												<p class="common-card__title">
+													Montreal</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/greece.png" alt="greece">
+												<p class="common-card__title">
+													Greece</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane" id="oct" role="tabpanel" aria-labelledby="oct-tab">
+									<div class="places-slider">
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/kyoto.png" alt="kyoto">
+												<p class="common-card__title">
+													Kyoto</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/montreal.png" alt="montreal">
+												<p class="common-card__title">
+													Montreal</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/greece.png" alt="greece">
+												<p class="common-card__title">
+													Greece</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane" id="nov" role="tabpanel" aria-labelledby="nov-tab">
+									<div class="places-slider">
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/kyoto.png" alt="kyoto">
+												<p class="common-card__title">
+													Kyoto</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/montreal.png" alt="montreal">
+												<p class="common-card__title">
+													Montreal</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/greece.png" alt="greece">
+												<p class="common-card__title">
+													Greece</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane" id="dec" role="tabpanel" aria-labelledby="dec-tab">
+									<div class="places-slider">
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/kyoto.png" alt="kyoto">
+												<p class="common-card__title">
+													Kyoto</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/montreal.png" alt="montreal">
+												<p class="common-card__title">
+													Montreal</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/greece.png" alt="greece">
+												<p class="common-card__title">
+													Greece</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane" id="jan" role="tabpanel" aria-labelledby="jan-tab">
+									<div class="places-slider">
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/kyoto.png" alt="kyoto">
+												<p class="common-card__title">
+													Kyoto</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/montreal.png" alt="montreal">
+												<p class="common-card__title">
+													Montreal</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/greece.png" alt="greece">
+												<p class="common-card__title">
+													Greece</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane" id="feb" role="tabpanel" aria-labelledby="feb-tab">
+									<div class="places-slider">
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/kyoto.png" alt="kyoto">
+												<p class="common-card__title">
+													Kyoto</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/montreal.png" alt="montreal">
+												<p class="common-card__title">
+													Montreal</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/greece.png" alt="greece">
+												<p class="common-card__title">
+													Greece</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane" id="mar" role="tabpanel" aria-labelledby="mar-tab">
+									<div class="places-slider">
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/kyoto.png" alt="kyoto">
+												<p class="common-card__title">
+													Kyoto</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/montreal.png" alt="montreal">
+												<p class="common-card__title">
+													Montreal</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/greece.png" alt="greece">
+												<p class="common-card__title">
+													Greece</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane" id="apr" role="tabpanel" aria-labelledby="apr-tab">
+									<div class="places-slider">
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/kyoto.png" alt="kyoto">
+												<p class="common-card__title">
+													Kyoto</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/montreal.png" alt="montreal">
+												<p class="common-card__title">
+													Montreal</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/greece.png" alt="greece">
+												<p class="common-card__title">
+													Greece</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane" id="may" role="tabpanel" aria-labelledby="may-tab">
+									<div class="places-slider">
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/kyoto.png" alt="kyoto">
+												<p class="common-card__title">
+													Kyoto</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/montreal.png" alt="montreal">
+												<p class="common-card__title">
+													Montreal</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/greece.png" alt="greece">
+												<p class="common-card__title">
+													Greece</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane" id="jun" role="tabpanel" aria-labelledby="jun-tab">
+									<div class="places-slider">
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/kyoto.png" alt="kyoto">
+												<p class="common-card__title">
+													Kyoto</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/montreal.png" alt="montreal">
+												<p class="common-card__title">
+													Montreal</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/greece.png" alt="greece">
+												<p class="common-card__title">
+													Greece</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/jul.png" alt="jul">
+												<p class="common-card__title">
+													San Francisco</p>
+											</div>
+										</a>
+										<a href="javascript:;" class="common-card">
+											<div class="common-card__media">
+												<img class="common-card__image" src="assets/img/copenhagen.png" alt="copenhagen">
+												<p class="common-card__title">
+													Copenhagen</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- Tabs content end-->
+						</div>
+						<!-- Most Visited Cities in the World -->
+						<div class="visited--city">
+							<p class="fw-bold secondary fs-3 mb-4 px-3 px-md-0"> Most Visited Cities in the World
+							</p>
+							<div class="places-slider">
+								<a href="javascript:;" class="common-card">
+									<div class="common-card__media">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/bangkok.png" alt="bangkok">
+										<p class="common-card__title">
+											Bangkok</p>
+									</div>
+								</a>
+								<a href="javascript:;" class="common-card">
+									<div class="common-card__media">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/paris.png" alt="paris">
+										<p class="common-card__title">
+											Paris</p>
+									</div>
+								</a>
+								<a href="javascript:;" class="common-card">
+									<div class="common-card__media">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/london.png" alt="london">
+										<p class="common-card__title">
+											London</p>
+									</div>
+								</a>
+								<a href="javascript:;" class="common-card">
+									<div class="common-card__media">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/dubai.png" alt="dubai">
+										<p class="common-card__title">
+											Dubai</p>
+									</div>
+								</a>
+								<a href="javascript:;" class="common-card">
+									<div class="common-card__media">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/singapore.png" alt="singapore">
+										<p class="common-card__title">
+											Singapore</p>
+									</div>
+								</a>
+								<a href="javascript:;" class="common-card">
+									<div class="common-card__media">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/bangkok.png" alt="bangkok">
+										<p class="common-card__title">
+											Bangkok</p>
+									</div>
+								</a>
+								<a href="javascript:;" class="common-card">
+									<div class="common-card__media">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/paris.png" alt="paris">
+										<p class="common-card__title">
+											Paris</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- third section start -->
+			<section class="gray-bg py-5">
+				<div class="container">
+					<!-- Discover  Asia -->
+					<div class="asia-wrapper py-0 py-md-5">
+						<p class="fw-bold secondary fs-2 m-0 px-1">Discover Asia</p>
+						<div class="row">
+							<div class="col-6 col-md-3 mt-4">
+								<div class="common-card">
+									<a href="javascript:;" class="d-block common-card__media position-relative">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/dubai.png" alt="dubai">
+										<p class="common-card__title">
+											Dubai</p>
+									</a>
+								</div>
+								<ul class="mt-2 ps-4 d-none d-md-block">
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Dubai Burj Khalifa
+											Tour</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Global Village</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">72 Hours of Fun</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3 mt-4">
+								<div class="common-card">
+									<a href="javascript:;" class="d-block common-card__media position-relative">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/abu-dhabi.png" alt="abu-dhabi">
+										<p class="common-card__title">
+											Abu Dhabi</p>
+									</a>
+								</div>
+								<ul class="mt-2 ps-4 d-none d-md-block">
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Al Ain City Tour</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Falcon Tour Abu Dhabi
+										</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Sunrise Desert
+											Safari</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">4
+											Day Family Trip</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3 mt-4">
+								<div class="common-card">
+									<a href="javascript:;" class="d-block common-card__media position-relative">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/phuket.png" alt="phuket">
+										<p class="common-card__title">
+											Phuket</p>
+									</a>
+								</div>
+								<ul class="mt-2 ps-4 d-none d-md-block">
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3 mt-4">
+								<div class="common-card">
+									<a href="javascript:;" class="d-block common-card__media position-relative">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/bangkok.png" alt="bangkok">
+										<p class="common-card__title">
+											Bangkok</p>
+									</a>
+								</div>
+								<ul class="mt-2 ps-4 d-none d-md-block">
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3 mt-4">
+								<div class="common-card">
+									<a href="javascript:;" class="d-block common-card__media position-relative">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/singapore.png" alt="singapore">
+										<p class="common-card__title">
+											Singapore</p>
+									</a>
+								</div>
+								<ul class="mt-2 ps-4 d-none d-md-block">
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3 mt-4">
+								<div class="common-card">
+									<a href="javascript:;" class="d-block common-card__media position-relative">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/mumbai.png" alt="mumbai">
+										<p class="common-card__title">
+											Mumbai</p>
+									</a>
+								</div>
+								<ul class="mt-2 ps-4 d-none d-md-block">
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3 mt-4">
+								<div class="common-card">
+									<a href="javascript:;" class="d-block common-card__media position-relative">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/jaipur.png" alt="jaipur">
+										<p class="common-card__title">
+											Jaipur</p>
+									</a>
+								</div>
+								<ul class="mt-2 ps-4 d-none d-md-block">
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3 mt-4">
+								<div class="common-card common-card--link">
+									<a href="javascript:;"
+										class="show__more d-block text-decoration-none common-card__media position-relative border danger-border rounded-4">
+										<p
+											class="common-card__image fs-5 danger-light m-0 d-flex align-items-center justify-content-center">
+											Show More</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Amazing Africa and The Middle East -->
+					<div class="asia-wrapper py-0 py-md-5">
+						<p class="fw-bold secondary fs-2 mt-md-0 mt-5 mb-0 px-1">Amazing Africa and The Middle East</p>
+						<div class="row">
+							<div class="col-6 col-md-3 mt-4">
+								<div class="common-card">
+									<a href="javascript:;" class="d-block common-card__media position-relative">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/cape_town.png" alt="cape_town">
+										<p class="common-card__title">
+											Cape Town</p>
+									</a>
+								</div>
+								<ul class="mt-2 ps-4 d-none d-md-block">
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Dubai Burj Khalifa
+											Tour</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Global Village</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">72 Hours of Fun</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3 mt-4">
+								<div class="common-card">
+									<a href="javascript:;" class="d-block common-card__media position-relative">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/cairo.png" alt="cairo">
+										<p class="common-card__title">
+											Cairo</p>
+									</a>
+								</div>
+								<ul class="mt-2 ps-4 d-none d-md-block">
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Al Ain City Tour</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Falcon Tour Abu Dhabi
+										</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Sunrise Desert
+											Safari</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">4
+											Day Family Trip</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3 mt-4">
+								<div class="common-card">
+									<a href="javascript:;" class="d-block common-card__media position-relative">
+										<div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100">
+										</div>
+										<img class="common-card__image" src="assets/img/morocco.png" alt="morocco">
+										<p class="common-card__title">
+											Morocco</p>
+									</a>
+								</div>
+								<ul class="mt-2 ps-4 d-none d-md-block">
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Things to do</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">SIM Cards</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Burj Khalifa</a>
+									</li>
+									<li>
+										<a class="dark-gray fs-6 fw-normal d-block asia-link mt-1" href="javascript:;">Weekend Getaway</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3 mt-4">
+								<div class="common-card common-card--link">
+									<a href="javascript:;"
+										class="show__more d-block text-decoration-none common-card__media position-relative border danger-border rounded-4">
+										<p
+											class="common-card__image fs-5 danger-light m-0 d-flex align-items-center justify-content-center">
+											Show More</p>
+									</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+	</div>
 </body>
 
 </html>
