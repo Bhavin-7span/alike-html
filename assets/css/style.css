@@ -161,11 +161,11 @@ body {
     color:var(--bs-primary);
 }
 .common-title{
-    font-size:30px;
+    font-size:28px;
 }
 .nav-tabs.place-tabs .nav-link{
     padding:0px 8px;
-    font-size:30px;
+    font-size:28px;
 }
 .nav-tabs .nav-link.active {
     color: #EC601D;
@@ -212,15 +212,41 @@ body {
     height: 100%;
     object-fit: cover;
 }
-.places-slider .slick-list,
-.cities-wrapper .slick-list{
-    overflow: visible;
-}
 
 .visited--city{
     margin-top: 5rem;
 }
 
+button{
+    border: none;
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.slick-prev, .slick-next{
+    content: '';
+    position: absolute;
+    color: grey;
+}
+
+.slick-prev{
+    bottom: -40px;
+    right: 48px;
+}
+
+.slick-next{
+    bottom: -40px;
+    right: 0;
+}
+
+.slick-prev:hover, .slick-next:hover{
+    color: #EC601D;
+}
+
+button:hover {
+    border: 1px solid #EC601D;
+}
 
 /* third section css strat */
 

@@ -2,12 +2,16 @@ $(document).ready(function () {
   $(".places-slider").slick({
     slidesToShow: 5,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 0,
-    speed: 7000,
+    speed: 1000,
     cssEase: "linear",
     pauseOnHover: true,
-    arrows: false,
+    arrows: true,
+    prevArrow:
+      "<button type='button' class='slick-prev pull-left'><i class='bi bi-chevron-left'></i></button>",
+    nextArrow:
+    "<button type='button' class='slick-next pull-right'><i class='bi bi-chevron-right'></i></button>",
     dots: false,
     responsive: [
       {
