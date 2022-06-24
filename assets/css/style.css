@@ -441,7 +441,8 @@ button.slick-arrow.slider--arrow {
     background-color: transparent;
     border: 1px solid var(--bs-gray-border);
     border-radius: 50%;
-    padding: 10px;
+    width: 30px;
+    height: 30px;
     transition: all .5s;
     position: absolute;
     right: 20px;
@@ -450,8 +451,8 @@ button.slick-arrow.slider--arrow {
 button.slick-prev.slider--arrow.slick-arrow {
     right: 85px;
 }
-button.slick-arrow:hover svg *{
-    stroke: var(--bs-primary);
+button.slick-arrow:hover i{
+    color: var(--bs-primary);
 }
 
 .hotel-card--media {
