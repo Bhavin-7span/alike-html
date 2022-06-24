@@ -174,20 +174,25 @@ body {
     color:var(--bs-primary);
 }
 .common-title{
-    font-size:30px;
+    font-size:28px;
 }
 .nav-tabs.place-tabs .nav-link{
     padding:0px 8px;
-    font-size:30px;
+    font-size:28px;
 }
-.nav-tabs .nav-link.active {
+.place-tabs .nav-item.slick-current .nav-link{
     color: #EC601D;
     background-color: transparent;
     border-color: transparent;
 }
 
-.nav-tabs .nav-link:focus,
-.nav-tabs .nav-link:hover {
+.place-tabs .nav-link.active {
+    border:none;
+
+}
+
+.place-tabs .nav-link:focus,
+.place-tabs .nav-link:hover {
     border-color: transparent;
     color: #EC601D;
 }
@@ -225,9 +230,6 @@ body {
     height: 100%;
     object-fit: cover;
 }
-.places-slider .slick-list{
-    overflow: visible;
-}
 
 .visited--city{
     margin-top: 5rem;
@@ -235,6 +237,37 @@ body {
 /* Best Places Section: CSS END */
 
 
+button{
+    border: none;
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.places-slider .slick-prev,.places-slider .slick-next{
+    position: absolute;
+    color: grey;
+    width:30px;
+    height:30px;
+}
+
+.places-slider .slick-prev{
+    bottom: -40px;
+    right: 48px;
+}
+
+.places-slider .slick-next{
+    bottom: -40px;
+    right: 0;
+}
+
+.slick-prev:hover, .slick-next:hover{
+    color: #EC601D;
+}
+
+button:hover {
+    border: 1px solid #EC601D;
+}
 
 /* Discover Asia Section: CSS START */
 
@@ -255,7 +288,17 @@ a.asia-link:hover {
     display:none;
 }
 
+.fix-content{
+    flex:0 0 800px;
+    max-width: 800px;
+}
 @media only screen and (max-width:1024px){
+    .fix-content{
+        flex:1;
+    }
+    .custom-dropdown{
+        display: inline-block;
+    }
     .custom-dropdown .place-tabs{
         display:none;
     }
@@ -266,8 +309,8 @@ a.asia-link:hover {
         color:var(--bs-primary);
         border:none;
         font-weight: 600;
-        padding:0px 20px;
-        margin-left: 10px;
+        padding:0px 10px;
+        margin-left: 0px;
     }
     .common-title{
         font-size:18px !important;
