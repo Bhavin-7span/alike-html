@@ -12,12 +12,24 @@ body {
     --bs-dark-gray: #70677C !important;
     --bs-light-gray:#8F8D91 !important;
     --bs-danger-light: #DB105B !important;
+    --bs-danger-bgpink: #DB105B !important;
     --bs-danger-border: #F46C83 !important;
     --bs-warning: #EAB308 !important;
     --bs-orange-bg:#FEF1DC !important;
     --bs-rounded-4: 12px;
+    --bs-light-pink: #F3F1F4 !important;
+    --bs-lightpink-bg: #FDDEDA !important;
     --bs-fs-6:14px;
     --bs-gray-border: #DCDADE !important;
+}
+.danger-bgpink{
+    background-color: var(--bs-danger-bgpink);
+}
+.light-pink{
+    color: var(--bs-light-pink);
+}
+.lightpink-bg{
+    background-color: var(--bs-lightpink-bg);
 }
 .primary-bg{
     background-color: var(--bs-primary-bg);
@@ -71,7 +83,7 @@ body {
 
 /* ******** city list page css start ********* */
 
-/* first section css start */
+/* Cover Section: CSS START */
 
 .section--cover {
     background-image: url(../img/header_img.png);
@@ -128,9 +140,10 @@ body {
     }
 }
 
+/* Cover Section: CSS END */
 
-/* second section css start */
 
+/* Best Places Section: CSS START */
 
 .place-overlay {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 63.12%, rgba(0, 0, 0, 0.7) 100%);
@@ -212,17 +225,18 @@ body {
     height: 100%;
     object-fit: cover;
 }
-.places-slider .slick-list,
-.cities-wrapper .slick-list{
+.places-slider .slick-list{
     overflow: visible;
 }
 
 .visited--city{
     margin-top: 5rem;
 }
+/* Best Places Section: CSS END */
 
 
-/* third section css strat */
+
+/* Discover Asia Section: CSS START */
 
 li::marker {
     color: #70677C;
@@ -286,8 +300,9 @@ a.asia-link:hover {
         font-size:18px;
     }
 }
+/* Discover Asia Section: CSS END */
 
-/* ******** city list page css end ********* */
+/* ******** city list page CSS END ********* */
 
 
 
@@ -338,7 +353,7 @@ a.asia-link:hover {
     box-shadow: none;
 }
 .faq__wrapper .accordion-button:not(.collapsed) {
-    color: #EC601D;
+    color: var(--bs-primary);
     border-radius: 12px;
     background-color: #fff;
     box-shadow: none;
@@ -360,7 +375,7 @@ a.asia-link:hover {
     font-weight: 700 !important;
     -webkit-font-smoothing: antialiased;
     background-image: none;
-    color: #EC601D;
+    color: var(--bs-primary);
 }
 .accordion-button::after{
     background-image: none;
@@ -368,13 +383,41 @@ a.asia-link:hover {
     font-family: bootstrap-icons !important;
     font-weight: 700 !important;
     -webkit-font-smoothing: antialiased;
-    color: #271B45;
+    color: var(--bs-secondary);
 }
 
 .know__icon .bi-cloud::before,
 .know__icon .bi-cash::before,
 .know__icon .bi-clock::before {
     font-weight: 700 !important;
-    color: #70677C;
+    color: var(--bs-dark-gray);
     font-size: 40px;
+}
+
+button.slick-arrow.slider--arrow {
+    background-color: transparent;
+    border: 1px solid var(--bs-gray-border);
+    border-radius: 50%;
+    padding: 10px;
+    transition: all .5s;
+    position: absolute;
+    right: 20px;
+    bottom: -40px;
+}
+button.slick-prev.slider--arrow.slick-arrow {
+    right: 85px;
+}
+button.slick-arrow:hover svg *{
+    stroke: var(--bs-primary);
+}
+
+.hotel-card--media {
+    padding-bottom: 100%;
+}
+.common-card.hotel--card::after{
+    display: none;
+}
+.hotel-rate__number{
+    border-radius: 8px;
+    padding: 12px 12px;
 }
