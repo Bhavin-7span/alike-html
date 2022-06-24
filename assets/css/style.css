@@ -15,7 +15,7 @@ body {
     --bs-danger-bgpink: #DB105B !important;
     --bs-danger-border: #F46C83 !important;
     --bs-warning: #EAB308 !important;
-    --bs-orange-bg:#FEF1DC !important;
+    --bs-orange-bg: #FEF1DC !important;
     --bs-rounded-4: 12px;
     --bs-light-pink: #F3F1F4 !important;
     --bs-lightpink-bg: #FDDEDA !important;
@@ -79,8 +79,6 @@ body {
 .fs-6{
     font-size: var(--bs-fs-6) !important;
 }
-
-
 /* ******** city list page css start ********* */
 
 /* Cover Section: CSS START */
@@ -96,8 +94,27 @@ body {
 .cover-overlay {
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
+
+.cover-content input{
+    border-radius: 8px !important;
+}
+
+.cover-content__text{
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .cover-content__text{
+        font-size: 36px;
+        font-weight: 800;
+        text-align: center;
+    }   
+}
+
 .serch-icon{
-    right: 27%;
+    right: 100px;
     bottom: 30%;
 }
 .serch-icon i.bi::before{
@@ -117,24 +134,24 @@ body {
     color: #271B45;
 }
 
-@media only screen and (max-width:1280px){
+@media only screen and (max-width: 1280px){
     .serch-icon{
-        right:20%;
+        right: 20px;
     }
 }
-@media only screen and (max-width:991px){
+@media only screen and (max-width: 991px){
     .serch-icon {
-        right: 8%;
+        right: 8px;
     }
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .section--cover {
         background-image: url(../img/moblie--cover.png);
         padding: 5rem 0;
     }
 }
 
-@media only screen and (max-width:575px) {
+@media only screen and (max-width: 575px) {
     .input-wrapper {
         width: auto !important;
     }
@@ -147,48 +164,56 @@ body {
 
 .place-overlay {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 63.12%, rgba(0, 0, 0, 0.7) 100%);
-    display:none;
+    display: none;
 }
 .common-card {    
-    margin: 0 10px;
-    position:relative;
+    margin: 0 12px;
+    position: relative;
     overflow: hidden;
 }
 
 .common-card::after{
-    content:"";
-    position:absolute;
-    top:0px;
-    left:0px;
-    right:0px;
-    bottom:0px;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
     border-radius: 12px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 63.12%, rgba(0, 0, 0, 0.7) 100%);
 }
 
 .common-card.common-card--link::after{
-    display:none;
+    display: none;
 }
 
 .common-card:hover .common-card__title{
-    color:var(--bs-primary);
+    color: var(--bs-primary);
 }
+
 .common-title{
-    font-size:28px;
+    font-size: 28px;
+    padding-left: 11px;
+    font-weight: 700;
+    margin: 0;
 }
+
 .nav-tabs.place-tabs .nav-link{
-    padding:0px 8px;
-    font-size:28px;
+    padding: 0px 8px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
 }
+
 .place-tabs .nav-item.slick-current .nav-link{
     color: #EC601D;
     background-color: transparent;
     border-color: transparent;
+    font-weight: 700;
 }
 
 .place-tabs .nav-link.active {
-    border:none;
-
+    border: none;
 }
 
 .place-tabs .nav-link:focus,
@@ -196,29 +221,31 @@ body {
     border-color: transparent;
     color: #EC601D;
 }
+
 .common-card__media{
     padding-bottom: 56.25%;
     overflow: hidden;
 }
+
 .common-card__media.common-card__media-75{
-    padding-bottom:75%;
-    position:relative;
+    padding-bottom: 75%;
+    position: relative;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    display:block;
+    display: block;
 }
 .common-card__title{
-    position:absolute;
-    bottom:0px;
-    right:0px;
-    left:0px;
-    font-size:24px;
-    font-weight:700;
-    line-height:32px;
-    padding:10px 15px;
-    margin:0px;
-    color:#fff;
-    z-index:10;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 10px 15px;
+    margin: 0px;
+    color: #fff;
+    z-index: 10;
 }
 .common-card__image{
     position: absolute;
@@ -237,6 +264,12 @@ body {
 /* Best Places Section: CSS END */
 
 
+.visited--city__text{
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 12px;
+}
+
 button{
     border: none;
     background: transparent;
@@ -244,11 +277,12 @@ button{
     border-radius: 50%;
 }
 
-.places-slider .slick-prev,.places-slider .slick-next{
+.places-slider .slick-prev,
+.places-slider .slick-next{
     position: absolute;
     color: grey;
-    width:30px;
-    height:30px;
+    width: 30px;
+    height: 30px;
 }
 
 .places-slider .slick-prev{
@@ -261,7 +295,8 @@ button{
     right: 0;
 }
 
-.slick-prev:hover, .slick-next:hover{
+.slick-prev:hover, 
+.slick-next:hover{
     color: #EC601D;
 }
 
@@ -269,6 +304,10 @@ button:hover {
     border: 1px solid #EC601D;
 }
 
+.asia-wrapper__text{
+    font-size: 36px;
+    font-weight: 800;
+}
 /* Discover Asia Section: CSS START */
 
 li::marker {
@@ -279,68 +318,107 @@ a.asia-link:hover {
     color: #EC601D;
 }
 
+.show__more .common-card__image{
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .show__more:hover{
     background-color: #FDDEDA;
     border-color: transparent !important;
 }
 
 .custom-dropdown .custom-dropdown__label{
-    display:none;
+    display: none;
 }
 
 .fix-content{
-    flex:0 0 800px;
+    flex: 0 0 800px;
     max-width: 800px;
 }
+
+.desktop{
+    display: block;
+}
+
+.mobile{
+    display: none;
+}
+
 @media only screen and (max-width:1024px){
     .fix-content{
-        flex:1;
+        flex: 1;
     }
     .custom-dropdown{
         display: inline-block;
     }
     .custom-dropdown .place-tabs{
-        display:none;
+        display: none;
     }
     .custom-dropdown .custom-dropdown__label{
         display: block;
         background-color:transparent;
-        font-size:18px;
-        color:var(--bs-primary);
-        border:none;
-        font-weight: 600;
-        padding:0px 10px;
+        font-size: 18px;
+        color: var(--bs-primary);
+        border: none;
+        font-weight: 700;
+        padding: 0px 10px;
         margin-left: 0px;
+        text-transform: uppercase;
+    }
+    .common-card{
+        margin: 0 6px;
     }
     .common-title{
-        font-size:18px !important;
+        font-size: 18px;
     }
     .custom-dropdown{
-        position:relative;
+        position: relative;
     }
     .place-tabs{
-        position:absolute;
-        top:35px;
-        right:0px;
+        position: absolute;
+        top: 35px;
+        right: 0px;
     }
     .custom-dropdown.is-active .place-tabs{
-        display:block;
-        padding:10px;
-        border:1px solid #eaeaea;
-        z-index:100;
-        background-color:#fff;
+        display: block;
+        padding: 10px;
+        border: 1px solid #eaeaea;
+        z-index: 100;
+        background-color: #fff;
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
         border-radius: 5px;
     }
     .nav-tabs.place-tabs .nav-link{
-        font-size:14px;
-        padding:5px 15px;
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+    .visited--city__text{
+        font-size: 18px;
+        padding-left: 6px;
+    }
+    .asia-wrapper__text{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .show__more .common-card__image{
+        font-size: 14px;
+        font-weight: 600;
     }
 }
 
 @media only screen and (max-width:768px){
     .common-card__title{
-        font-size:18px;
+        font-size: 18px;
     }
 }
 /* Discover Asia Section: CSS END */
@@ -362,15 +440,15 @@ a.asia-link:hover {
 }
 
 .cover-card__title{
-    font-size:48px;
-    color:#fff;
-    font-weight:800;
+    font-size: 48px;
+    color: #fff;
+    font-weight: 800;
 }
 .cover-card__text{
-    font-size:20px;
-    color:#fff;
+    font-size: 20px;
+    color: #fff;
     text-align: center;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 /* second section css start  */
