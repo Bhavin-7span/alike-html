@@ -6,27 +6,32 @@ body {
 :root {
     --bs-primary: #EC601D !important;
     --bs-primary-bg: #EC601D !important;
+    --bs-primary-border: #EC601D !important;
     --bs-secondary: #271B45 !important;
     --bs-gray: #DCDADE !important;
     --bs-gray-bg: #F9F8F9 !important;
     --bs-dark-gray: #70677C !important;
     --bs-light-gray:#8F8D91 !important;
+    --bs-gray500-border:#8F8D91 !important;
     --bs-danger-light: #DB105B !important;
     --bs-danger-bgpink: #DB105B !important;
     --bs-danger-border: #F46C83 !important;
     --bs-warning: #EAB308 !important;
     --bs-orange-bg: #FEF1DC !important;
     --bs-rounded-4: 12px;
-    --bs-light-pink: #F3F1F4 !important;
+    --bs-gray-200: #F3F1F4 !important;
     --bs-lightpink-bg: #FDDEDA !important;
     --bs-fs-6:14px;
     --bs-gray-border: #DCDADE !important;
 }
+.primary-border{
+    border-color: var(--bs-primary-border) !important;
+}
 .danger-bgpink{
     background-color: var(--bs-danger-bgpink);
 }
-.light-pink{
-    color: var(--bs-light-pink);
+.gray-200{
+    color: var(--bs-gray-200);
 }
 .lightpink-bg{
     background-color: var(--bs-lightpink-bg);
@@ -47,14 +52,14 @@ body {
     color: var(--bs-light-gray);
 }
 .rounded-4{
-    border-radius: var(--bs-rounded-4);
+    border-radius: var(--bs-rounded-4) !important;
 }
 .primary {
     color: var(--bs-primary);
 }
 
 .secondary {
-    color: var(--bs-secondary);
+    color: var(--bs-secondary) !important;
 }
 
 .gray {
@@ -300,9 +305,7 @@ button{
     color: #EC601D;
 }
 
-button:hover {
-    border: 1px solid #EC601D;
-}
+
 
 .asia-wrapper__text{
     font-size: 36px;
@@ -430,7 +433,7 @@ a.asia-link:hover {
 
 /* ******** city detail page css start ********* */
 
-/* first section css start */
+/* City Section css START */
 .section--city{
     background-image: url(../img/dubai_cover.png);
     background-repeat: no-repeat;
@@ -450,8 +453,9 @@ a.asia-link:hover {
     text-align: center;
     margin-top: 20px;
 }
+/* City Section css END */
 
-/* second section css start  */
+/* Detail Section css START  */
 .detail-wrap{
     margin-top: -5rem;
 }
@@ -463,12 +467,178 @@ a.asia-link:hover {
     font-weight: 700 !important;
     font-size: 25px;
 }
+/* Detail Section css END  */
+
+/* Top Hotels Details Section CSS START */
+.hotel-card--media {
+    padding-bottom: 100%;
+}
+.common-card.hotel--card::after{
+    display: none;
+}
+.hotel-rate__number{
+    border-radius: 8px;
+    padding: 12px 12px;
+}
+/* Top Hotels Details Section CSS END */
+
+/* Explore and Book filter CSS START */
+.search__icon{
+    left: 6%;
+    bottom: 30%;
+}
+.search__icon i.bi::before{
+    font-weight: 700 !important;
+}
+.input-field::placeholder{
+    color: var(--bs-light-gray);
+    font-weight: 400;
+    font-size: var(--bs-fs-6);
+}
+.explore-sidebar__accordion .accordion-button:not(.collapsed){
+    box-shadow: none;
+    border-bottom: 1px solid var(--bs-gray-200);
+}
+.radio__group  input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+    opacity: 0;
+}
+.radio__group label
+.checkbox-group label {
+    cursor: pointer;
+    position: relative;
+}
+.radio__group [type="radio"]:checked,
+.radio__group [type="radio"]:not(:checked),
+.checkbox-group [type="checkbox"]:checked,
+.checkbox-group [type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.radio__group [type="radio"]:checked + label,
+.radio__group [type="radio"]:not(:checked) + label,
+.checkbox-group [type="checkbox"]:checked + label,
+.checkbox-group [type="checkbox"]:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+}
+.radio__group [type="radio"]:checked + label:before,
+.radio__group [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--bs-gray500-border);
+    border-radius: 100%;
+    background: #fff;
+}
+.radio__group [type="radio"]:checked + label:before{
+    border-color: var(--bs-primary-border);
+}
+.radio__group [type="radio"]:checked + label:after,
+.radio__group [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--bs-primary-bg);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.radio__group [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.radio__group [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
 
 
-/* section--faq css start */
+.checkbox-group [type="checkbox"]:checked + label:before,
+.checkbox-group [type="checkbox"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--bs-gray500-border);
+    background: #fff;
+}
+.checkbox-group [type="checkbox"]:checked + label:before{
+    border-color: transparent;
+}
+.checkbox-group [type="checkbox"]:checked + label:after,
+.checkbox-group [type="checkbox"]:not(:checked) + label:after {
+    content: '\F271';
+    font-size: 20px;
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-weight: 700;
+    color: #EC601D;
+    vertical-align: -0.125em;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.checkbox-group [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.checkbox-group [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
 
+
+.clear-icon .bi-x::before {
+    font-size: 24px;
+    font-weight: 700 !important;
+}
+
+.btn-check:focus+.btn-secondary, .btn-secondary:focus{
+    box-shadow: none;
+    outline: none;
+    border: 0;
+    color: var(--bs-light-gray);
+}
+.btn-secondary:hover{
+    color: var(--bs-light-gray);
+}
+  
+/* Explore and Book filter END START */
+
+
+
+/* Know more Section CSS START */
+.know__icon .bi-cloud::before,
+.know__icon .bi-cash::before,
+.know__icon .bi-clock::before {
+    font-weight: 700 !important;
+    color: var(--bs-dark-gray);
+    font-size: 40px;
+}
+/* Know more Section CSS END */
+
+/* FAQs Section css START */
 /* faqs */
-.faq__wrapper .accordion-button:focus {
+.faq__wrapper .accordion-button:focus,
+.explore-sidebar__accordion .accordion-button:focus {
     border-color: transparent;
     outline: none;
     box-shadow: none;
@@ -489,7 +659,7 @@ a.asia-link:hover {
     border-bottom-right-radius: 12px !important;
     border-bottom-left-radius: 12px !important;
 }
-.accordion-button:not(.collapsed)::after {
+.faq__wrapper .accordion-button:not(.collapsed)::after {
     transform: none;
     content: "\F63B";
     font-family: bootstrap-icons !important;
@@ -498,7 +668,7 @@ a.asia-link:hover {
     background-image: none;
     color: var(--bs-primary);
 }
-.accordion-button::after{
+.faq__wrapper .accordion-button::after{
     background-image: none;
     content: "\F64D";
     font-family: bootstrap-icons !important;
@@ -506,15 +676,10 @@ a.asia-link:hover {
     -webkit-font-smoothing: antialiased;
     color: var(--bs-secondary);
 }
+/* FAQs Section css END */
 
-.know__icon .bi-cloud::before,
-.know__icon .bi-cash::before,
-.know__icon .bi-clock::before {
-    font-weight: 700 !important;
-    color: var(--bs-dark-gray);
-    font-size: 40px;
-}
 
+/* Slider arrows CSS START */
 button.slick-arrow.slider--arrow {
     background-color: transparent;
     border: 1px solid var(--bs-gray-border);
@@ -532,14 +697,4 @@ button.slick-prev.slider--arrow.slick-arrow {
 button.slick-arrow:hover i{
     color: var(--bs-primary);
 }
-
-.hotel-card--media {
-    padding-bottom: 100%;
-}
-.common-card.hotel--card::after{
-    display: none;
-}
-.hotel-rate__number{
-    border-radius: 8px;
-    padding: 12px 12px;
-}
+/* Slider arrows CSS END */
