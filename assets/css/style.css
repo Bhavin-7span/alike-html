@@ -22,33 +22,42 @@ body {
     --bs-fs-6:14px;
     --bs-gray-border: #DCDADE !important;
 }
+
 .danger-bgpink{
     background-color: var(--bs-danger-bgpink);
 }
+
 .light-pink{
     color: var(--bs-light-pink);
 }
+
 .lightpink-bg{
     background-color: var(--bs-lightpink-bg);
 }
 .primary-bg{
     background-color: var(--bs-primary-bg);
 }
+
 .gray-border{
     border-color: var(--bs-gray-border) !important;
 }
+
 .orange-bg{
     background-color: var(--bs-orange-bg);
 }
+
 .warning{
     color: var(--bs-warning);
 }
+
 .light-gray{
     color: var(--bs-light-gray);
 }
+
 .rounded-4{
     border-radius: var(--bs-rounded-4);
 }
+
 .primary {
     color: var(--bs-primary);
 }
@@ -76,13 +85,13 @@ body {
 .danger-border {
     border-color: var(--bs-danger-border) !important;
 }
+
 .fs-6{
     font-size: var(--bs-fs-6) !important;
 }
 /* ******** city list page css start ********* */
 
 /* Cover Section: CSS START */
-
 .section--cover {
     background-image: url(../img/header_img.png);
     background-repeat: no-repeat;
@@ -103,6 +112,7 @@ body {
     font-size: 24px;
     color: #ffffff;
     font-weight: 700;
+    margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
@@ -114,36 +124,40 @@ body {
 }
 
 .serch-icon{
-    right: 100px;
-    bottom: 30%;
+    right: 20px;
 }
+
 .serch-icon i.bi::before{
     font-weight: 700 !important;
 }
+
 .form-control:focus {
     border-color: transparent !important;
     box-shadow: none !important;
 }
+
+.input-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .input-group>.form-control:focus {
     z-index: auto;
 }
+
 .input-wrapper{
     width: 40%;
 }
+
+.input--search{
+    padding: 0.75rem 1rem;
+}
+
 .input--search::placeholder{
     color: #271B45;
 }
 
-@media only screen and (max-width: 1280px){
-    .serch-icon{
-        right: 20px;
-    }
-}
-@media only screen and (max-width: 991px){
-    .serch-icon {
-        right: 8px;
-    }
-}
 @media only screen and (max-width: 768px) {
     .section--cover {
         background-image: url(../img/moblie--cover.png);
@@ -156,16 +170,15 @@ body {
         width: auto !important;
     }
 }
-
 /* Cover Section: CSS END */
 
 
 /* Best Places Section: CSS START */
-
 .place-overlay {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 63.12%, rgba(0, 0, 0, 0.7) 100%);
     display: none;
 }
+
 .common-card {    
     margin: 0 12px;
     position: relative;
@@ -199,7 +212,7 @@ body {
 }
 
 .nav-tabs.place-tabs .nav-link{
-    padding: 0px 8px;
+    padding: 0px;
     font-size: 28px;
     text-align: center;
     font-weight: 600;
@@ -234,6 +247,7 @@ body {
     border-top-right-radius: 12px;
     display: block;
 }
+
 .common-card__title{
     position: absolute;
     bottom: 0px;
@@ -247,6 +261,7 @@ body {
     color: #fff;
     z-index: 10;
 }
+
 .common-card__image{
     position: absolute;
     top: 0;
@@ -259,11 +274,60 @@ body {
 }
 
 .visited--city{
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
+
+/* Breadcrumb section : CSS Start */
+.section--breadcrumb{
+    background-color: #F9F8F9;
+    border-bottom: 1px solid #F3F1F4;
+}
+
+.breadcrumb-content{
+    padding: 12px 0;
+    margin: 0;
+}
+
+.breadcrumb-content a{
+    text-decoration: none;
+    color: #271B45;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.breadcrumb-item.active::before{
+    content: '>'
+}
+
+.breadcrumb-item.active a{
+    color: #EC601D;
+    font-weight: 700;
+}
+/* Breadcrumb section : CSS End */
+
+ul.slick-dots{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0px;
+    padding: 0;
+    margin: 20px;
+    list-style: none;
+}
+
+.slick-dots li button{
+    padding: 0;
+    height: 8px;
+    width: 8px;
+    border: none;
+    background-color: #c5c5c5;
+}
+
+.slick-dots li.slick-active button{
+    background-color: #EC601D;
+}
+
 /* Best Places Section: CSS END */
-
-
 .visited--city__text{
     font-size: 30px;
     font-weight: 700;
@@ -281,18 +345,23 @@ button{
 .places-slider .slick-next{
     position: absolute;
     color: grey;
-    width: 30px;
-    height: 30px;
+    top: -45px;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease-in-out;
 }
 
 .places-slider .slick-prev{
-    bottom: -40px;
-    right: 48px;
+    right: 60px;
 }
 
 .places-slider .slick-next{
-    bottom: -40px;
-    right: 0;
+    right: 10px;
+}
+
+.slick-next i.bi::before, 
+.slick-prev i.bi::before{
+    font-weight: 800 !important;
 }
 
 .slick-prev:hover, 
@@ -308,8 +377,8 @@ button:hover {
     font-size: 36px;
     font-weight: 800;
 }
-/* Discover Asia Section: CSS START */
 
+/* Discover Asia Section: CSS START */
 li::marker {
     color: #70677C;
 }
@@ -336,8 +405,8 @@ a.asia-link:hover {
 }
 
 .fix-content{
-    flex: 0 0 800px;
-    max-width: 800px;
+    flex: 0 0 700px;
+    max-width: 700px;
 }
 
 .desktop{
@@ -359,7 +428,7 @@ a.asia-link:hover {
         display: none;
     }
     .custom-dropdown .custom-dropdown__label{
-        display: block;
+        display: flex;
         background-color:transparent;
         font-size: 18px;
         color: var(--bs-primary);
@@ -419,12 +488,32 @@ a.asia-link:hover {
 @media only screen and (max-width:768px){
     .common-card__title{
         font-size: 18px;
+    }    
+}
+
+@media only screen and (max-width: 375px){
+    .places-slider .slick-prev,
+    .places-slider .slick-next{
+        top: -40px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .places-slider .slick-prev{
+        right: 50px;
     }
 }
+
+@media only screen and (max-width: 320px){
+    .common-card__title{
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+}
+
 /* Discover Asia Section: CSS END */
 
 /* ******** city list page CSS END ********* */
-
 
 
 
@@ -444,6 +533,7 @@ a.asia-link:hover {
     color: #fff;
     font-weight: 800;
 }
+
 .cover-card__text{
     font-size: 20px;
     color: #fff;
@@ -455,16 +545,16 @@ a.asia-link:hover {
 .detail-wrap{
     margin-top: -5rem;
 }
+
 .heart-icon i.bi-heart::before{
     font-weight: 700 !important;
     font-size: 30px;
 }
+
 .user-icon i.bi-person-check::before{
     font-weight: 700 !important;
     font-size: 25px;
 }
-
-
 /* section--faq css start */
 
 /* faqs */

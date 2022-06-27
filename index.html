@@ -57,10 +57,10 @@
 					<div class="cover-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
 					<div
 						class="cover-content d-md-flex flex-column align-items-center justify-content-center py-sm-5 py-0 position-relative">
-						<p class="cover-content__text">Explore Cities and Make your own Trip Story</p>
+						<h1 class="cover-content__text">Explore Cities and Make your own Trip Story</h1>
 						<div class="m-auto input-wrapper">
 							<div class="input-group rounded-2">
-								<input type="search" class="form-control py-3 text-md-center input--search"
+								<input type="search" class="form-control input--search"
 									placeholder="Search for your favorite city" aria-label="Search" aria-describedby="search-addon" />
 								<span class="position-absolute serch-icon">
 									<i class="bi bi-search secondary"></i>
@@ -72,14 +72,27 @@
 			</section>
 			<!-- Cover Section: END -->
 
+			<!-- Breadcrumb Section : START -->
+			<section class="section section--breadcrumb">
+				<div class="container px-4">
+					<div class="breadcrumb-content">
+						<ol class="breadcrumb m-0">
+							<li class="breadcrumb-item"><a href="#">Home</a></li>
+							<li class="breadcrumb-item active" aria-current="page"><a href="#">Cities</a></li>
+						</ol>
+					</div>
+				</div>
+			</section>
+			<!-- Breadcrumb Section : END -->
+
 			<!-- Best Places Section: START -->
-			<section class="section section--places py-5">
+			<section class="section section--places py-4">
 				<div class="container">
 					<div class="py-0 py-md-5">
 						<div class="tab-container-one">
 							<!-- Tabs navs start-->
-							<div class="d-flex justify-content-between justify-content-lg-start mb-4">
-								<p class="common-title secondary">Best Places to visit in</p>
+							<div class="d-flex align-items-center mb-2">
+								<h3 class="common-title secondary">Best Places to visit in</h3>
 								<div class="fix-content">
 									<div class="custom-dropdown">
 										<button class="custom-dropdown__label"><span>Jul</span> <i class="bi bi-chevron-down"></i></button>
@@ -114,10 +127,10 @@
 								</div>
 							</div>
 							<!-- Tabs navs end-->
+
 							<!-- Tabs content strat-->
 							<div class="tab-content">
 								<div class="tab-pane active" id="jul" role="tabpanel" aria-labelledby="jul-tab">
-
 									<!-- Places Slide START-->
 									<div class="places-slider">
 										<a href="javascript:;" class="common-card">
@@ -171,7 +184,6 @@
 										</a>
 									</div>
 									<!-- Places Slide END-->
-
 								</div>
 								<div class="tab-pane" id="aug" role="tabpanel" aria-labelledby="aug-tab">
 									<div class="places-slider">
@@ -761,8 +773,8 @@
 						</div>
 						<!-- Most Visited Cities in the World -->
 						<div class="visited--city">
-							<p class="visited--city__text secondary"> Most Visited Cities in the World
-							</p>
+							<h3 class="visited--city__text secondary">Most Visited Cities in the World
+							</h3>
 							<div class="places-slider">
 								<a href="javascript:;" class="common-card">
 									<div class="common-card__media">
@@ -835,12 +847,12 @@
 			<!-- Best Places Section: END -->
 
 			<!-- Discover Asia Section: START -->
-			<section class="section section--discover gray-bg py-5 mt-5">
+			<section class="section section--discover gray-bg py-4">
 				<div class="container">
 					<!-- Discover  Asia -->
 					<div class="asia-wrapper py-0 py-md-5">
-						<p class="asia-wrapper__text secondary m-0 px-1">Discover Asia</p>
-						<div class="row gx-1">
+						<h3 class="asia-wrapper__text secondary m-0 px-1">Discover Asia</h3>
+						<div class="row gx-1 popular-list">
 							<div class="col-6 col-md-3 mt-4">
 								<div class="common-card">
 									<a href="javascript:;" class="d-block common-card__media position-relative">
@@ -1020,23 +1032,24 @@
 									</li>
 								</ul>
 							</div>
-							<div class="col-6 col-md-3 mt-4">
+							<div class="col-6 col-md-3 mt-4 btn-card">
 								<div class="common-card common-card--link">
-									<a href="javascript:;"
+									<a href="javascript:;" name="show_more"
 										class="show__more d-block text-decoration-none common-card__media position-relative border danger-border rounded-4">
 											<p
-											class="common-card__image desktop danger-light m-0">
+											class="common-card__image danger-light m-0">
 											Show More</p>
 									</a>
 								</div>
 							</div>
 						</div>
 					</div>
+
 					<!-- Amazing Africa and The Middle East -->
 					<div class="asia-wrapper py-0 py-md-5">
-						<p class="asia-wrapper__text mobile secondary mt-md-0 mt-5 mb-0 px-1">Amazing Africa</p>
-						<p class="asia-wrapper__text desktop secondary mt-md-0 mt-5 mb-0 px-1">Amazing Africa and The Middle East</p>
-						<div class="row gx-1">
+						<h3 class="asia-wrapper__text mobile secondary mt-md-0 mt-5 mb-0 px-1">Amazing Africa</h3>
+						<h3 class="asia-wrapper__text desktop secondary mt-md-0 mt-5 mb-0 px-1">Amazing Africa and The Middle East</h3>
+						<div class="row gx-1 popular-list">
 							<div class="col-6 col-md-3 mt-4">
 								<div class="common-card">
 									<a href="javascript:;" class="d-block common-card__media position-relative">
@@ -1116,9 +1129,9 @@
 									</li>
 								</ul>
 							</div>
-							<div class="col-6 col-md-3 mt-4">
+							<div class="col-6 col-md-3 mt-4 btn-card">
 								<div class="common-card common-card--link">
-									<a href="javascript:;"
+									<a href="javascript:;" name="show_more"
 										class="show__more d-block text-decoration-none common-card__media position-relative border danger-border rounded-4">
 										<p
 											class="common-card__image desktop danger-light m-0">
@@ -1132,7 +1145,6 @@
 				</div>
 			</section>
 			<!-- Discover Asia Section: END -->
-
 		</main>
 	</div>
 </body>
