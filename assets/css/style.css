@@ -348,7 +348,7 @@ button{
 .places-slider .slick-next{
     position: absolute;
     color: grey;
-    top: -45px;
+    top: -60px;
     width: 40px;
     height: 40px;
     transition: all 0.3s ease-in-out;
@@ -370,9 +370,8 @@ button{
 .slick-prev:hover, 
 .slick-next:hover{
     color: #EC601D;
+    border: 1px solid #EC601D;
 }
-
-
 
 .asia-wrapper__text{
     font-size: 36px;
@@ -568,7 +567,33 @@ a.asia-link:hover {
 }
 .hotel-rate__number{
     border-radius: 8px;
-    padding: 12px 12px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.hotel-reviews__comment {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--bs-secondary);
+}
+.hotel-reviews__number{
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: var(--bs-light-gray);
+    margin: 0;
+}
+span.hotel-type {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 4px 10px;
+    border-radius: 30px;
+    color: var(--bs-danger-light);
+    background-color: var(--bs-lightpink-bg);
 }
 /* Top Hotels Details Section CSS END */
 
@@ -588,6 +613,9 @@ a.asia-link:hover {
 .explore-sidebar__accordion .accordion-button:not(.collapsed){
     box-shadow: none;
     border-bottom: 1px solid var(--bs-gray-200);
+}
+.explore-sidebar__accordion .accordion-button::after{
+    filter: grayscale(1) brightness(0.5);
 }
 .radio__group  input[type="radio"],
 .checkbox-group input[type="checkbox"] {
@@ -700,7 +728,14 @@ a.asia-link:hover {
     font-size: 24px;
     font-weight: 700 !important;
 }
-
+.explore-clear__btn:hover{
+    background-color: var(--bs-primary-bg);
+    border-color: transparent;
+    color: #fff;
+}
+.explore-clear__btn:hover .clear-icon>i{
+    color: #fff;
+}
 .btn-check:focus+.btn-secondary, .btn-secondary:focus{
     box-shadow: none;
     outline: none;
@@ -710,7 +745,55 @@ a.asia-link:hover {
 .btn-secondary:hover{
     color: var(--bs-light-gray);
 }
-  
+.btn-secondary:active:focus{
+    box-shadow: none;
+}
+.filter-header__show>a:hover ,
+.filter-header__show>a:hover i.bi-x{
+    color: var(--bs-secondary);
+}
+
+.dropdown-toggle::after {
+    margin-left: 1.2em;
+    content: "\F282";
+    border: none;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -0.125em;
+    color: var(--bs-secondary);
+    font-weight: 700 !important;
+    -webkit-font-smoothing: antialiased;
+}  
+.dropdown-item.active, 
+.dropdown-item:active,
+.dropdown-item:focus, 
+.dropdown-item:hover {
+    color: var(--bs-primary);
+    text-decoration: none;
+    background-color: #fff;
+}
+.dropdown-item:hover label{
+    color: var(--bs-primary) !important;
+}
+.pagination-link.active{
+    color: var(--bs-secondary);
+}
+.pagination-link{
+    color: var(--bs-light-gray);
+}
+.explore-pagination__item .pagination--btn{
+    padding: 12px;
+}
+.pagination__arrow>i.bi::before{
+    font-weight: 700 !important;
+    font-size: 24px;
+}
+.pagination-number--list{
+    padding: 12px 30px;
+}
 /* Explore and Book filter END START */
 
 
@@ -723,6 +806,12 @@ a.asia-link:hover {
     color: var(--bs-dark-gray);
     font-size: 40px;
 }
+.know-more__text{
+    color: var(--bs-secondary);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
 /* Know more Section CSS END */
 
 /* FAQs Section css START */
@@ -734,7 +823,7 @@ a.asia-link:hover {
     box-shadow: none;
 }
 .faq__wrapper .accordion-button:not(.collapsed) {
-    color: var(--bs-primary);
+    color: var(--bs-primary) !important;
     border-radius: 12px;
     background-color: #fff;
     box-shadow: none;
@@ -788,3 +877,98 @@ button.slick-arrow:hover i{
     color: var(--bs-primary);
 }
 /* Slider arrows CSS END */
+
+
+/* ******** city detail page media query css start ********* */
+@media only screen and (max-width:991px){
+    .search__icon{
+        left: auto;
+        right: 5%;
+        bottom: 23%;
+    }
+    .explore-sidebar__input input.form-control {
+        padding: 10px 12px !important;
+    }
+    .sorting--btn{
+        font-size: 0;
+        width: auto !important;
+        padding: 0 !important;
+        max-width: 44px !important;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sorting-icon{
+        font-size: 24px;
+    }
+    .dropdown.sort--dropdown,
+    .explore-filter--dropdown {
+        width: 44px;
+        height: 44px;
+    }
+    .filter-header__show {
+        order: 3;
+        margin: 1rem 0 0;
+    }
+    .map-iframe {
+        flex: 0 0 50%;
+    }
+}
+@media only screen and (max-width:575px){
+    .cover-card__text{
+        font-size: 14px;
+        text-align: left;
+        line-height: 19px;
+    }
+    .section--city{
+        padding: 5rem 0;
+    }
+    .uae__row{
+        display: flex;
+        margin: 1rem 0 0;
+    }
+    .know__icon{
+        margin-right: 1rem;
+    }
+    .cover-card__title{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:425px){
+    .map-iframe {
+        flex: auto;
+        width: 167px;
+        height: 135px;
+    }
+    .map-iframe .dubai-map__iframe{
+        height: 100%;
+    }
+    .hotel__info>a {
+        font-size: 16px !important;
+        margin-bottom: 8px;
+    }
+    .hotel-card--media span {
+        font-size: 12px !important;
+        font-weight: 400 !important;
+    }
+    .uae-visit__month{
+        font-size: 16px !important;
+    }
+    .uae-visit__event{
+        font-size: 12px !important;
+    }  
+    .know-more__text{
+        font-size: 12px;
+        line-height: 16px;
+    }
+   .faq__wrapper .accordion-button{
+        font-size: 16px !important;
+    } 
+   .faq__wrapper .accordion-body{
+        font-size: 14px !important;
+    } 
+    .uae-row--details{
+        font-size: 16px !important;
+    }
+}
