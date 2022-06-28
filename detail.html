@@ -67,7 +67,7 @@
           <!-- City Section END -->
 
          <!-- Detail Section START -->
-         <section class="section section--detail position-relative gray-bg py-5">
+         <section class="section section--detail position-relative gray-bg pt-5 pb-2">
             <div class="container">
                <div class="detail-wrap bg-white rounded-4">
                   <div class="row pb-4 pb-md-5">
@@ -149,52 +149,70 @@
          </section>
          <!-- Detail Section END -->
 
+         <!-- Breadcrumb Section : START -->
+			<section class="section section--breadcrumb">
+				<div class="container px-4">
+					<div class="breadcrumb-content">
+						<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                     <ol class="breadcrumb m-0">
+                       <li class="breadcrumb-item"><a href="#">Home</a></li>
+                       <li class="breadcrumb-item"><a href="#">Cities</a></li>
+                       <li class="breadcrumb-item active" aria-current="page"><a href="#">Dubai</a></li>
+                     </ol>
+                   </nav>
+					</div>
+				</div>
+			</section>
+			<!-- Breadcrumb Section : END -->
+
          <!-- Top Hotels Details Section START -->
          <section class="section section--hotels gray-bg py-5 overflow-hidden">
             <div class="container">
 
                <!-- Top Hotels and Stays START-->
-               <div class="hotels__details pt-0 pt-lg-5">
+               <div class="hotels__details pt-3 pt-md-5">
                   <h2 class="secondary fw-bold mb-4 fs-3">Top Hotels and Stays</h2>
-                  <div class="row">
-                     <div class="col-lg-6">
-                        <div class="row rounded-4 bg-white p-3 my-3 me-0 me-md-3">
+                  <div class="row m-0">
+                     <div class="col-lg-6 col-12">
+                        <div class="row rounded-4 bg-white p-3 my-3 me-lg-3">
                            <div class="common-card hotel--card col-5 p-0 m-0">
                               <a href="javascript;;" class="d-block hotel-card--media common-card__media position-relative">
                                  <img class="common-card__image" src="assets/img/sunshine_vila.png" alt="sunshine_vila">
                                  <span class="position-absolute gray-200 fs-6 danger-bgpink rounded-3 p-1 fw-bold bottom-0 d-inline-block ms-2 mb-2">Limited Time Deal</span>
                               </a>
-                              <div class="hotel-rate__list d-block d-sm-none my-3">
-                                 <ul class="d-flex list-unstyled mb-2 p-0">
+                              <div class="hotel-rate__list d-block d-sm-none mt-3">
+                                 <ul class="d-flex list-unstyled mb-1 p-0">
                                     <li class="warning fs-6">★</li>
                                     <li class="warning fs-6">★</li>
                                     <li class="warning fs-6">★</li>
                                     <li class="warning fs-6">★</li>
                                     <li class="warning fs-6">★</li>
                                  </ul>
-                                 <span class="danger-light lightpink-bg rounded-pill px-4 py-1">Villa</span>
+                                 <span class="hotel-type">Villa</span>
                               </div>
                            </div>
-                           <div class="col-7 pe-0">
-                              <a class="d-block text-decoration-none secondary fs-5 fw-bold" href="javascript;;">The Sunshine Villa</a>
-                              <div class="d-flex hotel__rate justify-content-between mb-4 mb-md-5">
-                                 <div class="hotel-rate__list d-none d-sm-block">
-                                    <ul class="d-flex list-unstyled mb-2 p-0">
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                    </ul>
-                                    <span class="danger-light lightpink-bg rounded-pill px-4 py-1">Villa</span>
-                                 </div>
-                                 <div class="hotel-rate__reviews d-flex align-items-center flex-md-row flex-row-reverse">
-                                    <div class="mx-1">
-                                       <p class="m-0 secondary fs-5">Excellent</p>
-                                       <p class="m-0 light-gray fs-6">358 reviews</p>
+                           <div class="col-7 pe-0 d-md-block d-flex flex-column justify-content-between">
+                              <div class="hotel__info">
+                                 <a class="d-block text-decoration-none secondary fs-5 fw-bold" href="javascript;;">The Sunshine Villa</a>
+                                 <div class="d-flex hotel__rate justify-content-between mb-4 mb-md-5 align-items-end">
+                                    <div class="hotel-rate__list d-none d-sm-block">
+                                       <ul class="d-flex list-unstyled mb-1 p-0">
+                                          <li class="warning fs-6">★</li>
+                                          <li class="warning fs-6">★</li>
+                                          <li class="warning fs-6">★</li>
+                                          <li class="warning fs-6">★</li>
+                                          <li class="warning fs-6">★</li>
+                                       </ul>
+                                       <span class="hotel-type">Villa</span>
                                     </div>
-                                    <div>
-                                       <span class="orange-bg primary hotel-rate__number d-block fw-bold">10</span>
+                                    <div class="hotel-rate__reviews d-flex align-items-center flex-md-row flex-row-reverse">
+                                       <div class="mx-1">
+                                          <p class="hotel-reviews__comment">Excellent</p>
+                                          <p class="hotel-reviews__number">358 reviews</p>
+                                       </div>
+                                       <div class="hotel-rate__label">
+                                          <span class="orange-bg primary hotel-rate__number fw-bold">10</span>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
@@ -222,44 +240,46 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-lg-6">
+                     <div class="col-lg-6 col-12">
                         <div class="row rounded-4 bg-white p-3 my-3">
                            <div class="common-card hotel--card col-5 p-0 m-0">
                               <a href="javascript;;" class="d-block hotel-card--media common-card__media position-relative">
                                  <img class="common-card__image" src="assets/img/the_palm.png" alt="the_palm">
                                  <span class="position-absolute gray-200 fs-6 danger-bgpink rounded-3 p-1 fw-bold bottom-0 d-inline-block ms-2 mb-2">Getaway Deal</span>
                               </a>
-                              <div class="hotel-rate__list d-block d-sm-none my-3">
-                                 <ul class="d-flex list-unstyled mb-2 p-0">
+                              <div class="hotel-rate__list d-block d-sm-none mt-3">
+                                 <ul class="d-flex list-unstyled mb-1 p-0">
                                     <li class="warning fs-6">★</li>
                                     <li class="warning fs-6">★</li>
                                     <li class="warning fs-6">★</li>
                                     <li class="warning fs-6">★</li>
                                     <li class="warning fs-6">★</li>
                                  </ul>
-                                 <span class="danger-light lightpink-bg rounded-pill px-4 py-1">Villa</span>
+                                 <span class="hotel-type">Resort</span>
                               </div>
                            </div>
-                           <div class="col-7 pe-0">
-                              <a class="d-block text-decoration-none secondary fs-5 fw-bold" href="javascript;;">Anantara The Palm Dubai Resort</a>
-                              <div class="d-flex hotel__rate justify-content-between mb-4 mb-md-5">
-                                 <div class="hotel-rate__list d-none d-sm-block">
-                                    <ul class="d-flex list-unstyled mb-2 p-0">
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                    </ul>
-                                    <span class="danger-light lightpink-bg rounded-pill px-4 py-1">Villa</span>
-                                 </div>
-                                 <div class="hotel-rate__reviews d-flex align-items-center flex-md-row flex-row-reverse">
-                                    <div class="mx-1">
-                                       <p class="m-0 secondary fs-5">Excellent</p>
-                                       <p class="m-0 light-gray fs-6">358 reviews</p>
+                           <div class="col-7 pe-0 d-md-block d-flex flex-column justify-content-between">
+                              <div class="hotel__info">
+                                 <a class="d-block text-decoration-none secondary fs-5 fw-bold" href="javascript;;">Anantara The Palm Dubai Resort</a>
+                                 <div class="d-flex hotel__rate justify-content-between mb-4 mb-md-5 align-items-end">
+                                    <div class="hotel-rate__list d-none d-sm-block">
+                                       <ul class="d-flex list-unstyled mb-1 p-0">
+                                          <li class="warning fs-6">★</li>
+                                          <li class="warning fs-6">★</li>
+                                          <li class="warning fs-6">★</li>
+                                          <li class="warning fs-6">★</li>
+                                          <li class="warning fs-6">★</li>
+                                       </ul>
+                                       <span class="hotel-type">Resort</span>
                                     </div>
-                                    <div>
-                                       <span class="orange-bg primary hotel-rate__number d-block fw-bold">10</span>
+                                    <div class="hotel-rate__reviews d-flex align-items-center flex-md-row flex-row-reverse">
+                                       <div class="mx-1">
+                                          <p class="hotel-reviews__comment">Very Good</p>
+                                          <p class="hotel-reviews__number">3769 reviews</p>
+                                       </div>
+                                       <div class="hotel-rate__label">
+                                          <span class="orange-bg primary hotel-rate__number fw-bold">8</span>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
@@ -281,50 +301,52 @@
                                 <div class="text-end">
                                     <p class="m-0 light-gray fs-6 d-none d-sm-block">2 Night, 2 Adult</p>
                                     <p class="m-0 light-gray fs-5 text-decoration-line-through fw-lighter">₹9320</p>
-                                    <p class="secondary fs-4 m-0 fw-bold">₹74,085</p>
+                                    <p class="secondary fs-4 m-0 fw-bold">₹14,654</p>
                                 </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                     <div class="col-lg-6">
-                        <div class="row rounded-4 bg-white p-3 my-3 me-0 me-md-3">
+                     <div class="col-lg-6 col-12">
+                        <div class="row rounded-4 bg-white p-3 my-3 me-lg-3">
                            <div class="common-card hotel--card col-5 p-0 m-0">
                               <a href="javascript;;" class="d-block hotel-card--media common-card__media position-relative">
                                  <img class="common-card__image" src="assets/img/marina_view.png" alt="marina_view">
                                  <span class="position-absolute gray-200 fs-6 danger-bgpink rounded-3 p-1 fw-bold bottom-0 d-inline-block ms-2 mb-2">Only 4 Left</span>
                               </a>
-                              <div class="hotel-rate__list d-block d-sm-none my-3">
-                                 <ul class="d-flex list-unstyled mb-2 p-0">
+                              <div class="hotel-rate__list d-block d-sm-none mt-3">
+                                 <ul class="d-flex list-unstyled mb-1 p-0">
                                     <li class="warning fs-6">★</li>
                                     <li class="warning fs-6">★</li>
                                     <li class="warning fs-6">★</li>
                                     <li class="warning fs-6">★</li>
                                     <li class="warning fs-6">★</li>
                                  </ul>
-                                 <span class="danger-light lightpink-bg rounded-pill px-4 py-1">Villa</span>
+                                 <span class="hotel-type">Apartments</span>
                               </div>
                            </div>
-                           <div class="col-7 pe-0">
-                              <a class="d-block text-decoration-none secondary fs-5 fw-bold" href="javascript;;">Dream Inn Apartments - Marina View Tower</a>
-                              <div class="d-flex hotel__rate justify-content-between mb-4 mb-md-5">
-                                 <div class="hotel-rate__list d-none d-sm-block">
-                                    <ul class="d-flex list-unstyled mb-2 p-0">
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                    </ul>
-                                    <span class="danger-light lightpink-bg rounded-pill px-4 py-1">Villa</span>
-                                 </div>
-                                 <div class="hotel-rate__reviews d-flex align-items-center flex-md-row flex-row-reverse">
-                                    <div class="mx-1">
-                                       <p class="m-0 secondary fs-5">Excellent</p>
-                                       <p class="m-0 light-gray fs-6">358 reviews</p>
+                           <div class="col-7 pe-0 d-md-block d-flex flex-column justify-content-between">
+                              <div class="hotel__info">
+                                 <a class="d-block text-decoration-none secondary fs-5 fw-bold" href="javascript;;">Dream Inn Apartments - Marina View Tower</a>
+                                 <div class="d-flex hotel__rate justify-content-between mb-4 mb-md-5 align-items-end">
+                                    <div class="hotel-rate__list d-none d-sm-block">
+                                       <ul class="d-flex list-unstyled mb-1 p-0">
+                                          <li class="warning fs-6">★</li>
+                                          <li class="warning fs-6">★</li>
+                                          <li class="warning fs-6">★</li>
+                                          <li class="warning fs-6">★</li>
+                                          <li class="warning fs-6">★</li>
+                                       </ul>
+                                       <span class="hotel-type">Apartments</span>
                                     </div>
-                                    <div>
-                                       <span class="orange-bg primary hotel-rate__number d-block fw-bold">10</span>
+                                    <div class="hotel-rate__reviews d-flex align-items-center flex-md-row flex-row-reverse">
+                                       <div class="mx-1">
+                                          <p class="hotel-reviews__comment">Very Good</p>
+                                          <p class="hotel-reviews__number">5273 reviews</p>
+                                       </div>
+                                       <div class="hotel-rate__label">
+                                          <span class="orange-bg primary hotel-rate__number fw-bold">8</span>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
@@ -346,50 +368,50 @@
                                 <div class="text-end">
                                     <p class="m-0 light-gray fs-6 d-none d-sm-block">2 Night, 2 Adult</p>
                                     <p class="m-0 light-gray fs-5 text-decoration-line-through fw-lighter">₹9320</p>
-                                    <p class="secondary fs-4 m-0 fw-bold">₹74,085</p>
+                                    <p class="secondary fs-4 m-0 fw-bold">₹11,461</p>
                                 </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                     <div class="col-lg-6">
+                     <div class="col-lg-6 col-12">
                         <div class="row rounded-4 bg-white p-3 my-3">
                            <div class="common-card hotel--card col-5 p-0 m-0">
                               <a href="javascript;;" class="d-block hotel-card--media common-card__media position-relative">
                                  <img class="common-card__image" src="assets/img/battuta.png" alt="battuta">
                                  <span class="position-absolute gray-200 fs-6 danger-bgpink rounded-3 p-1 fw-bold bottom-0 d-inline-block ms-2 mb-2">Limited Time Deal</span>
                               </a>
-                              <div class="hotel-rate__list d-block d-sm-none my-3">
-                                 <ul class="d-flex list-unstyled mb-2 p-0">
-                                    <li class="warning fs-6">★</li>
+                              <div class="hotel-rate__list d-block d-sm-none mt-3">
+                                 <ul class="d-flex list-unstyled mb-1 p-0">
                                     <li class="warning fs-6">★</li>
                                     <li class="warning fs-6">★</li>
                                     <li class="warning fs-6">★</li>
                                     <li class="warning fs-6">★</li>
                                  </ul>
-                                 <span class="danger-light lightpink-bg rounded-pill px-4 py-1">Villa</span>
+                                 <span class="hotel-type">Home Stays</span>
                               </div>
                            </div>
-                           <div class="col-7 pe-0">
-                              <a class="d-block text-decoration-none secondary fs-5 fw-bold" href="javascript;;">Avani Ibnn Battuta Dubai Hotel</a>
-                              <div class="d-flex hotel__rate justify-content-between mb-4 mb-md-5">
-                                 <div class="hotel-rate__list d-none d-sm-block">
-                                    <ul class="d-flex list-unstyled mb-2 p-0">
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                       <li class="warning fs-6">★</li>
-                                    </ul>
-                                    <span class="danger-light lightpink-bg rounded-pill px-4 py-1">Villa</span>
-                                 </div>
-                                 <div class="hotel-rate__reviews d-flex align-items-center flex-md-row flex-row-reverse">
-                                    <div class="mx-1">
-                                       <p class="m-0 secondary fs-5">Excellent</p>
-                                       <p class="m-0 light-gray fs-6">358 reviews</p>
+                           <div class="col-7 pe-0 d-md-block d-flex flex-column justify-content-between">
+                              <div class="hotel__info">
+                                 <a class="d-block text-decoration-none secondary fs-5 fw-bold" href="javascript;;">Avani Ibnn Battuta Dubai Hotel</a>
+                                 <div class="d-flex hotel__rate justify-content-between mb-4 mb-md-5 align-items-end">
+                                    <div class="hotel-rate__list d-none d-sm-block">
+                                       <ul class="d-flex list-unstyled mb-1 p-0">
+                                          <li class="warning fs-6">★</li>
+                                          <li class="warning fs-6">★</li>
+                                          <li class="warning fs-6">★</li>
+                                          <li class="warning fs-6">★</li>
+                                       </ul>
+                                       <span class="hotel-type">Home Stays</span>
                                     </div>
-                                    <div>
-                                       <span class="orange-bg primary hotel-rate__number d-block fw-bold">10</span>
+                                    <div class="hotel-rate__reviews d-flex align-items-center flex-md-row flex-row-reverse">
+                                       <div class="mx-1">
+                                          <p class="hotel-reviews__comment">Very Good</p>
+                                          <p class="hotel-reviews__number">2130 reviews</p>
+                                       </div>
+                                       <div class="hotel-rate__label">
+                                          <span class="orange-bg primary hotel-rate__number fw-bold">8</span>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
@@ -411,7 +433,7 @@
                                 <div class="text-end">
                                     <p class="m-0 light-gray fs-6 d-none d-sm-block">2 Night, 2 Adult</p>
                                     <p class="m-0 light-gray fs-5 text-decoration-line-through fw-lighter">₹9320</p>
-                                    <p class="secondary fs-4 m-0 fw-bold">₹74,085</p>
+                                    <p class="secondary fs-4 m-0 fw-bold">₹10,194</p>
                                 </div>
                               </div>
                            </div>
@@ -426,22 +448,83 @@
               <!-- Top Hotels and Stays END-->
 
                <!-- Explore and Book filter START-->
-               <div class="explore__details pt-0 pt-lg-5">
+               <div class="explore__details pt-5">
                   <h2 class="secondary fw-bold mb-4 fs-3">Explore and Book</h2>
-                  <div class="explore__row row">
-                     <div class="col-lg-3 explore__sidebar">
+                  <div class="row filter__header">
+                     <div class="filter-header__search col-lg-3 col-7">
                         <div class="input-group explore-sidebar__input">
-                           <input type="search" class="form-control py-3 ps-3 ps-md-5 input-field rounded-4 bg-white border-0"
+                           <input type="search" class="form-control py-3 ps-3 ps-lg-5 input-field rounded-4 bg-white border-0"
                               placeholder="Search Trip" aria-label="Search" aria-describedby="search-addon" />
                            <span class="position-absolute search__icon">
                               <i class="bi bi-search light-gray"></i>
                            </span>
                         </div>
-                        <div class="explore-sidebar__menu rounded-4 bg-white mt-3">
-                           <div class="text-end explore-clear__btn pt-2 pe-2" id="clear__all">
-                              <a class="text-end primary fw-bold fs-6 d-inline-block text-decoration-none border primary-border rounded-3 px-3 py-2">
-                                 <span class="clear-icon pe-2"><i class="bi bi-x primary"></i></span>Clear All
+                     </div>
+                     <div class="filter-header__show col-lg-7">
+                        <a href="javascript:;" class="rounded-4 lightpink-bg px-3 py-1 fs-6 text-decoration-none danger-light mb-1 d-inline-block">Price - Low to High <span><i class="bi bi-x danger-light"></i></span></a>
+                        <a href="javascript:;" class="rounded-4 orange-bg px-3 py-1 fs-6 text-decoration-none primary mb-1 d-inline-block">Trip Stories <span><i class="bi bi-x primary"></i></span></a>
+                        <a href="javascript:;" class="rounded-4 orange-bg px-3 py-1 fs-6 text-decoration-none primary mb-1 d-inline-block">Attractions <span><i class="bi bi-x primary"></i></span></a>
+                        <a href="javascript:;" class="rounded-4 orange-bg px-3 py-1 fs-6 text-decoration-none primary mb-1 d-inline-block">90$ - 90$ <span><i class="bi bi-x primary"></i></span></a>
+                        <a href="javascript:;" class="rounded-4 orange-bg px-3 py-1 fs-6 text-decoration-none primary mb-1 d-inline-block">90$ - 90$ <span><i class="bi bi-x primary"></i></span></a>
+                        <a href="javascript:;" class="rounded-4 orange-bg px-3 py-1 fs-6 text-decoration-none primary mb-1 d-inline-block">90$ - 90$ <span><i class="bi bi-x primary"></i></span></a>
+                        <a href="javascript:;" class="rounded-4 orange-bg px-3 py-1 fs-6 text-decoration-none primary mb-1 d-inline-block">90$ - 90$ <span><i class="bi bi-x primary"></i></span></a>
+                        <a href="javascript:;" class="rounded-4 orange-bg px-3 py-1 fs-6 text-decoration-none primary mb-1 d-inline-block">Trip Stories <span><i class="bi bi-x primary"></i></span></a>
+                     </div>
+                     <div class="filter-header__sorting col-lg-2 col-5">
+                        <div class="d-flex justify-content-end">
+                           <div class="dropdown sort--dropdown">
+                              <a class="btn btn-secondary dropdown-toggle bg-white rounded-4 light-gray border-0 py-3 w-100 sorting--btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><span class="pe-lg-1 sorting-icon"><i class="bi bi-sort-down-alt light-gray"></i></span> 
+                                 Sort
                               </a>
+                              <ul class="dropdown-menu border-white rounded-4" aria-labelledby="dropdownMenuLink">
+                                 <li>
+                                    <a class="dropdown-item" href="#">
+                                       <div class="radio__group mt-2 position-relative">
+                                          <input type="radio" name="sort_filter" id="low_to_high">
+                                          <label class="secondary fs-6 fw-normal" for="low_to_high">Price - Low to High</label>
+                                       </div>
+                                    </a>
+                                 </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                       <div class="radio__group mt-2 position-relative">
+                                          <input type="radio" name="sort_filter" id="high_to_low">
+                                          <label class="secondary fs-6 fw-normal" for="high_to_low">Price - High to Low</label>
+                                       </div>
+                                    </a>
+                                 </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                       <div class="radio__group mt-2 position-relative">
+                                          <input type="radio" name="sort_filter" id="most_popular">
+                                          <label class="secondary fs-6 fw-normal" for="most_popular">Most Popular</label>
+                                       </div>
+                                    </a>
+                                 </li>
+                                 <li>
+                                     <a class="dropdown-item" href="#">
+                                        <div class="radio__group mt-2 position-relative">
+                                           <input type="radio" name="sort_filter" id="by_name">
+                                           <label class="secondary fs-6 fw-normal" for="by_name">By Name</label>
+                                        </div>
+                                     </a>
+                                  </li>
+                              </ul>
+                            </div>
+                            <div class="explore-filter--dropdown ms-3 d-lg-none">
+                              <a class="btn btn-secondary dropdown-toggle bg-white rounded-4 light-gray border-0 py-3 w-100 sorting--btn" href="#" role="button" id="dropdownFilterLink" data-bs-toggle="dropdown" aria-expanded="false"><span class="pe-lg-1 sorting-icon"><i class="bi bi-funnel light-gray"></i></span> 
+                              </a>
+                            </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="explore__row row">
+                     <div class="col-lg-3 explore__sidebar d-lg-block d-none">
+                        <div class="explore-sidebar__menu rounded-4 bg-white mt-3">
+                           <div class="text-end pt-2 pe-2">
+                              <button type="button" class="explore-clear__btn text-end primary fw-bold fs-6 d-inline-flex align-items-center justify-content-around text-decoration-none border primary-border rounded-3 px-4 py-1" id="clear__all">
+                                 <span class="clear-icon pe-2 pt-1"><i class="bi bi-x primary"></i></span>Clear All
+                              </button>
                            </div>
                            <div class="explore-sidebar__accordion">
                               <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -532,356 +615,318 @@
                      </div>
                      <div class="col-lg-9 explore__maincontent">
                         <div class="row">
-                           <div class="explore-filter__show col-md-10">
-                              <a href="javascript:;" class="rounded-4 orange-bg px-3 py-1 fs-6 text-decoration-none primary mb-1 d-inline-block">Price - Low to High <span><i class="bi bi-x primary"></i></span></a>
-                              <a href="javascript:;" class="rounded-4 orange-bg px-3 py-1 fs-6 text-decoration-none primary mb-1 d-inline-block">Trip Stories <span><i class="bi bi-x primary"></i></span></a>
-                              <a href="javascript:;" class="rounded-4 orange-bg px-3 py-1 fs-6 text-decoration-none primary mb-1 d-inline-block">Attractions <span><i class="bi bi-x primary"></i></span></a>
-                              <a href="javascript:;" class="rounded-4 orange-bg px-3 py-1 fs-6 text-decoration-none primary mb-1 d-inline-block">90$ - 90$ <span><i class="bi bi-x primary"></i></span></a>
-                              <a href="javascript:;" class="rounded-4 orange-bg px-3 py-1 fs-6 text-decoration-none primary mb-1 d-inline-block">90$ - 90$ <span><i class="bi bi-x primary"></i></span></a>
-                              <a href="javascript:;" class="rounded-4 orange-bg px-3 py-1 fs-6 text-decoration-none primary mb-1 d-inline-block">90$ - 90$ <span><i class="bi bi-x primary"></i></span></a>
-                              <a href="javascript:;" class="rounded-4 orange-bg px-3 py-1 fs-6 text-decoration-none primary mb-1 d-inline-block">90$ - 90$ <span><i class="bi bi-x primary"></i></span></a>
-                              <a href="javascript:;" class="rounded-4 orange-bg px-3 py-1 fs-6 text-decoration-none primary mb-1 d-inline-block">Trip Stories <span><i class="bi bi-x primary"></i></span></a>
+                           <div class="col-lg-4 col-sm-6 col-12 mt-3">
+                              <a href="javascript:;" class="d-block">
+                                 <div class="cities-content h-100">
+                                    <div class="bg-white rounded-4 h-100">
+                                       <div class="common-card__media common-card__media-75">
+                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
+                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
+                                                class="bi bi-heart text-white"></i></a>
+                                       </div>
+                                       <div class="cities-details px-3 pb-3">
+                                          <div class="d-flex align-items-center justify-content-between my-4">
+                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
+                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
+                                          </div>
+                                          <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
+                                          <p class="light-gray mb-2"><span class="pe-2"><i
+                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
+                                          <span
+                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
+                                       </div>
+                                       <div
+                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
+                                          <a href="#" class="d-flex align-items-center text-decoration-none">
+                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
+                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
+                                          </a>
+                                          <a href="#" class="user-icon text-decoration-none"><i class="bi bi-person-check primary"></i></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </a>
                            </div>
-                           <div class="explore-filter__dropdown col-md-2">
-                              <div class="dropdown filter--dropdown">
-                                 <a class="btn btn-secondary dropdown-toggle bg-white rounded-4 light-gray border-0" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Sort
-                                 </a>
-                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li>
-                                       <a class="dropdown-item" href="#">
-                                          <div class="radio__group mt-2 position-relative">
-                                             <input type="radio" name="sort_filter" id="low_to_high">
-                                             <label class="secondary fs-6 fw-normal" for="low_to_high">Price - Low to High</label>
+                           <div class="col-lg-4 col-sm-6 col-12 mt-3">
+                              <a href="javascript:;" class="d-block">
+                                 <div class="cities-content h-100">
+                                    <div class="bg-white rounded-4 h-100">
+                                       <div class="common-card__media common-card__media-75">
+                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
+                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
+                                                class="bi bi-heart text-white"></i></a>
+                                       </div>
+                                       <div class="cities-details px-3 pb-3">
+                                          <div class="d-flex align-items-center justify-content-between my-4">
+                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
+                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
                                           </div>
-                                       </a>
-                                    </li>
-                                   <li>
-                                       <a class="dropdown-item" href="#">
-                                          <div class="radio__group mt-2 position-relative">
-                                             <input type="radio" name="sort_filter" id="high_to_low">
-                                             <label class="secondary fs-6 fw-normal" for="high_to_low">Price - High to Low</label>
+                                          <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
+                                          <p class="light-gray mb-2"><span class="pe-2"><i
+                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
+                                          <span
+                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
+                                       </div>
+                                       <div
+                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
+                                          <a href="#" class="d-flex align-items-center text-decoration-none">
+                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
+                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
+                                          </a>
+                                          <a href="#" class="user-icon text-decoration-none"><i class="bi bi-person-check primary"></i></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col-lg-4 col-sm-6 col-12 mt-3">
+                              <a href="javascript:;" class="d-block">
+                                 <div class="cities-content h-100">
+                                    <div class="bg-white rounded-4 h-100">
+                                       <div class="common-card__media common-card__media-75">
+                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
+                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
+                                                class="bi bi-heart text-white"></i></a>
+                                       </div>
+                                       <div class="cities-details px-3 pb-3">
+                                          <div class="d-flex align-items-center justify-content-between my-4">
+                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
+                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
                                           </div>
-                                       </a>
-                                    </li>
-                                   <li>
-                                       <a class="dropdown-item" href="#">
-                                          <div class="radio__group mt-2 position-relative">
-                                             <input type="radio" name="sort_filter" id="most_popular">
-                                             <label class="secondary fs-6 fw-normal" for="high_to_low">Most Popular</label>
+                                          <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
+                                          <p class="light-gray mb-2"><span class="pe-2"><i
+                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
+                                          <span
+                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
+                                       </div>
+                                       <div
+                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
+                                          <a href="#" class="d-flex align-items-center text-decoration-none">
+                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
+                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
+                                          </a>
+                                          <a href="#" class="user-icon text-decoration-none"><i class="bi bi-person-check primary"></i></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col-lg-4 col-sm-6 col-12 mt-3">
+                              <a href="javascript:;" class="d-block">
+                                 <div class="cities-content h-100">
+                                    <div class="bg-white rounded-4 h-100">
+                                       <div class="common-card__media common-card__media-75">
+                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
+                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
+                                                class="bi bi-heart text-white"></i></a>
+                                       </div>
+                                       <div class="cities-details px-3 pb-3">
+                                          <div class="d-flex align-items-center justify-content-between my-4">
+                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
+                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
                                           </div>
-                                       </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                           <div class="radio__group mt-2 position-relative">
-                                              <input type="radio" name="sort_filter" id="by_name">
-                                              <label class="secondary fs-6 fw-normal" for="by_name">By Name</label>
-                                           </div>
-                                        </a>
-                                     </li>
-                                 </ul>
-                               </div>
+                                          <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
+                                          <p class="light-gray mb-2"><span class="pe-2"><i
+                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
+                                          <span
+                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
+                                       </div>
+                                       <div
+                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
+                                          <a href="#" class="d-flex align-items-center text-decoration-none">
+                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
+                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
+                                          </a>
+                                          <a href="#" class="user-icon text-decoration-none"><i class="bi bi-person-check primary"></i></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col-lg-4 col-sm-6 col-12 mt-3 d-sm-block d-none">
+                              <a href="javascript:;" class="d-block">
+                                 <div class="cities-content h-100">
+                                    <div class="bg-white rounded-4 h-100">
+                                       <div class="common-card__media common-card__media-75">
+                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
+                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
+                                                class="bi bi-heart text-white"></i></a>
+                                       </div>
+                                       <div class="cities-details px-3 pb-3">
+                                          <div class="d-flex align-items-center justify-content-between my-4">
+                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
+                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
+                                          </div>
+                                          <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
+                                          <p class="light-gray mb-2"><span class="pe-2"><i
+                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
+                                          <span
+                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
+                                       </div>
+                                       <div
+                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
+                                          <a href="#" class="d-flex align-items-center text-decoration-none">
+                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
+                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
+                                          </a>
+                                          <a href="#" class="user-icon text-decoration-none"><i class="bi bi-person-check primary"></i></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col-lg-4 col-sm-6 col-12 mt-3 d-sm-block d-none">
+                              <a href="javascript:;" class="d-block">
+                                 <div class="cities-content h-100">
+                                    <div class="bg-white rounded-4 h-100">
+                                       <div class="common-card__media common-card__media-75">
+                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
+                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
+                                                class="bi bi-heart text-white"></i></a>
+                                       </div>
+                                       <div class="cities-details px-3 pb-3">
+                                          <div class="d-flex align-items-center justify-content-between my-4">
+                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
+                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
+                                          </div>
+                                          <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
+                                          <p class="light-gray mb-2"><span class="pe-2"><i
+                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
+                                          <span
+                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
+                                       </div>
+                                       <div
+                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
+                                          <a href="#" class="d-flex align-items-center text-decoration-none">
+                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
+                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
+                                          </a>
+                                          <a href="#" class="user-icon text-decoration-none"><i class="bi bi-person-check primary"></i></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col-lg-4 col-sm-6 col-12 mt-3 d-sm-block d-none">
+                              <a href="javascript:;" class="d-block">
+                                 <div class="cities-content h-100">
+                                    <div class="bg-white rounded-4 h-100">
+                                       <div class="common-card__media common-card__media-75">
+                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
+                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
+                                                class="bi bi-heart text-white"></i></a>
+                                       </div>
+                                       <div class="cities-details px-3 pb-3">
+                                          <div class="d-flex align-items-center justify-content-between my-4">
+                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
+                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
+                                          </div>
+                                          <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
+                                          <p class="light-gray mb-2"><span class="pe-2"><i
+                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
+                                          <span
+                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
+                                       </div>
+                                       <div
+                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
+                                          <a href="#" class="d-flex align-items-center text-decoration-none">
+                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
+                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
+                                          </a>
+                                          <a href="#" class="user-icon text-decoration-none"><i class="bi bi-person-check primary"></i></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col-lg-4 col-sm-6 col-12 mt-3 d-sm-block d-none">
+                              <a href="javascript:;" class="d-block">
+                                 <div class="cities-content h-100">
+                                    <div class="bg-white rounded-4 h-100">
+                                       <div class="common-card__media common-card__media-75">
+                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
+                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
+                                                class="bi bi-heart text-white"></i></a>
+                                       </div>
+                                       <div class="cities-details px-3 pb-3">
+                                          <div class="d-flex align-items-center justify-content-between my-4">
+                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
+                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
+                                          </div>
+                                          <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
+                                          <p class="light-gray mb-2"><span class="pe-2"><i
+                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
+                                          <span
+                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
+                                       </div>
+                                       <div
+                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
+                                          <a href="#" class="d-flex align-items-center text-decoration-none">
+                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
+                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
+                                          </a>
+                                          <a href="#" class="user-icon text-decoration-none"><i class="bi bi-person-check primary"></i></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col-lg-4 col-sm-6 col-12 mt-3 d-sm-block d-none">
+                              <a href="javascript:;" class="d-block">
+                                 <div class="cities-content h-100">
+                                    <div class="bg-white rounded-4 h-100">
+                                       <div class="common-card__media common-card__media-75">
+                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
+                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
+                                                class="bi bi-heart text-white"></i></a>
+                                       </div>
+                                       <div class="cities-details px-3 pb-3">
+                                          <div class="d-flex align-items-center justify-content-between my-4">
+                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
+                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
+                                          </div>
+                                          <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
+                                          <p class="light-gray mb-2"><span class="pe-2"><i
+                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
+                                          <span
+                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
+                                       </div>
+                                       <div
+                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
+                                          <a href="#" class="d-flex align-items-center text-decoration-none">
+                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
+                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
+                                          </a>
+                                          <a href="#" class="user-icon text-decoration-none"><i class="bi bi-person-check primary"></i></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </a>
                            </div>
                         </div>
-                        <div class="row">
-                           <div class="col-lg-4 col-6 mt-md-3">
-                              <a href="javascript:;" class="d-block">
-                                 <div class="cities-content h-100 me-3">
-                                    <div class="bg-white rounded-4 h-100">
-                                       <div class="common-card__media common-card__media-75">
-                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
-                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
-                                                class="bi bi-heart text-white"></i></a>
-                                       </div>
-                                       <div class="cities-details px-3 pb-3">
-                                          <div class="d-flex align-items-center justify-content-between my-4">
-                                             <p class="m-0 light-gray"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</p>
-                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
-                                          </div>
-                                          <h3 class="secondary fw-bold mb-5 fs-4  ">Laid Back in Dubai</h3>
-                                          <p class="light-gray mb-2"><span class="pe-2"><i
-                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
-                                          <span
-                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
-                                       </div>
-                                       <div
-                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
-                                          <div class="d-flex align-items-center">
-                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
-                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
-                                          </div>
-                                          <span class="user-icon"><i class="bi bi-person-check primary"></i></span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </a>
-                           </div>
-                           <div class="col-lg-4 col-6 mt-md-3">
-                              <a href="javascript:;" class="d-block">
-                                 <div class="cities-content h-100 me-3">
-                                    <div class="bg-white rounded-4 h-100">
-                                       <div class="common-card__media common-card__media-75">
-                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
-                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
-                                                class="bi bi-heart text-white"></i></a>
-                                       </div>
-                                       <div class="cities-details px-3 pb-3">
-                                          <div class="d-flex align-items-center justify-content-between my-4">
-                                             <p class="m-0 light-gray"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</p>
-                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
-                                          </div>
-                                          <h3 class="secondary fw-bold mb-5 fs-4  ">Laid Back in Dubai</h3>
-                                          <p class="light-gray mb-2"><span class="pe-2"><i
-                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
-                                          <span
-                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
-                                       </div>
-                                       <div
-                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
-                                          <div class="d-flex align-items-center">
-                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
-                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
-                                          </div>
-                                          <span class="user-icon"><i class="bi bi-person-check primary"></i></span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </a>
-                           </div>
-                           <div class="col-lg-4 col-6 mt-md-3">
-                              <a href="javascript:;" class="d-block">
-                                 <div class="cities-content h-100 me-3">
-                                    <div class="bg-white rounded-4 h-100">
-                                       <div class="common-card__media common-card__media-75">
-                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
-                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
-                                                class="bi bi-heart text-white"></i></a>
-                                       </div>
-                                       <div class="cities-details px-3 pb-3">
-                                          <div class="d-flex align-items-center justify-content-between my-4">
-                                             <p class="m-0 light-gray"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</p>
-                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
-                                          </div>
-                                          <h3 class="secondary fw-bold mb-5 fs-4  ">Laid Back in Dubai</h3>
-                                          <p class="light-gray mb-2"><span class="pe-2"><i
-                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
-                                          <span
-                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
-                                       </div>
-                                       <div
-                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
-                                          <div class="d-flex align-items-center">
-                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
-                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
-                                          </div>
-                                          <span class="user-icon"><i class="bi bi-person-check primary"></i></span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </a>
-                           </div>
-                           <div class="col-lg-4 col-6 mt-md-3">
-                              <a href="javascript:;" class="d-block">
-                                 <div class="cities-content h-100 me-3">
-                                    <div class="bg-white rounded-4 h-100">
-                                       <div class="common-card__media common-card__media-75">
-                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
-                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
-                                                class="bi bi-heart text-white"></i></a>
-                                       </div>
-                                       <div class="cities-details px-3 pb-3">
-                                          <div class="d-flex align-items-center justify-content-between my-4">
-                                             <p class="m-0 light-gray"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</p>
-                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
-                                          </div>
-                                          <h3 class="secondary fw-bold mb-5 fs-4  ">Laid Back in Dubai</h3>
-                                          <p class="light-gray mb-2"><span class="pe-2"><i
-                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
-                                          <span
-                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
-                                       </div>
-                                       <div
-                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
-                                          <div class="d-flex align-items-center">
-                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
-                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
-                                          </div>
-                                          <span class="user-icon"><i class="bi bi-person-check primary"></i></span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </a>
-                           </div>
-                           <div class="col-lg-4 col-6 mt-md-3">
-                              <a href="javascript:;" class="d-block">
-                                 <div class="cities-content h-100 me-3">
-                                    <div class="bg-white rounded-4 h-100">
-                                       <div class="common-card__media common-card__media-75">
-                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
-                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
-                                                class="bi bi-heart text-white"></i></a>
-                                       </div>
-                                       <div class="cities-details px-3 pb-3">
-                                          <div class="d-flex align-items-center justify-content-between my-4">
-                                             <p class="m-0 light-gray"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</p>
-                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
-                                          </div>
-                                          <h3 class="secondary fw-bold mb-5 fs-4  ">Laid Back in Dubai</h3>
-                                          <p class="light-gray mb-2"><span class="pe-2"><i
-                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
-                                          <span
-                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
-                                       </div>
-                                       <div
-                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
-                                          <div class="d-flex align-items-center">
-                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
-                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
-                                          </div>
-                                          <span class="user-icon"><i class="bi bi-person-check primary"></i></span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </a>
-                           </div>
-                           <div class="col-lg-4 col-6 mt-md-3">
-                              <a href="javascript:;" class="d-block">
-                                 <div class="cities-content h-100 me-3">
-                                    <div class="bg-white rounded-4 h-100">
-                                       <div class="common-card__media common-card__media-75">
-                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
-                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
-                                                class="bi bi-heart text-white"></i></a>
-                                       </div>
-                                       <div class="cities-details px-3 pb-3">
-                                          <div class="d-flex align-items-center justify-content-between my-4">
-                                             <p class="m-0 light-gray"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</p>
-                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
-                                          </div>
-                                          <h3 class="secondary fw-bold mb-5 fs-4  ">Laid Back in Dubai</h3>
-                                          <p class="light-gray mb-2"><span class="pe-2"><i
-                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
-                                          <span
-                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
-                                       </div>
-                                       <div
-                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
-                                          <div class="d-flex align-items-center">
-                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
-                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
-                                          </div>
-                                          <span class="user-icon"><i class="bi bi-person-check primary"></i></span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </a>
-                           </div>
-                           <div class="col-lg-4 col-6 mt-md-3">
-                              <a href="javascript:;" class="d-block">
-                                 <div class="cities-content h-100 me-3">
-                                    <div class="bg-white rounded-4 h-100">
-                                       <div class="common-card__media common-card__media-75">
-                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
-                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
-                                                class="bi bi-heart text-white"></i></a>
-                                       </div>
-                                       <div class="cities-details px-3 pb-3">
-                                          <div class="d-flex align-items-center justify-content-between my-4">
-                                             <p class="m-0 light-gray"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</p>
-                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
-                                          </div>
-                                          <h3 class="secondary fw-bold mb-5 fs-4  ">Laid Back in Dubai</h3>
-                                          <p class="light-gray mb-2"><span class="pe-2"><i
-                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
-                                          <span
-                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
-                                       </div>
-                                       <div
-                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
-                                          <div class="d-flex align-items-center">
-                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
-                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
-                                          </div>
-                                          <span class="user-icon"><i class="bi bi-person-check primary"></i></span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </a>
-                           </div>
-                           <div class="col-lg-4 col-6 mt-md-3">
-                              <a href="javascript:;" class="d-block">
-                                 <div class="cities-content h-100 me-3">
-                                    <div class="bg-white rounded-4 h-100">
-                                       <div class="common-card__media common-card__media-75">
-                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
-                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
-                                                class="bi bi-heart text-white"></i></a>
-                                       </div>
-                                       <div class="cities-details px-3 pb-3">
-                                          <div class="d-flex align-items-center justify-content-between my-4">
-                                             <p class="m-0 light-gray"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</p>
-                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
-                                          </div>
-                                          <h3 class="secondary fw-bold mb-5 fs-4  ">Laid Back in Dubai</h3>
-                                          <p class="light-gray mb-2"><span class="pe-2"><i
-                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
-                                          <span
-                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
-                                       </div>
-                                       <div
-                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
-                                          <div class="d-flex align-items-center">
-                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
-                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
-                                          </div>
-                                          <span class="user-icon"><i class="bi bi-person-check primary"></i></span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </a>
-                           </div>
-                           <div class="col-lg-4 col-6 mt-md-3">
-                              <a href="javascript:;" class="d-block">
-                                 <div class="cities-content h-100 me-3">
-                                    <div class="bg-white rounded-4 h-100">
-                                       <div class="common-card__media common-card__media-75">
-                                          <img class="common-card__image" src="assets/img/story_1.png" alt="story_1">
-                                          <a href="javascript:;" class="position-absolute heart-icon end-0 me-3 mt-3"><i
-                                                class="bi bi-heart text-white"></i></a>
-                                       </div>
-                                       <div class="cities-details px-3 pb-3">
-                                          <div class="d-flex align-items-center justify-content-between my-4">
-                                             <p class="m-0 light-gray"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</p>
-                                             <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
-                                          </div>
-                                          <h3 class="secondary fw-bold mb-5 fs-4  ">Laid Back in Dubai</h3>
-                                          <p class="light-gray mb-2"><span class="pe-2"><i
-                                                   class="bi bi-clock light-gray"></i></span>5 Days</p>
-                                          <span
-                                             class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill">Luxury</span>
-                                       </div>
-                                       <div
-                                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3">
-                                          <div class="d-flex align-items-center">
-                                             <img class="pe-1" src="assets/img/user.svg" alt="user">
-                                             <p class="m-0 secondary fs-6">Christeena Ann</p>
-                                          </div>
-                                          <span class="user-icon"><i class="bi bi-person-check primary"></i></span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </a>
-                           </div>
+                        <div class="explore__pagination">
+                           <ul class="explore-pagination__list list-unstyled d-flex align-items-center justify-content-end mt-3 mt-md-5">
+                              <li class="explore-pagination__item">
+                                 <button type="button" class="rounded-4 bg-white border-0 pagination-prev pagination--btn"><span class="pagination__arrow"><i class="bi bi-arrow-left-short primary"></i></span></button>
+                              </li>
+                              <li class="explore-pagination__item pagination-number--list bg-white rounded-4 mx-2">
+                                 <a href="#" class="pagination-link text-decoration-none active">1</a>
+                                 <span class="light-gray">/</span>
+                                 <a href="#" class="pagination-link text-decoration-none">8</a>
+                              </li>
+                              <li class="explore-pagination__item">
+                                 <button type="button" class="rounded-4 bg-white border-0 pagination-next pagination--btn"><span class="pagination__arrow"><i class="bi bi-arrow-right-short primary"></i></span></button>
+                              </li>
+                           </ul>
                         </div>
                      </div>
                   </div>
@@ -897,34 +942,36 @@
             <div class="container">
                <div class="know-wrap pt-0 pt-lg-5">
                   <h2 class="secondary fw-bold mb-4 fs-3">Know More about Dubai</h2>
-                  <div class="border gray-border rounded-4 p-2 p-5">
+                  <div class="border gray-border rounded-4 p-3 p-lg-5">
                      <div class="row justify-content-between pb-3 pb-lg-4 border-bottom gray-border">
-                        <div class="map-wrapper rounded-4 col-6 col-lg-4 d-flex d-lg-block">
-                           <iframe class="w-100 rounded-4"
-                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1651498.5434933475!2d55.464897955310704!3d24.741253866363763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1655975027404!5m2!1sen!2sin"
-                              width="310" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                              referrerpolicy="no-referrer-when-downgrade"></iframe>
-                           <div class="d-flex d-lg-none d-block">
-                              <p class="light-gray fs-6 m-0 pe-5">Best time to visit:</p>
-                              <div class="d-flex">
-                                 <div class="gray-border border-end pe-4">
-                                    <p class="primary fs-5 fw-bold text-uppercase m-0">NOV - FEB</p>
-                                    <p class="secondary fs-6 m-0">Dubai Shopping Festival</p>
+                        <div class="map-wrapper rounded-4 col-12 col-lg-4 d-flex d-lg-block">
+                           <div class="map-iframe">
+                              <iframe class="w-100 rounded-4 dubai-map__iframe"
+                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1651498.5434933475!2d55.464897955310704!3d24.741253866363763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1655975027404!5m2!1sen!2sin"
+                                 width="310" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+                           </div>
+                           <div class="d-flex d-lg-none d-block flex-column ps-3 uae__visit">
+                              <p class="light-gray fs-6 m-0 pe-5 uae-visit__text">Best time to visit:</p>
+                              <div class="d-flex flex-column">
+                                 <div class="mt-2">
+                                    <p class="primary fs-5 fw-bold text-uppercase m-0 uae-visit__month">NOV - FEB</p>
+                                    <p class="secondary fs-6 m-0 uae-visit__event">Dubai Shopping Festival</p>
                                  </div>
-                                 <div class="gray-border ps-4">
-                                    <p class="primary fs-5 fw-bold text-uppercase m-0">MAR - APR</p>
-                                    <p class="secondary fs-6 m-0">UAE Desert Challenge</p>
+                                 <div class="mt-2">
+                                    <p class="primary fs-5 fw-bold text-uppercase m-0 uae-visit__month">MAR - APR</p>
+                                    <p class="secondary fs-6 m-0 uae-visit__event">UAE Desert Challenge</p>
                                  </div>
                               </div>
                            </div>
                         </div>
                         <div class="col-lg-8 col-12 mt-4 mt-lg-0">
-                           <p>Iaculis viverra interdum quam leo at fringilla rutrum. Tempor, aliquam est in consectetur
+                           <p class="know-more__text">Iaculis viverra interdum quam leo at fringilla rutrum. Tempor, aliquam est in consectetur
                               orci, nunc. Viverra scelerisque arcu morbi feugiat scelerisque nunc etiam cum in. Odio
                               tellus diam ac massa nisi, imperdiet. In vitae nunc, dictumst elit egestas enim platea
                               sed. Rhoncus, magna neque venenatis euismod vitae ullamcorper molestie.</p>
 
-                           <p>Suspendisse pellentesque pulvinar duis urna, porttitor dignissim sagittis nisl orci. Est
+                           <p class="know-more__text">Suspendisse pellentesque pulvinar duis urna, porttitor dignissim sagittis nisl orci. Est
                               dolor mauris suspendisse aliquet tellus. Est, enim, cras tellus, morbi. In mauris lectus
                               odio aenean condimentum eget.</p>
                            <div class="d-flex d-lg-block d-none">
@@ -942,41 +989,41 @@
                            </div>
                         </div>
                      </div>
-                     <div class="d-flex align-items-center justify-content-between mt-3 mt-md-4">
-                        <div>
+                     <div class="row align-items-center justify-content-between mt-3 mt-md-4">
+                        <div class="col-md-4 col-12 uae__row">
                            <span class="mb-3 mb-md-4 text-center d-block know__icon">
                               <i class="bi bi-cloud"></i>
                            </span>
-                           <div class="d-flex">
+                           <div class="d-flex justify-content-center">
                               <div class="gray-border border-end pe-4">
                                  <p class="secondary fs-6 fw-bold text-uppercase m-0">NOV - APR</p>
-                                 <p class="light-gray fs-5 fw-light m-0">31°C / 14°C</p>
+                                 <p class="light-gray fs-5 fw-light m-0 uae-row--details">31°C / 14°C</p>
                               </div>
                               <div class="gray-border ps-4">
                                  <p class="secondary fs-6 fw-bold text-uppercase m-0">MAY - OCT</p>
-                                 <p class="light-gray fs-5 fw-light m-0">41°C / 23°C</p>
+                                 <p class="light-gray fs-5 fw-light m-0 uae-row--details">41°C / 23°C</p>
                               </div>
                            </div>
                         </div>
-                        <div>
+                        <div class="col-md-4 col-12 uae__row">
                            <span class="mb-3 mb-md-4 text-center d-block know__icon">
                               <i class="bi bi-cash"></i>
                            </span>
-                           <div class="d-flex">
-                              <div class="text-center">
+                           <div class="d-flex justify-content-center">
+                              <div class="text-md-center">
                                  <p class="secondary fs-6 fw-bold text-uppercase m-0">UAE Dirham</p>
-                                 <p class="light-gray fs-5 fw-light m-0">1 INR = 0.05AED</p>
+                                 <p class="light-gray fs-5 fw-light m-0 uae-row--details">1 INR = 0.05AED</p>
                               </div>
                            </div>
                         </div>
-                        <div>
+                        <div class="col-md-4 col-12 uae__row">
                            <span class="mb-3 mb-md-4 text-center d-block know__icon">
                               <i class="bi bi-clock"></i>
                            </span>
-                           <div class="d-flex">
-                              <div class="text-center">
+                           <div class="d-flex justify-content-center">
+                              <div class="text-md-center">
                                  <p class="secondary fs-6 fw-bold text-uppercase m-0">GMT +04:00</p>
-                                 <p class="light-gray fs-5 fw-light m-0">1 hour behind</p>
+                                 <p class="light-gray fs-5 fw-light m-0 uae-row--details">1 hour behind</p>
                               </div>
                            </div>
                         </div>
@@ -1066,35 +1113,43 @@
                <h2 class="secondary fw-bold mb-4 pt-0 pt-lg-5 fs-3">Explore Cities Nearby</h2>
                <div class="row justify-content-between">
                   <div class="place-content col-6 col-md-3 mt-3 mt-md-0">
-                     <a href="javascript:;" class="common-card__media position-relative d-block">
-                        <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                        <img class="common-card__image" src="assets/img/sharjah.png" alt="sharjah">
-                        <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">
-                           Sharjah</p>
+                     <a href="javascript:;" class="common-card position-relative d-block">
+                        <div class="common-card__media">
+                           <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
+                           <img class="common-card__image" src="assets/img/sharjah.png" alt="sharjah">
+                           <p class="common-card__title">
+                              Sharjah</p>
+                        </div>
                      </a>
                   </div>
                   <div class="place-content col-6 col-md-3 mt-3 mt-md-0">
-                     <a href="javascript:;" class="common-card__media position-relative d-block">
-                        <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                        <img class="common-card__image" src="assets/img/al_ain.png" alt="al_ain">
-                        <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">
-                           Al Ain</p>
+                     <a href="javascript:;" class="common-card position-relative d-block">
+                        <div class="common-card__media">
+                           <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
+                           <img class="common-card__image" src="assets/img/al_ain.png" alt="al_ain">
+                           <p class="common-card__title">
+                              Al Ain</p>
+                        </div>
                      </a>
                   </div>
                   <div class="place-content col-6 col-md-3 mt-3 mt-md-0">
-                     <a href="javascript:;" class="common-card__media position-relative d-block">
-                        <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                        <img class="common-card__image" src="assets/img/abu_dhabi2.png" alt="abu_dhabi2">
-                        <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">
-                           Abu Dhabi</p>
+                     <a href="javascript:;" class="common-card position-relative d-block">
+                        <div class="common-card__media">
+                           <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
+                           <img class="common-card__image" src="assets/img/abu_dhabi2.png" alt="abu_dhabi2">
+                           <p class="common-card__title">
+                              Abu Dhabi</p>
+                        </div>
                      </a>
                   </div>
                   <div class="place-content col-6 col-md-3 mt-3 mt-md-0">
-                     <a href="javascript:;" class="common-card__media position-relative d-block">
-                        <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-                        <img class="common-card__image" src="assets/img/kong.png" alt="kong">
-                        <p class="position-absolute bottom-0 d-block text-white ms-2 ms-md-3 mb-2 mb-md-3 fw-bold fs-5">
-                           Kong</p>
+                     <a href="javascript:;" class="common-card position-relative d-block">
+                        <div class="common-card__media">
+                           <div class="place-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
+                           <img class="common-card__image" src="assets/img/kong.png" alt="kong">
+                           <p class="common-card__title">
+                              Kong</p>
+                        </div>
                      </a>
                   </div>
                </div>
