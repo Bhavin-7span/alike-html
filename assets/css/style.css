@@ -127,7 +127,7 @@ body {
 }
 
 .serch-icon{
-    right: 20px;
+    right: 15px;
 }
 
 .serch-icon i.bi::before{
@@ -183,12 +183,14 @@ body {
 }
 
 .common-card {    
-    margin: 0 12px;
+    margin: 10px 12px;
     position: relative;
     overflow: hidden;
+    transition: 0.2s ease-in-out;
+    border-radius:12px;
 }
 
-.common-card::after{
+.common-card__media::after{
     content: "";
     position: absolute;
     top: 0px;
@@ -203,13 +205,8 @@ body {
     display: none;
 }
 
-.common-card:hover .common-card__title{
-    color: var(--bs-primary);
-}
-
 .common-title{
     font-size: 28px;
-    padding-left: 11px;
     font-weight: 700;
     margin: 0;
 }
@@ -238,9 +235,16 @@ body {
     color: #EC601D;
 }
 
+.common-card:hover .common-card__image{
+    transform: scale(1.2);
+    transition:all 0.3s;
+}
+
 .common-card__media{
     padding-bottom: 56.25%;
     overflow: hidden;
+    transition: 0.2s ease-in-out;
+    border-radius: 12px;
 }
 
 .common-card__media.common-card__media-75{
@@ -274,6 +278,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition:all 0.3s;
 }
 
 .visited--city{
@@ -334,7 +339,6 @@ ul.slick-dots{
 .visited--city__text{
     font-size: 30px;
     font-weight: 700;
-    padding-left: 12px;
 }
 
 button{
@@ -342,6 +346,10 @@ button{
     background: transparent;
     border: 1px solid grey;
     border-radius: 50%;
+}
+
+.places-slider{
+    margin: 0 -10px;
 }
 
 .places-slider .slick-prev,
@@ -385,6 +393,10 @@ li::marker {
 
 a.asia-link:hover {
     color: #EC601D;
+}
+
+.show__more.common-card__media::after{
+    display: none;
 }
 
 .show__more .common-card__image{
@@ -437,9 +449,12 @@ a.asia-link:hover {
         padding: 0px 10px;
         margin-left: 0px;
         text-transform: uppercase;
+    }  
+    .places-slider{
+        margin: 0 -8px;
     }
     .common-card{
-        margin: 0 6px;
+        margin: 10px 6px;
     }
     .common-title{
         font-size: 18px;
@@ -467,7 +482,6 @@ a.asia-link:hover {
     }
     .visited--city__text{
         font-size: 18px;
-        padding-left: 6px;
     }
     .asia-wrapper__text{
         font-size: 24px;
@@ -488,7 +502,10 @@ a.asia-link:hover {
 @media only screen and (max-width:768px){
     .common-card__title{
         font-size: 18px;
-    }    
+    } 
+    ul.slick-dots{
+        margin: 12px;
+    }
 }
 
 @media only screen and (max-width: 375px){
@@ -576,22 +593,31 @@ a.asia-link:hover {
     left: 6%;
     bottom: 30%;
 }
+
 .search__icon i.bi::before{
     font-weight: 700 !important;
 }
+
 .input-field::placeholder{
     color: var(--bs-light-gray);
     font-weight: 400;
     font-size: var(--bs-fs-6);
 }
+
+.input-group input[type='search']:focus::placeholder{
+    color: transparent;
+}
+
 .explore-sidebar__accordion .accordion-button:not(.collapsed){
     box-shadow: none;
     border-bottom: 1px solid var(--bs-gray-200);
 }
+
 .radio__group  input[type="radio"],
 .checkbox-group input[type="checkbox"] {
     opacity: 0;
 }
+
 .radio__group label
 .checkbox-group label {
     cursor: pointer;
