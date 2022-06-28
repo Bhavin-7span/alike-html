@@ -506,6 +506,9 @@ a.asia-link:hover {
     ul.slick-dots{
         margin: 12px;
     }
+    .explore-cities{
+        margin: 0 -4px !important;
+    }
 }
 
 @media only screen and (max-width: 375px){
@@ -632,6 +635,10 @@ span.hotel-type {
 
 .input-group input[type='search']:focus::placeholder{
     color: transparent;
+}
+
+.explore-cities .place-content{
+    padding: 0 !important;
 }
 
 .explore-sidebar__accordion .accordion-button:not(.collapsed){
