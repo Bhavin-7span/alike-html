@@ -184,4 +184,13 @@ $(document).ready(function () {
     $(".custom-dropdown__label span").text(currentText);
     $(".custom-dropdown").removeClass("is-active");
   });
+
+  $(".filter--btn").click(function(){
+    $(".dropdown-menu__filter").toggleClass("main");
+  });
+
+  $('.faq__wrapper .accordion-item').click(function(){
+    $(this).toggleClass('is-active');
+    $(this).siblings().removeClass('is-active');
+  });
 });
