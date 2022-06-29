@@ -616,6 +616,12 @@ a.detail__content:hover .detail-content__text{
 .hotel-card--media span{
     z-index: 1;
 }
+.hotel-action__btn{
+   transition: all .3s;
+}
+.hotel-action__btn:hover{
+    background-color: #F39153;
+}
 .common-card.hotel--card::after{
     display: none;
 }
