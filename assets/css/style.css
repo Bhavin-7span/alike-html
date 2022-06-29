@@ -21,7 +21,7 @@ body {
     --bs-rounded-4: 12px;
     --bs-gray-200: #F3F1F4 !important;
     --bs-lightpink-bg: #FDDEDA !important;
-    --bs-fs-6:14px;
+    --bs-fs-6: 14px;
     --bs-gray-border: #DCDADE !important;
 }
 .graybg-300{
@@ -225,7 +225,7 @@ body {
     color: #EC601D;
     background-color: transparent;
     border-color: transparent;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .place-tabs .nav-link.active {
@@ -285,7 +285,7 @@ body {
 }
 
 .visited--city{
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 /* Breadcrumb section : CSS Start */
@@ -340,8 +340,8 @@ ul.slick-dots{
 .slick-dots li.slick-active button{
     background-color: #EC601D;
 }
-
 /* Best Places Section: CSS END */
+
 .visited--city__text{
     font-size: 30px;
     font-weight: 700;
@@ -387,12 +387,16 @@ button{
     border: 1px solid #EC601D;
 }
 
+/* Discover Asia Section: CSS START */
 .asia-wrapper__text{
     font-size: 36px;
     font-weight: 800;
 }
 
-/* Discover Asia Section: CSS START */
+.popular-list ul{
+    margin-top: -1rem;
+}
+
 li::marker {
     color: #70677C;
 }
@@ -447,6 +451,7 @@ a.asia-link:hover {
     }
     .custom-dropdown .custom-dropdown__label{
         display: flex;
+        gap: 0.25rem;
         background-color:transparent;
         font-size: 18px;
         color: var(--bs-primary);
@@ -454,7 +459,6 @@ a.asia-link:hover {
         font-weight: 700;
         padding: 0px 10px;
         margin-left: 0px;
-        text-transform: uppercase;
     }  
     .places-slider{
         margin: 0 -8px;
@@ -485,6 +489,9 @@ a.asia-link:hover {
     .nav-tabs.place-tabs .nav-link{
         font-size: 14px;
         padding: 5px 15px;
+    }
+    .visited--city{
+        margin-top: 2.5rem;
     }
     .visited--city__text{
         font-size: 18px;
@@ -517,6 +524,12 @@ a.asia-link:hover {
     }
 }
 
+@media (max-width: 425px) {
+    .popular-list{
+        --bs-gutter-y: -2.5rem;
+    }
+}
+
 @media only screen and (max-width: 375px){
     .places-slider .slick-prev,
     .places-slider .slick-next{
@@ -532,7 +545,6 @@ a.asia-link:hover {
 
 @media only screen and (max-width: 320px){
     .common-card__title{
-        font-size: 16px;
         padding: 6px 10px;
     }
 }
@@ -540,6 +552,7 @@ a.asia-link:hover {
 /* Discover Asia Section: CSS END */
 
 /* ******** city list page CSS END ********* */
+
 
 
 
@@ -651,7 +664,7 @@ span.hotel-type {
 .input-field::placeholder{
     color: var(--bs-light-gray);
     font-weight: 400;
-    font-size: var(--bs-fs-6);
+    font-size: 16px;
 }
 
 .input-group input[type='search']:focus::placeholder{
