@@ -186,9 +186,13 @@ $(document).ready(function () {
   });
 
   $(".filter--btn").click(function(){
-    $(".dropdown-menu__filter").toggleClass("main");
+    $(".dropdown-menu__filter").addClass("main");
+  });
+  $(".sidebar-back__btn").click(function(){
+    $(".dropdown-menu__filter").removeClass("main");
   });
 
+// accordion 
   $('.faq__wrapper .accordion-item').click(function(){
     $(this).toggleClass('is-active');
     $(this).siblings().removeClass('is-active');
