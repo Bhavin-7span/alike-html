@@ -105,7 +105,10 @@ body {
     background-size: cover;
     padding: 7rem 0;
 }
-
+.container {
+    max-width: 1140px;
+    padding: 0 16px;
+}
 .cover-overlay {
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
@@ -578,6 +581,8 @@ a.asia-link:hover {
     color: #fff;
     text-align: center;
     margin-top: 20px;
+    font-weight: 700;
+    max-width: 730px;
 }
 /* City Section css END */
 
@@ -610,6 +615,12 @@ a.detail__content:hover .detail-content__text{
 /* Detail Section css END  */
 
 /* Top Hotels Details Section CSS START */
+.section--hotels{
+    padding: 5rem 0;
+}
+.hotel-info__link:hover{
+    color: var(--bs-primary) !important;
+}
 .hotel-card--media {
     padding-bottom: 100%;
 }
@@ -658,6 +669,9 @@ span.hotel-type {
 /* Top Hotels Details Section CSS END */
 
 /* Explore and Book filter CSS START */
+.explore__details{
+    padding: 5rem 0 0;
+}
 .search__icon{
     left: 6%;
     bottom: 30%;
@@ -798,7 +812,7 @@ a.close-filter {
     height: 18px;
     border: 2px solid var(--bs-gray500-border);
     background: #fff;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 .checkbox-group [type="checkbox"]:checked + label:before{
     border-color: transparent;
@@ -920,7 +934,10 @@ a.close-filter {
     transform: rotate(0deg);
 }
 .cities-details a:hover{
-    color: var(--bs-primary);
+    color: var(--bs-primary) !important;
+}
+.hotel__likes:hover {
+    color: var(--bs-light-gray) !important;
 }
 
 /* Explore and Book filter END  */
@@ -1042,6 +1059,15 @@ button.slick-arrow:hover i{
 
 /* ******** city detail page media query css start ********* */
 @media only screen and (max-width:991px){
+    .explore__details{
+        padding: 2rem 0 0;
+    }
+    .section--hotels{
+        padding: 2rem 0;
+    }
+    .cover-card__text{
+        max-width: 650px;
+    }
     .section--know{
         padding: 2rem 0;
     }

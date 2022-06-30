@@ -54,13 +54,13 @@
          <!-- City Section START -->
          <section class="section section--city position-relative">
             <div class="cover-overlay position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"></div>
-            <div class="container px-3">
+            <div class="container">
                <div
                   class="cover-content d-md-flex flex-column align-items-center justify-content-center py-sm-5 py-0 position-relative">
                   <h2 class="cover-card__title">Dubai</h2>
                   <p class="cover-card__text">“The UAE is a young modern nation of 7 Emirates,
-                     with Dubai and Abu Dhabi <span class="d-block">on the gulf and Al Ain in the Arabian
-                        desert.”</span></p>
+                     with Dubai and Abu Dhabi on the gulf and Al Ain in the Arabian
+                        desert.”</p>
                </div>
             </div>
          </section>
@@ -151,7 +151,7 @@
 
          <!-- Breadcrumb Section : START -->
 			<section class="section section--breadcrumb">
-				<div class="container px-4">
+				<div class="container">
 					<div class="breadcrumb-content">
 						<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                      <ol class="breadcrumb m-0">
@@ -166,12 +166,12 @@
 			<!-- Breadcrumb Section : END -->
 
          <!-- Top Hotels Details Section START -->
-         <section class="section section--hotels gray-bg py-5 overflow-hidden">
+         <section class="section section--hotels gray-bg overflow-hidden">
             <div class="container">
 
                <!-- Top Hotels and Stays START-->
-               <div class="hotels__details pt-3 pt-md-5">
-                  <h2 class="secondary fw-bold mb-4 fs-3">Top Hotels and Stays</h2>
+               <div class="hotels__details">
+                  <h2 class="secondary fw-bold mb-0 mb-md-4 fs-3">Top Hotels and Stays</h2>
                   <div class="row m-0">
                      <div class="col-lg-6 col-12">
                         <div class="row rounded-4 bg-white p-3 my-3 me-lg-3">
@@ -193,7 +193,7 @@
                            </div>
                            <div class="col-7 pe-0 d-md-block d-flex flex-column justify-content-between">
                               <div class="hotel__info mb-4">
-                                 <a class="d-block text-decoration-none secondary fs-5 fw-bold" href="javascript;;">The Sunshine Villa</a>
+                                 <a class="d-block text-decoration-none secondary fs-5 fw-bold hotel-info__link" href="javascript;;">The Sunshine Villa</a>
                                  <div class="d-flex hotel__rate justify-content-between align-items-end">
                                     <div class="hotel-rate__list d-none d-sm-block">
                                        <ul class="d-flex list-unstyled mb-1 p-0">
@@ -260,7 +260,7 @@
                            </div>
                            <div class="col-7 pe-0 d-md-block d-flex flex-column justify-content-between">
                               <div class="hotel__info mb-4">
-                                 <a class="d-block text-decoration-none secondary fs-5 fw-bold" href="javascript;;">Anantara The Palm Dubai Resort</a>
+                                 <a class="d-block text-decoration-none secondary fs-5 fw-bold hotel-info__link" href="javascript;;">Anantara The Palm Dubai Resort</a>
                                  <div class="d-flex hotel__rate justify-content-between align-items-end">
                                     <div class="hotel-rate__list d-none d-sm-block">
                                        <ul class="d-flex list-unstyled mb-1 p-0">
@@ -327,7 +327,7 @@
                            </div>
                            <div class="col-7 pe-0 d-md-block d-flex flex-column justify-content-between">
                               <div class="hotel__info mb-4">
-                                 <a class="d-block text-decoration-none secondary fs-5 fw-bold" href="javascript;;">Dream Inn Apartments - Marina View Tower</a>
+                                 <a class="d-block text-decoration-none secondary fs-5 fw-bold hotel-info__link" href="javascript;;">Dream Inn Apartments - Marina View Tower</a>
                                  <div class="d-flex hotel__rate justify-content-between align-items-end">
                                     <div class="hotel-rate__list d-none d-sm-block">
                                        <ul class="d-flex list-unstyled mb-1 p-0">
@@ -393,7 +393,7 @@
                            </div>
                            <div class="col-7 pe-0 d-md-block d-flex flex-column justify-content-between">
                               <div class="hotel__info mb-4">
-                                 <a class="d-block text-decoration-none secondary fs-5 fw-bold" href="javascript;;">Avani Ibnn Battuta Dubai Hotel</a>
+                                 <a class="d-block text-decoration-none secondary fs-5 fw-bold hotel-info__link" href="javascript;;">Avani Ibnn Battuta Dubai Hotel</a>
                                  <div class="d-flex hotel__rate justify-content-between align-items-end">
                                     <div class="hotel-rate__list d-none d-sm-block">
                                        <ul class="d-flex list-unstyled mb-1 p-0">
@@ -447,7 +447,7 @@
               <!-- Top Hotels and Stays END-->
 
                <!-- Explore and Book filter START-->
-               <div class="explore__details pt-5">
+               <div class="explore__details">
                   <h2 class="secondary fw-bold mb-4 fs-3">Explore and Book</h2>
                   <div class="row filter__header">
                      <div class="filter-header__search col-lg-3 col-8">
@@ -811,8 +811,7 @@
                                        </div>
                                        <div class="cities-details px-3 pb-3">
                                           <div class="d-flex align-items-center justify-content-between my-4">
-                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <span class="m-0 light-gray text-decoration-none hotel__likes"><a class="pe-2" href="#"><i class="bi bi-hand-thumbs-up light-gray"></i></a>7</span>
                                              <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
                                           </div>
                                           <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
@@ -844,8 +843,7 @@
                                        </div>
                                        <div class="cities-details px-3 pb-3">
                                           <div class="d-flex align-items-center justify-content-between my-4">
-                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <span class="m-0 light-gray text-decoration-none hotel__likes"><a class="pe-2" href="#"><i class="bi bi-hand-thumbs-up light-gray"></i></a>7</span>
                                              <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
                                           </div>
                                           <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
@@ -877,8 +875,7 @@
                                        </div>
                                        <div class="cities-details px-3 pb-3">
                                           <div class="d-flex align-items-center justify-content-between my-4">
-                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <span class="m-0 light-gray text-decoration-none hotel__likes"><a class="pe-2" href="#"><i class="bi bi-hand-thumbs-up light-gray"></i></a>7</span>
                                              <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
                                           </div>
                                           <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
@@ -910,8 +907,7 @@
                                        </div>
                                        <div class="cities-details px-3 pb-3">
                                           <div class="d-flex align-items-center justify-content-between my-4">
-                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <span class="m-0 light-gray text-decoration-none hotel__likes"><a class="pe-2" href="#"><i class="bi bi-hand-thumbs-up light-gray"></i></a>7</span>
                                              <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
                                           </div>
                                           <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
@@ -943,8 +939,7 @@
                                        </div>
                                        <div class="cities-details px-3 pb-3">
                                           <div class="d-flex align-items-center justify-content-between my-4">
-                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <span class="m-0 light-gray text-decoration-none hotel__likes"><a class="pe-2" href="#"><i class="bi bi-hand-thumbs-up light-gray"></i></a>7</span>
                                              <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
                                           </div>
                                           <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
@@ -976,8 +971,7 @@
                                        </div>
                                        <div class="cities-details px-3 pb-3">
                                           <div class="d-flex align-items-center justify-content-between my-4">
-                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <span class="m-0 light-gray text-decoration-none hotel__likes"><a class="pe-2" href="#"><i class="bi bi-hand-thumbs-up light-gray"></i></a>7</span>
                                              <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
                                           </div>
                                           <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
@@ -1009,8 +1003,7 @@
                                        </div>
                                        <div class="cities-details px-3 pb-3">
                                           <div class="d-flex align-items-center justify-content-between my-4">
-                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <span class="m-0 light-gray text-decoration-none hotel__likes"><a class="pe-2" href="#"><i class="bi bi-hand-thumbs-up light-gray"></i></a>7</span>
                                              <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
                                           </div>
                                           <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
@@ -1042,8 +1035,7 @@
                                        </div>
                                        <div class="cities-details px-3 pb-3">
                                           <div class="d-flex align-items-center justify-content-between my-4">
-                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <span class="m-0 light-gray text-decoration-none hotel__likes"><a class="pe-2" href="#"><i class="bi bi-hand-thumbs-up light-gray"></i></a>7</span>
                                              <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
                                           </div>
                                           <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
@@ -1075,8 +1067,7 @@
                                        </div>
                                        <div class="cities-details px-3 pb-3">
                                           <div class="d-flex align-items-center justify-content-between my-4">
-                                             <a href="#" class="m-0 light-gray text-decoration-none"><span class="pe-2"><i
-                                                      class="bi bi-hand-thumbs-up light-gray"></i></span>7</a>
+                                             <span class="m-0 light-gray text-decoration-none hotel__likes"><a class="pe-2" href="#"><i class="bi bi-hand-thumbs-up light-gray"></i></a>7</span>
                                              <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
                                           </div>
                                           <a href="#" class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block">Laid Back in Dubai</a>
@@ -1099,7 +1090,7 @@
                            </div>
                         </div>
                         <div class="explore__pagination">
-                           <ul class="explore-pagination__list list-unstyled d-flex align-items-center justify-content-end mt-3 mt-md-5">
+                           <ul class="explore-pagination__list list-unstyled d-flex align-items-center justify-content-end mt-3 mt-md-5 mb-0">
                               <li class="explore-pagination__item">
                                  <button type="button" class="rounded-4 bg-white border-0 pagination-prev pagination--btn"><span class="pagination__arrow"><i class="bi bi-arrow-left-short primary"></i></span></button>
                               </li>
@@ -1125,7 +1116,7 @@
          <!-- Know more Section START -->
          <section class="section section--know">
             <div class="container">
-               <div class="know-wrap pt-0 pt-lg-5">
+               <div class="know-wrap">
                   <h2 class="secondary fw-bold mb-4 fs-3">Know More about Dubai</h2>
                   <div class="border gray-border rounded-4 know__row">
                      <div class="row justify-content-between pb-3 pb-lg-4 border-bottom gray-border">
