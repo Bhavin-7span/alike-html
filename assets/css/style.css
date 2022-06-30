@@ -616,6 +616,12 @@ a.detail__content:hover .detail-content__text{
 .hotel-card--media span{
     z-index: 1;
 }
+.hotel-action__btn{
+   transition: all .3s;
+}
+.hotel-action__btn:hover{
+    background-color: #F39153;
+}
 .common-card.hotel--card::after{
     display: none;
 }
@@ -706,7 +712,7 @@ a.close-filter {
 
 .explore-sidebar__accordion .accordion-button:not(.collapsed){
     box-shadow: none;
-    border-bottom: 1px solid var(--bs-gray-200);
+    border-bottom: 1px solid var(--bs-gray-200) !important;
 }
 
 .explore-sidebar__accordion .accordion-button::after{
@@ -813,16 +819,16 @@ a.close-filter {
 }
 .checkbox-group [type="checkbox"]:checked + label:after,
 .checkbox-group [type="checkbox"]:not(:checked) + label:after {
-    content: '\F271';
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
+    background-position: center;
+    background-image: url(../img/checked.svg);
     font-size: 20px;
     position: absolute;
-    top: -2px;
+    top: 0px;
     left: 0px;
-    display: inline-block;
-    font-family: bootstrap-icons !important;
-    font-weight: 700;
-    color: #EC601D;
-    vertical-align: -0.125em;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
@@ -922,7 +928,18 @@ a.close-filter {
     left: 0;
     bottom: 0;
 }
-/* Explore and Book filter END START */
+
+.explore-sidebar__accordion .accordion-button::after{
+    transform: rotate(270deg);
+}
+.explore-sidebar__accordion .accordion-button:not(.collapsed)::after{
+    transform: rotate(0deg);
+}
+.cities-details a:hover{
+    color: var(--bs-primary);
+}
+
+/* Explore and Book filter END  */
 
 .section-hotel{
     background-color: var(--bs-gray-bg);
@@ -935,6 +952,12 @@ a.close-filter {
 }
 
 /* Know more Section CSS START */
+.section--know{
+    padding: 5rem 0;
+}
+.know__row{
+    padding: 2.5rem;
+}
 .know__icon .bi-cloud::before,
 .know__icon .bi-cash::before,
 .know__icon .bi-clock::before {
@@ -948,10 +971,21 @@ a.close-filter {
     line-height: 22px;
     font-weight: 400;
 }
+.uae-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
 /* Know more Section CSS END */
 
 /* FAQs Section css START */
 /* faqs */
+.section--faq{
+    padding: 5rem 0;
+}
+.faq__wrapper{
+    padding-bottom: 5rem;
+}
 .faq__wrapper .accordion-body {
     padding: 0 1.5rem 1rem;
 }
@@ -1056,10 +1090,20 @@ button.slick-arrow:hover i{
 
 /* ******** city detail page media query css start ********* */
 @media only screen and (max-width:991px){
+    .section--know{
+        padding: 2rem 0;
+    }
+    .know__row{
+        padding: 0rem;
+        border: none !important;
+    }
     .search__icon{
         left: auto;
         right: 5%;
         bottom: 23%;
+    }
+    .hotel-action__btn {
+        padding: 14px 32px !important;
     }
     .explore-sidebar__input input.form-control {
         padding: 10px 12px !important;
@@ -1105,11 +1149,11 @@ button.slick-arrow:hover i{
         margin-right: 10px;
         max-width: 100%;
     }
-    .explore-sidebar__accordion .accordion-button:not(.collapsed)::after{
-        transform: rotate(180deg);
+    .section--faq{
+        padding: 2rem 0;
     }
-    .explore-sidebar__accordion .accordion-button::after{
-        transform: rotate(260deg);
+    .faq__wrapper{
+        padding-bottom: 2rem;
     }
 }
 @media only screen and (max-width:575px){

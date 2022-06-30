@@ -440,9 +440,8 @@
                         </div>
                      </div>
                   </div>
-                  <div class="text-center mt-3 mt-md-5">
-                     <button type="button"
-                        class="text-white fw-normal fs-6 rounded-3 primary-bg border-0 shadow-none px-4 py-3">Show All Hotels</button>
+                  <div class="text-center mt-3 mt-md-5 hotel__action">
+                     <button type="button" class="text-white fw-normal fs-6 rounded-3 primary-bg border-0 shadow-none px-4 py-3 hotel-action__btn">Show All Hotels</button>
                   </div>
                </div>
               <!-- Top Hotels and Stays END-->
@@ -789,7 +788,7 @@
                                  </div>
                                </div>
                            </div>
-                           <div class="explore-sidebar__footer d-flex align-content-center py-2">
+                           <div class="explore-sidebar__footer d-flex align-content-center py-2 d-none">
                               <div class="col-6 ps-3 pe-1">
                                  <button type="button" class="sidebar-back__btn graybg-300 border-0 rounded-3 w-100 light-gray py-2">Back</button>
                               </div>
@@ -1124,11 +1123,11 @@
          <!-- Top Hotels Details Section END -->
 
          <!-- Know more Section START -->
-         <section class="section section--know py-5">
+         <section class="section section--know">
             <div class="container">
                <div class="know-wrap pt-0 pt-lg-5">
                   <h2 class="secondary fw-bold mb-4 fs-3">Know More about Dubai</h2>
-                  <div class="border gray-border rounded-4 p-3 p-lg-5">
+                  <div class="border gray-border rounded-4 know__row">
                      <div class="row justify-content-between pb-3 pb-lg-4 border-bottom gray-border">
                         <div class="map-wrapper rounded-4 col-12 col-lg-4 d-flex d-lg-block">
                            <div class="map-iframe">
@@ -1193,7 +1192,7 @@
                         </div>
                         <div class="col-md-4 col-12 uae__row">
                            <span class="mb-3 mb-md-4 text-center d-block know__icon">
-                              <i class="bi bi-cash"></i>
+                              <img class="uae-img" src="assets/img/uae_dirham.svg" alt="uae_dirham">
                            </span>
                            <div class="d-flex justify-content-center">
                               <div class="text-md-center">
@@ -1221,11 +1220,11 @@
          <!-- Know more Section END -->
 
          <!-- FAQs Section START -->
-         <section class="section section--faq gray-bg py-5">
+         <section class="section section--faq gray-bg">
             <div class="container">
 
                <!-- faqs -->
-               <div class="faq__wrapper my-4 my-md-5 pt-0 pt-lg-5">
+               <div class="faq__wrapper">
                   <h2 class="secondary fw-bold mb-4 fs-3">Frequently Asked Questions</h2>
                   <div class="accordion" id="accordionExample">
                      <div class="accordion-item is-active gray-border border rounded-4 mt-3">
@@ -1296,7 +1295,7 @@
                </div>
 
                <!-- Explore Cities Nearby START-->
-               <h2 class="secondary fw-bold pt-0 pt-lg-5 fs-3">Explore Cities Nearby</h2>
+               <h2 class="secondary fw-bold fs-3">Explore Cities Nearby</h2>
                <div class="row justify-content-between explore-cities">
                   <div class="place-content col-6 col-md-3 mt-md-0">
                      <a href="javascript:;" class="common-card position-relative d-block">

@@ -185,10 +185,15 @@ $(document).ready(function () {
     $(".custom-dropdown").removeClass("is-active");
   });
 
+  // filter button open & close
   $(".filter--btn").click(function(){
-    $(".dropdown-menu__filter").toggleClass("main");
+    $(".dropdown-menu__filter").addClass("main");
+  });
+  $(".sidebar-back__btn").click(function(){
+    $(".dropdown-menu__filter").removeClass("main");
   });
 
+// accordion item open to show border
   $('.faq__wrapper .accordion-item').click(function(){
     $(this).toggleClass('is-active');
     $(this).siblings().removeClass('is-active');
