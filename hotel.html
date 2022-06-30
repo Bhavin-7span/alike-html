@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Required meta tags for responsive -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Favicon and touch icons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon.png"
+    />
+    <meta name="misapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:site" content="@twitter_username" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="R" />
+    <meta property="fb:admins" content="Facebook numeric ID" />
+    <!-- gmail verification -->
+    <meta name="google-site-verification" content="" />
+    <!-- Website title -->
+    <title>alike | Hotel List Page</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- bootstrap cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <!-- jQuery (necessary for jQuery plugins) -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- slick slider css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- slick slider js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </head>
+  <body>
+    <section class="section section-hotel">
+      <div class="container">
+        <div class="explore__details pt-5">
+          <div class="explore__row row">
+            <div class="col-lg-3 explore__sidebar d-lg-block d-none">
+              <div class="explore-sidebar__menu rounded-4 bg-white mt-3">
+                <div class="map-wrapper rounded-4 col-12 d-flex d-lg-block">
+                  <div class="map-iframe">
+                     <iframe class="w-100 h-100 rounded-4 dubai-map__iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1651498.5434933475!2d55.464897955310704!3d24.741253866363763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1655975027404!5m2!1sen!2sin"
+                        width="310" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+                <div class="map-button">
+                  <button>
+                    Go To Map
+                  </button>
+                </div>
+                <div class="explore-clear">
+                  <div class="py-3 d-flex align-items-center justify-content-end">
+                    <button
+                      type="button"
+                      class="explore-clear__btn text-end primary fw-bold fs-6 d-inline-flex align-items-center justify-content-around text-decoration-none border primary-border rounded-3 px-4 py-1"
+                      id="clear__all"
+                    >
+                      <span class="clear-icon pe-2 pt-1"
+                        ><i class="bi bi-x primary"></i></span
+                      >Clear All
+                    </button>
+                  </div>
+                </div>
+                <div class="explore-sidebar__accordion">
+                  <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item border-0">
+                      <h2
+                        class="accordion-header"
+                        id="panelsStayOpen-headingOne"
+                      >
+                        <button
+                          class="accordion-button bg-transparent secondary fw-bold"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseOne"
+                          aria-expanded="true"
+                          aria-controls="panelsStayOpen-collapseOne"
+                        >
+                          Property Type
+                        </button>
+                      </h2>
+                      <div
+                        id="panelsStayOpen-collapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne"
+                      >
+                        <div class="accordion-body">
+                          <div
+                            class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                          >
+                            <div class="input-field">
+                              <input
+                                type="checkbox"
+                                name="tour_type"
+                                id="individual_experience"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="individual_experience"
+                                >All</label
+                              >
+                            </div>
+                            <span class="fs-6">(14)</span>
+                          </div>
+                          <div
+                            class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                          >
+                            <div class="input-field">
+                              <input
+                                type="checkbox"
+                                name="tour_type"
+                                id="trip_story"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="trip_story"
+                                >Hotel</label
+                              >
+                            </div>
+                            <span class="fs-6">(14)</span>
+                          </div>
+                          <div
+                            class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                          >
+                            <div class="input-field">
+                              <input
+                                type="checkbox"
+                                name="tour_type"
+                                id="trip_story"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="trip_story"
+                                >Villa</label
+                              >
+                            </div>
+                            <span class="fs-6">(14)</span>
+                          </div>
+                          <div
+                            class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                          >
+                            <div class="input-field">
+                              <input
+                                type="checkbox"
+                                name="tour_type"
+                                id="trip_story"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="trip_story"
+                                >Resort</label
+                              >
+                            </div>
+                            <span class="fs-6">(14)</span>
+                          </div>
+                          <div
+                            class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                          >
+                            <div class="input-field">
+                              <input
+                                type="checkbox"
+                                name="tour_type"
+                                id="trip_story"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="trip_story"
+                                >Apartment</label
+                              >
+                            </div>
+                            <span class="fs-6">(14)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                      <h2
+                        class="accordion-header"
+                        id="panelsStayOpen-headingTwo"
+                      >
+                        <button
+                          class="accordion-button collapsed bg-transparent secondary fw-bold"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseTwo"
+                        >
+                          Tour Category
+                        </button>
+                      </h2>
+                      <div
+                        id="panelsStayOpen-collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo"
+                      >
+                        <div class="accordion-body">
+                          <div
+                            class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                            role="group"
+                            aria-label=""
+                          >
+                            <div class="input-field">
+                              <input
+                                type="checkbox"
+                                class=""
+                                id="attractions"
+                                name="attractions"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="attractions"
+                                >Attractions</label
+                              >
+                            </div>
+                            <span class="secondary fs-6">(14)</span>
+                          </div>
+                          <div
+                            class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                            role="group"
+                            aria-label=""
+                          >
+                            <div class="input-field">
+                              <input
+                                type="checkbox"
+                                class=""
+                                id="theme_parks"
+                                name="theme_parks"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="theme_parks"
+                                >Theme Parks</label
+                              >
+                            </div>
+                            <span class="secondary fs-6">(14)</span>
+                          </div>
+                          <div
+                            class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                            role="group"
+                            aria-label=""
+                          >
+                            <div class="input-field">
+                              <input
+                                type="checkbox"
+                                class=""
+                                id="activities"
+                                name="activities"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="activities"
+                                >Activities</label
+                              >
+                            </div>
+                            <span class="secondary fs-6">(14)</span>
+                          </div>
+                          <div
+                            class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                            role="group"
+                            aria-label=""
+                            name="tours"
+                          >
+                            <div class="input-field">
+                              <input type="checkbox" class="" id="tours" />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="tours"
+                                >Tours</label
+                              >
+                            </div>
+                            <span class="secondary fs-6">(14)</span>
+                          </div>
+                          <div
+                            class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                            role="group"
+                            aria-label=""
+                            name="commute"
+                          >
+                            <div class="input-field">
+                              <input type="checkbox" class="" id="commute" />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="commute"
+                                >Commute</label
+                              >
+                            </div>
+                            <span class="secondary fs-6">(14)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                      <h2
+                        class="accordion-header"
+                        id="panelsStayOpen-headingThree"
+                      >
+                        <button
+                          class="accordion-button collapsed bg-transparent secondary fw-bold"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseThree"
+                        >
+                          Price
+                        </button>
+                      </h2>
+                      <div
+                        id="panelsStayOpen-collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree"
+                      >
+                        <div class="accordion-body">
+                          <div
+                            class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                            role="group"
+                            aria-label=""
+                          >
+                            <div class="input-field">
+                              <input
+                                type="checkbox"
+                                class=""
+                                id="price1"
+                                name="price1"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="price1"
+                                >90$ - 90$</label
+                              >
+                            </div>
+                            <span class="secondary fs-6">(14)</span>
+                          </div>
+                          <div
+                            class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                            role="group"
+                            aria-label=""
+                          >
+                            <div class="input-field">
+                              <input
+                                type="checkbox"
+                                class=""
+                                id="price2"
+                                name="price2"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="price2"
+                                >90$ - 90$</label
+                              >
+                            </div>
+                            <span class="secondary fs-6">(14)</span>
+                          </div>
+                          <div
+                            class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                            role="group"
+                            aria-label=""
+                          >
+                            <div class="input-field">
+                              <input
+                                type="checkbox"
+                                class=""
+                                id="price3"
+                                name="price3"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="price3"
+                                >90$ - 90$</label
+                              >
+                            </div>
+                            <span class="secondary fs-6">(14)</span>
+                          </div>
+                          <div
+                            class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                            role="group"
+                            aria-label=""
+                          >
+                            <div class="input-field">
+                              <input
+                                type="checkbox"
+                                class=""
+                                id="price4"
+                                name="price4"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="price4"
+                                >90$ - 90$</label
+                              >
+                            </div>
+                            <span class="secondary fs-6">(14)</span>
+                          </div>
+                          <div
+                            class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                            role="group"
+                            aria-label=""
+                          >
+                            <div class="input-field">
+                              <input
+                                type="checkbox"
+                                class=""
+                                id="price5"
+                                name="price5"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="price5"
+                                >90$ - 90$</label
+                              >
+                            </div>
+                            <span class="secondary fs-6">(14)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9 explore__maincontent">
+              <div class="row filter__header">
+                <div class="filter-header__show col-lg-8">
+                  <div class="filter-header__link">
+                    <span
+                      href="javascript:;"
+                      class="rounded-4 lightpink-bg danger-light mb-1"
+                      >Price - Low to High
+                      <a href="#" class="close-filter text-decoration-none"
+                        ><i class="bi bi-x danger-light"></i></a
+                    ></span>
+                    <span class="rounded-4 orange-bg primary mb-1"
+                      >Trip Stories
+                      <a
+                        href="javascript:;"
+                        class="close-filter text-decoration-none"
+                        ><i class="bi bi-x primary"></i></a
+                    ></span>
+                    <span class="rounded-4 orange-bg primary mb-1"
+                      >Attractions
+                      <a
+                        href="javascript:;"
+                        class="close-filter text-decoration-none"
+                        ><i class="bi bi-x primary"></i></a
+                    ></span>
+                    <span class="rounded-4 orange-bg primary mb-1"
+                      >90$ - 90$
+                      <a
+                        href="javascript:;"
+                        class="close-filter text-decoration-none"
+                        ><i class="bi bi-x primary"></i></a
+                    ></span>
+                  </div>
+                </div>
+                <div class="filter-header__sorting col-lg-2 col-4 ps-0">
+                  <div class="d-flex justify-content-end">
+                    <div
+                      class="explore-filter--dropdown me-2 d-lg-none position-relative"
+                    >
+                      <a
+                        class="btn btn-secondary dropdown-toggle bg-white rounded-4 light-gray border-0 py-3 w-100 filter--btn"
+                        href="javascript:;"
+                        role="button"
+                        ><span class="pe-lg-1 sorting-icon"
+                          ><i class="bi bi-funnel light-gray"></i
+                        ></span>
+                      </a>
+                      <div
+                        class="col-lg-3 explore__sidebar dropdown-menu__filter d-none"
+                      >
+                        <div class="explore-sidebar__menu rounded-4 bg-white mt-3">
+                            <button type="button" class="explore-clear__btn text-end primary fw-bold fs-6 d-inline-flex align-items-center justify-content-around text-decoration-none border primary-border rounded-3 px-4 py-1" id="clear__all">
+                              <span class="clear-icon pe-2 pt-1"><i class="bi bi-x primary"></i></span>Clear All
+                            </button>
+                          <div class="explore-sidebar__accordion">
+                            <div
+                              class="accordion"
+                              id="accordionPanelsStayOpenExample"
+                            >
+                              <div class="accordion-item border-0">
+                                <h2
+                                  class="accordion-header"
+                                  id="panelsStayOpen-headingOne"
+                                >
+                                  <button
+                                    class="accordion-button bg-transparent secondary fw-bold"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne"
+                                  >
+                                    Tour Type
+                                  </button>
+                                </h2>
+                                <div
+                                  id="panelsStayOpen-collapseOne"
+                                  class="accordion-collapse collapse show"
+                                  aria-labelledby="panelsStayOpen-headingOne"
+                                >
+                                  <div class="accordion-body">
+                                    <div
+                                      class="radio__group mt-2 position-relative d-flex align-items-center justify-content-between"
+                                    >
+                                      <div class="input-field">
+                                        <input
+                                          type="radio"
+                                          name="tour_type1"
+                                          id="individual_experience1"
+                                        />
+                                        <label
+                                          class="secondary fs-6 fw-normal"
+                                          for="individual_experience1"
+                                          >Individual Experience</label
+                                        >
+                                      </div>
+                                      <span class="secondary fs-6">(14)</span>
+                                    </div>
+                                    <div
+                                      class="radio__group mt-2 position-relative d-flex align-items-center justify-content-between"
+                                    >
+                                      <div class="input-field">
+                                        <input
+                                          type="radio"
+                                          name="tour_type1"
+                                          id="trip_story1"
+                                        />
+                                        <label
+                                          class="secondary fs-6 fw-normal"
+                                          for="trip_story1"
+                                          >Trip Story</label
+                                        >
+                                      </div>
+                                      <span class="secondary fs-6">(14)</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item border-0">
+                                <h2
+                                  class="accordion-header"
+                                  id="panelsStayOpen-headingTwo"
+                                >
+                                  <button
+                                    class="accordion-button collapsed bg-transparent secondary fw-bold"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo"
+                                  >
+                                    Tour Category
+                                  </button>
+                                </h2>
+                                <div
+                                  id="panelsStayOpen-collapseTwo"
+                                  class="accordion-collapse collapse"
+                                  aria-labelledby="panelsStayOpen-headingTwo"
+                                >
+                                  <div class="accordion-body">
+                                    <div
+                                      class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                                      role="group"
+                                      aria-label=""
+                                    >
+                                      <div class="input-field">
+                                        <input
+                                          type="checkbox"
+                                          class=""
+                                          id="attractions1"
+                                          name="attractions1"
+                                        />
+                                        <label
+                                          class="secondary fs-6 fw-normal"
+                                          for="attractions1"
+                                          >Attractions</label
+                                        >
+                                      </div>
+                                      <span class="secondary fs-6">(14)</span>
+                                    </div>
+                                    <div
+                                      class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                                      role="group"
+                                      aria-label=""
+                                    >
+                                      <div class="input-field">
+                                        <input
+                                          type="checkbox"
+                                          class=""
+                                          id="theme_parks1"
+                                          name="theme_parks1"
+                                        />
+                                        <label
+                                          class="secondary fs-6 fw-normal"
+                                          for="theme_parks1"
+                                          >Theme Parks</label
+                                        >
+                                      </div>
+                                      <span class="secondary fs-6">(14)</span>
+                                    </div>
+                                    <div
+                                      class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                                      role="group"
+                                      aria-label=""
+                                    >
+                                      <div class="input-field">
+                                        <input
+                                          type="checkbox"
+                                          class=""
+                                          id="activities1"
+                                          name="activities1"
+                                        />
+                                        <label
+                                          class="secondary fs-6 fw-normal"
+                                          for="activities1"
+                                          >Activities</label
+                                        >
+                                      </div>
+                                      <span class="secondary fs-6">(14)</span>
+                                    </div>
+                                    <div
+                                      class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                                      role="group"
+                                      aria-label=""
+                                    >
+                                      <div class="input-field">
+                                        <input
+                                          type="checkbox"
+                                          class=""
+                                          id="tours1"
+                                          name="tours1"
+                                        />
+                                        <label
+                                          class="secondary fs-6 fw-normal"
+                                          for="tours1"
+                                          >Tours</label
+                                        >
+                                      </div>
+                                      <span class="secondary fs-6">(14)</span>
+                                    </div>
+                                    <div
+                                      class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                                      role="group"
+                                      aria-label=""
+                                    >
+                                      <div class="input-field">
+                                        <input
+                                          type="checkbox"
+                                          class=""
+                                          id="commute1"
+                                          name="commute1"
+                                        />
+                                        <label
+                                          class="secondary fs-6 fw-normal"
+                                          for="commute1"
+                                          >Commute</label
+                                        >
+                                      </div>
+                                      <span class="secondary fs-6">(14)</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item border-0">
+                                <h2
+                                  class="accordion-header"
+                                  id="panelsStayOpen-headingThree"
+                                >
+                                  <button
+                                    class="accordion-button collapsed bg-transparent secondary fw-bold"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree"
+                                  >
+                                    Price
+                                  </button>
+                                </h2>
+                                <div
+                                  id="panelsStayOpen-collapseThree"
+                                  class="accordion-collapse collapse"
+                                  aria-labelledby="panelsStayOpen-headingThree"
+                                >
+                                  <div class="accordion-body">
+                                    <div
+                                      class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                                      role="group"
+                                      aria-label=""
+                                    >
+                                      <div class="input-field">
+                                        <input
+                                          type="checkbox"
+                                          class=""
+                                          id="price_1"
+                                          name="price_1"
+                                        />
+                                        <label
+                                          class="secondary fs-6 fw-normal"
+                                          for="price_1"
+                                          >90$ - 90$</label
+                                        >
+                                      </div>
+                                      <span class="secondary fs-6">(14)</span>
+                                    </div>
+                                    <div
+                                      class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                                      role="group"
+                                      aria-label=""
+                                    >
+                                      <div class="input-field">
+                                        <input
+                                          type="checkbox"
+                                          class=""
+                                          id="price_2"
+                                          name="price_2"
+                                        />
+                                        <label
+                                          class="secondary fs-6 fw-normal"
+                                          for="price_2"
+                                          >90$ - 90$</label
+                                        >
+                                      </div>
+    
+                                      <span class="secondary fs-6">(14)</span>
+                                    </div>
+                                    <div
+                                      class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                                      role="group"
+                                      aria-label=""
+                                    >
+                                      <div class="input-field">
+                                        <input
+                                          type="checkbox"
+                                          class=""
+                                          id="price_3"
+                                          name="price_3"
+                                        />
+                                        <label
+                                          class="secondary fs-6 fw-normal"
+                                          for="price_3"
+                                          >90$ - 90$</label
+                                        >
+                                      </div>
+                                      <span class="secondary fs-6">(14)</span>
+                                    </div>
+                                    <div
+                                      class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                                      role="group"
+                                      aria-label=""
+                                    >
+                                      <div class="input-field">
+                                        <input
+                                          type="checkbox"
+                                          class=""
+                                          id="price_4"
+                                          name="price_4"
+                                        />
+                                        <label
+                                          class="secondary fs-6 fw-normal"
+                                          for="price_4"
+                                          >90$ - 90$</label
+                                        >
+                                      </div>
+                                      <span class="secondary fs-6">(14)</span>
+                                    </div>
+                                    <div
+                                      class="checkbox-group mt-2 position-relative d-flex align-items-center justify-content-between"
+                                      role="group"
+                                      aria-label=""
+                                    >
+                                      <div class="input-field">
+                                        <input
+                                          type="checkbox"
+                                          class=""
+                                          id="price_5"
+                                          name="price_5"
+                                        />
+                                        <label
+                                          class="secondary fs-6 fw-normal"
+                                          for="price_5"
+                                          >90$ - 90$</label
+                                        >
+                                      </div>
+                                      <span class="secondary fs-6">(14)</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown sort--dropdown">
+                      <a
+                        class="btn btn-secondary dropdown-toggle bg-white rounded-4 light-gray border-0 py-3 w-100 sorting--btn"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        ><span class="pe-lg-1 sorting-icon"
+                          ><i class="bi bi-sort-down-alt light-gray"></i
+                        ></span>
+                        Sort
+                      </a>
+                      <ul
+                        class="dropdown-menu border-white rounded-4"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <div class="radio__group mt-2 position-relative">
+                              <input
+                                type="radio"
+                                name="sort_filter"
+                                id="low_to_high"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="low_to_high"
+                                >Price - Low to High</label
+                              >
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <div class="radio__group mt-2 position-relative">
+                              <input
+                                type="radio"
+                                name="sort_filter"
+                                id="high_to_low"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="high_to_low"
+                                >Price - High to Low</label
+                              >
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <div class="radio__group mt-2 position-relative">
+                              <input
+                                type="radio"
+                                name="sort_filter"
+                                id="most_popular"
+                              />
+                              <label
+                                class="secondary fs-6 fw-normal"
+                                for="most_popular"
+                                >Most Popular</label
+                              >
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <div class="radio__group mt-2 position-relative">
+                              <input type="radio" name="sort_filter" id="by_name" />
+                              <label class="secondary fs-6 fw-normal" for="by_name"
+                                >By Name</label
+                              >
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-sm-6 col-12 mt-3">
+                  <a href="javascript:;" class="d-block">
+                    <div class="cities-content h-100">
+                      <div class="bg-white rounded-4 h-100">
+                        <div class="common-card__media common-card__media-75">
+                          <img
+                            class="common-card__image"
+                            src="assets/img/story_1.png"
+                            alt="story_1"
+                          />
+                          <a
+                            href="javascript:;"
+                            class="position-absolute heart-icon end-0 me-3 mt-3"
+                            ><i class="bi bi-heart text-white"></i
+                          ></a>
+                        </div>
+                        <div class="cities-details px-3 pb-3">
+                          <div
+                            class="d-flex align-items-center justify-content-between my-4"
+                          >
+                            <a
+                              href="#"
+                              class="m-0 light-gray text-decoration-none"
+                              ><span class="pe-2"
+                                ><i
+                                  class="bi bi-hand-thumbs-up light-gray"
+                                ></i></span
+                              >7</a
+                            >
+                            <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
+                          </div>
+                          <a
+                            href="#"
+                            class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block"
+                            >Laid Back in Dubai</a
+                          >
+                          <p class="light-gray mb-2">
+                            <span class="pe-2"
+                              ><i class="bi bi-clock light-gray"></i></span
+                            >5 Days
+                          </p>
+                          <span
+                            class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill"
+                            >Luxury</span
+                          >
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3"
+                        >
+                          <a
+                            href="#"
+                            class="d-flex align-items-center text-decoration-none"
+                          >
+                            <img
+                              class="pe-1"
+                              src="assets/img/user.svg"
+                              alt="user"
+                            />
+                            <p class="m-0 secondary fs-6">Christeena Ann</p>
+                          </a>
+                          <a href="#" class="user-icon text-decoration-none"
+                            ><i class="bi bi-person-check primary"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 mt-3">
+                  <a href="javascript:;" class="d-block">
+                    <div class="cities-content h-100">
+                      <div class="bg-white rounded-4 h-100">
+                        <div class="common-card__media common-card__media-75">
+                          <img
+                            class="common-card__image"
+                            src="assets/img/story_1.png"
+                            alt="story_1"
+                          />
+                          <a
+                            href="javascript:;"
+                            class="position-absolute heart-icon end-0 me-3 mt-3"
+                            ><i class="bi bi-heart text-white"></i
+                          ></a>
+                        </div>
+                        <div class="cities-details px-3 pb-3">
+                          <div
+                            class="d-flex align-items-center justify-content-between my-4"
+                          >
+                            <a
+                              href="#"
+                              class="m-0 light-gray text-decoration-none"
+                              ><span class="pe-2"
+                                ><i
+                                  class="bi bi-hand-thumbs-up light-gray"
+                                ></i></span
+                              >7</a
+                            >
+                            <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
+                          </div>
+                          <a
+                            href="#"
+                            class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block"
+                            >Laid Back in Dubai</a
+                          >
+                          <p class="light-gray mb-2">
+                            <span class="pe-2"
+                              ><i class="bi bi-clock light-gray"></i></span
+                            >5 Days
+                          </p>
+                          <span
+                            class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill"
+                            >Luxury</span
+                          >
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3"
+                        >
+                          <a
+                            href="#"
+                            class="d-flex align-items-center text-decoration-none"
+                          >
+                            <img
+                              class="pe-1"
+                              src="assets/img/user.svg"
+                              alt="user"
+                            />
+                            <p class="m-0 secondary fs-6">Christeena Ann</p>
+                          </a>
+                          <a href="#" class="user-icon text-decoration-none"
+                            ><i class="bi bi-person-check primary"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 mt-3">
+                  <a href="javascript:;" class="d-block">
+                    <div class="cities-content h-100">
+                      <div class="bg-white rounded-4 h-100">
+                        <div class="common-card__media common-card__media-75">
+                          <img
+                            class="common-card__image"
+                            src="assets/img/story_1.png"
+                            alt="story_1"
+                          />
+                          <a
+                            href="javascript:;"
+                            class="position-absolute heart-icon end-0 me-3 mt-3"
+                            ><i class="bi bi-heart text-white"></i
+                          ></a>
+                        </div>
+                        <div class="cities-details px-3 pb-3">
+                          <div
+                            class="d-flex align-items-center justify-content-between my-4"
+                          >
+                            <a
+                              href="#"
+                              class="m-0 light-gray text-decoration-none"
+                              ><span class="pe-2"
+                                ><i
+                                  class="bi bi-hand-thumbs-up light-gray"
+                                ></i></span
+                              >7</a
+                            >
+                            <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
+                          </div>
+                          <a
+                            href="#"
+                            class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block"
+                            >Laid Back in Dubai</a
+                          >
+                          <p class="light-gray mb-2">
+                            <span class="pe-2"
+                              ><i class="bi bi-clock light-gray"></i></span
+                            >5 Days
+                          </p>
+                          <span
+                            class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill"
+                            >Luxury</span
+                          >
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3"
+                        >
+                          <a
+                            href="#"
+                            class="d-flex align-items-center text-decoration-none"
+                          >
+                            <img
+                              class="pe-1"
+                              src="assets/img/user.svg"
+                              alt="user"
+                            />
+                            <p class="m-0 secondary fs-6">Christeena Ann</p>
+                          </a>
+                          <a href="#" class="user-icon text-decoration-none"
+                            ><i class="bi bi-person-check primary"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 mt-3">
+                  <a href="javascript:;" class="d-block">
+                    <div class="cities-content h-100">
+                      <div class="bg-white rounded-4 h-100">
+                        <div class="common-card__media common-card__media-75">
+                          <img
+                            class="common-card__image"
+                            src="assets/img/story_1.png"
+                            alt="story_1"
+                          />
+                          <a
+                            href="javascript:;"
+                            class="position-absolute heart-icon end-0 me-3 mt-3"
+                            ><i class="bi bi-heart text-white"></i
+                          ></a>
+                        </div>
+                        <div class="cities-details px-3 pb-3">
+                          <div
+                            class="d-flex align-items-center justify-content-between my-4"
+                          >
+                            <a
+                              href="#"
+                              class="m-0 light-gray text-decoration-none"
+                              ><span class="pe-2"
+                                ><i
+                                  class="bi bi-hand-thumbs-up light-gray"
+                                ></i></span
+                              >7</a
+                            >
+                            <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
+                          </div>
+                          <a
+                            href="#"
+                            class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block"
+                            >Laid Back in Dubai</a
+                          >
+                          <p class="light-gray mb-2">
+                            <span class="pe-2"
+                              ><i class="bi bi-clock light-gray"></i></span
+                            >5 Days
+                          </p>
+                          <span
+                            class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill"
+                            >Luxury</span
+                          >
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3"
+                        >
+                          <a
+                            href="#"
+                            class="d-flex align-items-center text-decoration-none"
+                          >
+                            <img
+                              class="pe-1"
+                              src="assets/img/user.svg"
+                              alt="user"
+                            />
+                            <p class="m-0 secondary fs-6">Christeena Ann</p>
+                          </a>
+                          <a href="#" class="user-icon text-decoration-none"
+                            ><i class="bi bi-person-check primary"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 mt-3 d-sm-block d-none">
+                  <a href="javascript:;" class="d-block">
+                    <div class="cities-content h-100">
+                      <div class="bg-white rounded-4 h-100">
+                        <div class="common-card__media common-card__media-75">
+                          <img
+                            class="common-card__image"
+                            src="assets/img/story_1.png"
+                            alt="story_1"
+                          />
+                          <a
+                            href="javascript:;"
+                            class="position-absolute heart-icon end-0 me-3 mt-3"
+                            ><i class="bi bi-heart text-white"></i
+                          ></a>
+                        </div>
+                        <div class="cities-details px-3 pb-3">
+                          <div
+                            class="d-flex align-items-center justify-content-between my-4"
+                          >
+                            <a
+                              href="#"
+                              class="m-0 light-gray text-decoration-none"
+                              ><span class="pe-2"
+                                ><i
+                                  class="bi bi-hand-thumbs-up light-gray"
+                                ></i></span
+                              >7</a
+                            >
+                            <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
+                          </div>
+                          <a
+                            href="#"
+                            class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block"
+                            >Laid Back in Dubai</a
+                          >
+                          <p class="light-gray mb-2">
+                            <span class="pe-2"
+                              ><i class="bi bi-clock light-gray"></i></span
+                            >5 Days
+                          </p>
+                          <span
+                            class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill"
+                            >Luxury</span
+                          >
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3"
+                        >
+                          <a
+                            href="#"
+                            class="d-flex align-items-center text-decoration-none"
+                          >
+                            <img
+                              class="pe-1"
+                              src="assets/img/user.svg"
+                              alt="user"
+                            />
+                            <p class="m-0 secondary fs-6">Christeena Ann</p>
+                          </a>
+                          <a href="#" class="user-icon text-decoration-none"
+                            ><i class="bi bi-person-check primary"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 mt-3 d-sm-block d-none">
+                  <a href="javascript:;" class="d-block">
+                    <div class="cities-content h-100">
+                      <div class="bg-white rounded-4 h-100">
+                        <div class="common-card__media common-card__media-75">
+                          <img
+                            class="common-card__image"
+                            src="assets/img/story_1.png"
+                            alt="story_1"
+                          />
+                          <a
+                            href="javascript:;"
+                            class="position-absolute heart-icon end-0 me-3 mt-3"
+                            ><i class="bi bi-heart text-white"></i
+                          ></a>
+                        </div>
+                        <div class="cities-details px-3 pb-3">
+                          <div
+                            class="d-flex align-items-center justify-content-between my-4"
+                          >
+                            <a
+                              href="#"
+                              class="m-0 light-gray text-decoration-none"
+                              ><span class="pe-2"
+                                ><i
+                                  class="bi bi-hand-thumbs-up light-gray"
+                                ></i></span
+                              >7</a
+                            >
+                            <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
+                          </div>
+                          <a
+                            href="#"
+                            class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block"
+                            >Laid Back in Dubai</a
+                          >
+                          <p class="light-gray mb-2">
+                            <span class="pe-2"
+                              ><i class="bi bi-clock light-gray"></i></span
+                            >5 Days
+                          </p>
+                          <span
+                            class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill"
+                            >Luxury</span
+                          >
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3"
+                        >
+                          <a
+                            href="#"
+                            class="d-flex align-items-center text-decoration-none"
+                          >
+                            <img
+                              class="pe-1"
+                              src="assets/img/user.svg"
+                              alt="user"
+                            />
+                            <p class="m-0 secondary fs-6">Christeena Ann</p>
+                          </a>
+                          <a href="#" class="user-icon text-decoration-none"
+                            ><i class="bi bi-person-check primary"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 mt-3 d-sm-block d-none">
+                  <a href="javascript:;" class="d-block">
+                    <div class="cities-content h-100">
+                      <div class="bg-white rounded-4 h-100">
+                        <div class="common-card__media common-card__media-75">
+                          <img
+                            class="common-card__image"
+                            src="assets/img/story_1.png"
+                            alt="story_1"
+                          />
+                          <a
+                            href="javascript:;"
+                            class="position-absolute heart-icon end-0 me-3 mt-3"
+                            ><i class="bi bi-heart text-white"></i
+                          ></a>
+                        </div>
+                        <div class="cities-details px-3 pb-3">
+                          <div
+                            class="d-flex align-items-center justify-content-between my-4"
+                          >
+                            <a
+                              href="#"
+                              class="m-0 light-gray text-decoration-none"
+                              ><span class="pe-2"
+                                ><i
+                                  class="bi bi-hand-thumbs-up light-gray"
+                                ></i></span
+                              >7</a
+                            >
+                            <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
+                          </div>
+                          <a
+                            href="#"
+                            class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block"
+                            >Laid Back in Dubai</a
+                          >
+                          <p class="light-gray mb-2">
+                            <span class="pe-2"
+                              ><i class="bi bi-clock light-gray"></i></span
+                            >5 Days
+                          </p>
+                          <span
+                            class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill"
+                            >Luxury</span
+                          >
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3"
+                        >
+                          <a
+                            href="#"
+                            class="d-flex align-items-center text-decoration-none"
+                          >
+                            <img
+                              class="pe-1"
+                              src="assets/img/user.svg"
+                              alt="user"
+                            />
+                            <p class="m-0 secondary fs-6">Christeena Ann</p>
+                          </a>
+                          <a href="#" class="user-icon text-decoration-none"
+                            ><i class="bi bi-person-check primary"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 mt-3 d-sm-block d-none">
+                  <a href="javascript:;" class="d-block">
+                    <div class="cities-content h-100">
+                      <div class="bg-white rounded-4 h-100">
+                        <div class="common-card__media common-card__media-75">
+                          <img
+                            class="common-card__image"
+                            src="assets/img/story_1.png"
+                            alt="story_1"
+                          />
+                          <a
+                            href="javascript:;"
+                            class="position-absolute heart-icon end-0 me-3 mt-3"
+                            ><i class="bi bi-heart text-white"></i
+                          ></a>
+                        </div>
+                        <div class="cities-details px-3 pb-3">
+                          <div
+                            class="d-flex align-items-center justify-content-between my-4"
+                          >
+                            <a
+                              href="#"
+                              class="m-0 light-gray text-decoration-none"
+                              ><span class="pe-2"
+                                ><i
+                                  class="bi bi-hand-thumbs-up light-gray"
+                                ></i></span
+                              >7</a
+                            >
+                            <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
+                          </div>
+                          <a
+                            href="#"
+                            class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block"
+                            >Laid Back in Dubai</a
+                          >
+                          <p class="light-gray mb-2">
+                            <span class="pe-2"
+                              ><i class="bi bi-clock light-gray"></i></span
+                            >5 Days
+                          </p>
+                          <span
+                            class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill"
+                            >Luxury</span
+                          >
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3"
+                        >
+                          <a
+                            href="#"
+                            class="d-flex align-items-center text-decoration-none"
+                          >
+                            <img
+                              class="pe-1"
+                              src="assets/img/user.svg"
+                              alt="user"
+                            />
+                            <p class="m-0 secondary fs-6">Christeena Ann</p>
+                          </a>
+                          <a href="#" class="user-icon text-decoration-none"
+                            ><i class="bi bi-person-check primary"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 mt-3 d-sm-block d-none">
+                  <a href="javascript:;" class="d-block">
+                    <div class="cities-content h-100">
+                      <div class="bg-white rounded-4 h-100">
+                        <div class="common-card__media common-card__media-75">
+                          <img
+                            class="common-card__image"
+                            src="assets/img/story_1.png"
+                            alt="story_1"
+                          />
+                          <a
+                            href="javascript:;"
+                            class="position-absolute heart-icon end-0 me-3 mt-3"
+                            ><i class="bi bi-heart text-white"></i
+                          ></a>
+                        </div>
+                        <div class="cities-details px-3 pb-3">
+                          <div
+                            class="d-flex align-items-center justify-content-between my-4"
+                          >
+                            <a
+                              href="#"
+                              class="m-0 light-gray text-decoration-none"
+                              ><span class="pe-2"
+                                ><i
+                                  class="bi bi-hand-thumbs-up light-gray"
+                                ></i></span
+                              >7</a
+                            >
+                            <p class="primary fw-bold m-0 fs-6">~ ₹33,507.00</p>
+                          </div>
+                          <a
+                            href="#"
+                            class="secondary fw-bold mb-5 fs-4 text-decoration-none d-block"
+                            >Laid Back in Dubai</a
+                          >
+                          <p class="light-gray mb-2">
+                            <span class="pe-2"
+                              ><i class="bi bi-clock light-gray"></i></span
+                            >5 Days
+                          </p>
+                          <span
+                            class="primary mt-3 d-inline-block fs-6 orange-bg py-1 px-4 rounded-pill"
+                            >Luxury</span
+                          >
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between border-top gray-border px-3 py-3"
+                        >
+                          <a
+                            href="#"
+                            class="d-flex align-items-center text-decoration-none"
+                          >
+                            <img
+                              class="pe-1"
+                              src="assets/img/user.svg"
+                              alt="user"
+                            />
+                            <p class="m-0 secondary fs-6">Christeena Ann</p>
+                          </a>
+                          <a href="#" class="user-icon text-decoration-none"
+                            ><i class="bi bi-person-check primary"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="explore__pagination">
+                <ul
+                  class="explore-pagination__list list-unstyled d-flex align-items-center justify-content-end mt-3 mt-md-5"
+                >
+                  <li class="explore-pagination__item">
+                    <button
+                      type="button"
+                      class="rounded-4 bg-white border-0 pagination-prev pagination--btn"
+                    >
+                      <span class="pagination__arrow"
+                        ><i class="bi bi-arrow-left-short primary"></i
+                      ></span>
+                    </button>
+                  </li>
+                  <li
+                    class="explore-pagination__item pagination-number--list bg-white rounded-4 mx-2"
+                  >
+                    <a
+                      href="#"
+                      class="pagination-link text-decoration-none active"
+                      >1</a
+                    >
+                    <span class="light-gray">/</span>
+                    <a href="#" class="pagination-link text-decoration-none"
+                      >8</a
+                    >
+                  </li>
+                  <li class="explore-pagination__item">
+                    <button
+                      type="button"
+                      class="rounded-4 bg-white border-0 pagination-next pagination--btn"
+                    >
+                      <span class="pagination__arrow"
+                        ><i class="bi bi-arrow-right-short primary"></i
+                      ></span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
