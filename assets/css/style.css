@@ -928,6 +928,12 @@ a.close-filter {
 
 
 /* Know more Section CSS START */
+.section--know{
+    padding: 5rem 0;
+}
+.know__row{
+    padding: 2.5rem;
+}
 .know__icon .bi-cloud::before,
 .know__icon .bi-cash::before,
 .know__icon .bi-clock::before {
@@ -1036,10 +1042,20 @@ button.slick-arrow:hover i{
 
 /* ******** city detail page media query css start ********* */
 @media only screen and (max-width:991px){
+    .section--know{
+        padding: 2rem 0;
+    }
+    .know__row{
+        padding: 0rem;
+        border: none !important;
+    }
     .search__icon{
         left: auto;
         right: 5%;
         bottom: 23%;
+    }
+    .hotel-action__btn {
+        padding: 14px 32px !important;
     }
     .explore-sidebar__input input.form-control {
         padding: 10px 12px !important;
@@ -1084,6 +1100,12 @@ button.slick-arrow:hover i{
         width: auto;
         margin-right: 10px;
         max-width: 100%;
+    }
+    .section--faq{
+        padding: 2rem 0;
+    }
+    .faq__wrapper{
+        padding-bottom: 2rem;
     }
 }
 @media only screen and (max-width:575px){

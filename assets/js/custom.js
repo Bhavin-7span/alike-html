@@ -185,6 +185,7 @@ $(document).ready(function () {
     $(".custom-dropdown").removeClass("is-active");
   });
 
+  // filter button open & close
   $(".filter--btn").click(function(){
     $(".dropdown-menu__filter").addClass("main");
   });
@@ -192,7 +193,7 @@ $(document).ready(function () {
     $(".dropdown-menu__filter").removeClass("main");
   });
 
-// accordion 
+// accordion item open to show border
   $('.faq__wrapper .accordion-item').click(function(){
     $(this).toggleClass('is-active');
     $(this).siblings().removeClass('is-active');
